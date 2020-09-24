@@ -1,0 +1,72 @@
+[
+  {
+    "id": 1,
+    "name": "Canine Cupid",
+    "image": "images/canine-cupid-ezgif.gif",
+    "github": "https://github.com/ishabali/Project3-Front-End-Canine-Cupid",
+    "deployed": "http://canine-cupid.s3-website.us-east-2.amazonaws.com/"
+  },
+  {
+    "id": 2,
+    "name" : "Canine Cupid V.2",
+    "image" : "images/canine-cupid-v2.gif",
+    "github": "https://github.com/Canine-Cupid-2-0",
+    "deployed": "http://canine-cupid-2-0.s3-website.us-east-2.amazonaws.com"
+  },
+  {
+    "id": 3,
+    "name" : "Cocktail HQ",
+    "image" : "images/COCKTAILHQ.gif",
+    "github": "https://github.com/lrmccann/Cocktail-HQ-FE",
+    "deployed": "https://lrmccann.github.io/Cocktail-HQ-FE/"
+  },
+  {
+    "id": 4,
+    "name" : "IPA's using API's",
+    "image" : "images/IPASUSINGAPIS.gif",
+    "github": "https://github.com/lrmccann/IPA-s-using-API-s",
+    "deployed": "https://lrmccann.github.io/IPA-s-using-API-s/"
+  },
+  {
+    "id": 5,
+    "name": "API Weather App",
+    "image": "images/weather-app.gif",
+    "github": "https://github.com/lrmccann/Weather-API",
+    "deployed": "https://lrmccann.github.io/Weather-API/"
+  },
+  {
+    "id": 6,
+    "name": "Coding Quiz",
+    "image": "images/CODING-QUIZ.gif",
+    "github": "https://github.com/lrmccann/4-Coding-Quiz",
+    "deployed": "https://lrmccann.github.io/4-Coding-Quiz/"
+  },
+  {
+    "id": 7,
+    "name": "Team Generator",
+    "image": "images/TEAM-GEN.gif",
+    "github": "https://github.com/lrmccann/10-Team-Profile-Builder",
+    "deployed": "https://github.com/lrmccann/10-Team-Profile-Builder"
+  },
+  {
+    "id": 8,
+    "name": "API Weather App",
+    "image": "images/weather-app.gif",
+    "github": "https://github.com/lrmccann/Weather-API",
+    "deployed": "https://lrmccann.github.io/Weather-API/"
+  },
+  {
+    "id": 9,
+    "name": "'Born To Read' Book Club",
+    "image": "images/book-club-ezgif.gif",
+    "github": "https://github.com/ishabali/Project-2-FrontEnd--Born-To-Read-Book-Club",
+    "deployed": "https://nw-bookclub2020.github.io/FrontEnd.github.io/"
+  },
+  {
+    "id": 10,
+    "name": "Dream Your Vacation",
+    "image": "images/dream-your-vacation-ezgif.gif",
+    "github": "https://github.com/ishabali/Project-1-Dream-Your-Vacation",
+    "deployed": "https://ice-code-nw-2020.github.io/Project-1/"
+  }
+]
