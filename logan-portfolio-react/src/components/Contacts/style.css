@@ -11,7 +11,7 @@
 }
 .hello{
   position: fixed;
-  top: 50px;
+  top: 100px;
   left: 78%;
   z-index: 100;
 }

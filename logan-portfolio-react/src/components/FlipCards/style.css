@@ -1,19 +1,24 @@
 .flip-card-before{
     height: 300px;
-    width: 180px;
-    border-radius: 25px;
+    width: 225px;
+    border-radius: 30px;
     padding: 5%;
+    border:transparent;
 }
 .flip-card-before span{
     position: relative;
+    border:transparent;
 }
 
 .flip-card-after{
     height: 300px;
-    width: 180px;
+    width: 220;
     border-radius: 25px;
+   text-align: center;
+   border:transparent;
 }
 
 .flip-card-after span{
-    position: relative;
+    border:transparent;
+    position: absolute;
 }
