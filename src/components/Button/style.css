@@ -1,0 +1,12 @@
+.prjectBtn{
+border-radius: 30px;
+height: 55px;
+width:185px;
+margin-left: 20%;
+}
+
+.prjectText{
+    padding-top: 5%;
+    font-size: 15px;
+    font-weight: bolder;
+}

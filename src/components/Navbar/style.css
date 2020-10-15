@@ -1,0 +1,13 @@
+nav.navbar.navbar-default {
+  margin-bottom: 0;
+}
+.nav-item{
+  color: black;
+}
+.disabled-link {
+  pointer-events: none;
+}
+.enabled-link {
+  pointer-events: auto;
+}
+
