@@ -7,6 +7,7 @@ import FlipCardOne from "../components/FlipCards";
 import Photo from "../images/port-pic.jpeg";
 import Fade from "react-reveal/Fade";
 import ProjectsBtn from "../components/Button";
+// import style from "./index.css";
 
 function Home(props) {
   return (

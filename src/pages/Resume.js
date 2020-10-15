@@ -5,6 +5,7 @@ import projects from "../projects.json"
 import {Container , Row} from "../components/Grid";
 import Col from "../components/Col";
 import "../images/resume-img.png";
+// import style from "./index.css";
 
 export default function () {
 

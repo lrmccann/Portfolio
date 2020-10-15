@@ -3,6 +3,7 @@ import ContactForm from "../components/ContactForm"
 import {Container , Row} from "../components/Grid";
 // import Row from "../components/Row";
 import Col from "../components/Col";
+// import style from "./index.css";
 
 class Contact extends Component {
     state = {

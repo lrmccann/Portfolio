@@ -7,6 +7,7 @@ import Navbar from "./components/Navbar";
 import Footer from "./components/Footer";
 import Resume from "./pages/Resume";
 import "bootstrap/dist/css/bootstrap.min.css";
+// import style from "./index.css";
 
 function App() {
   return (

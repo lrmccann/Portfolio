@@ -4,6 +4,7 @@ import projects from "../projects.json"
 import { Container, Row } from "../components/Grid";
 import Col from "../components/Col";
 import Fade from "react-reveal/Fade";
+// import style from "./index.css";
 
 export default function Projects(props) {
 
