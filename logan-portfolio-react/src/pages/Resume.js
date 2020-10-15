@@ -15,7 +15,6 @@ export default function () {
         <Container>
             <div style={{height:"825px" , width:"100%" }}>
             <img style={{height:"750px" , marginTop:"5%" , marginLeft:"20%"}} src={require('../images/resume-img.png')} alt="My Resume"></img>
-
             </div>
             </Container>
     )

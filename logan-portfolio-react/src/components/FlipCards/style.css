@@ -2,23 +2,29 @@
     height: 300px;
     width: 225px;
     border-radius: 30px;
-    padding: 5%;
+    padding: 4.5%;
     border:transparent;
+    outline: none;
+    position: relative;
+    border: solid black 3px;
 }
-.flip-card-before span{
+.flip-card-before:active{
     position: relative;
     border:transparent;
+    outline: none;
 }
-
 .flip-card-after{
     height: 300px;
-    width: 220;
+    width: 225px;
     border-radius: 25px;
    text-align: center;
    border:transparent;
+   outline: none;
+   position: relative;
 }
 
-.flip-card-after span{
+.flip-card-after:active{
     border:transparent;
-    position: absolute;
+    position: relative;
+    outline: none;
 }

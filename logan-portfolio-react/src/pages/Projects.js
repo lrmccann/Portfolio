@@ -3,6 +3,7 @@ import Card from "../components/Card";
 import projects from "../projects.json"
 import { Container, Row } from "../components/Grid";
 import Col from "../components/Col";
+import Fade from "react-reveal/Fade";
 
 export default function Projects(props) {
 
@@ -39,18 +40,19 @@ export default function Projects(props) {
   }
   if(cardsideOne === true){
     return (
+      <Fade left>
       <div className="prjctPage">
         {(projectsToMap.map((item ) => (
           <div key={item.name}>
             {/* {console.log(key)} */}
             {/* {console.log(item.name)} */}
             <Container fluid>
-              <div className="prjctCont"  >
+              <div className="prjctCont">
                 <button className="flipbtn" id={item.name} onClick={(e) => (flipCards(e.target.id))}><img id={item.name} onClick={(e) => (flipCards(e.target.id))} className="icon-btn" src="../images/info-icon.svg"></img></button>
                 <div>
                   <h1 style={{ textAlign: "center", paddingTop: "1%" }}>{item.name}</h1>
                   <div style={{border: "solid black 1px"}}></div>
-                  <h5>{item.description}</h5>
+                  <h5 style={{padding:"3%" , fontSize:"15px"}}>{item.description}</h5>
                 </div>
               </div>
   
@@ -58,13 +60,14 @@ export default function Projects(props) {
           </div>
         )))}
       </div>
+      </Fade>
     )
   }
   if(cardsideTwo === true){
     return (
       <div className="prjctPageTwo">
             <Container fixed>
-            <button className="flipbtnTwo btn-secondary" onClick={flipCardsBack}><h3>return</h3></button>
+            <button className="flipbtnTwo " onClick={flipCardsBack}><h2>X</h2></button>
               <div className="prjctContFlipped" >
                 {/* <div style={{margin:"none"}}> */}
                 <img className="video" src={currentlySelectedProject.image}></img>
@@ -76,10 +79,6 @@ export default function Projects(props) {
           </div>
     )
   }
-
-
-
-
 
   // }
 

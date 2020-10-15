@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import Col from "../Col";
 import {Row} from "../Grid";
+import Wobble from 'react-reveal/Wobble';
 import "./style.css";
 
 export default function FlipCardOne(props) {
@@ -30,19 +31,21 @@ export default function FlipCardOne(props) {
       console.log(props)
     return (
         <button className="flip-card-before" onClick={switchPictures} style={{backgroundColor:props.backgroundColor , marginLeft:props.marginLeft , paddingRight:props.paddingRight }}>
-        <div style={{ color:"white" , overflow:"hidden" }}><h6>{props.headerText}</h6></div>
+        <div style={{ color:"black" , overflow:"hidden" }}><h6>{props.headerText}</h6></div>
       </button>
     );
   } if(cardLoadedTwo === true){
     return (
         <button className="flip-card-after" onClick={switchPicturesTwo} style={{backgroundColor:"white" , marginLeft:props.marginLeft}} >
-                <ul style={{listStyle:"none"}}>
-                <li style={{ paddingRight:"50px"  ,fontSize: "20px"}}><h5>{props.textOne}</h5></li>
+                <ul style={{listStyle:"none" , border:"none"}}>
+                  <Wobble>
+                <li style={{ paddingRight:"50px"  ,fontSize: "20px" }}><h5>{props.textOne}</h5></li>
                   <li style={{paddingRight:"50px"  , fontSize: "20px"}}><h5>{props.textTwo}</h5></li>
                   <li style={{paddingRight:"50px"  , fontSize: "20px"}}><h5>{props.textThree}</h5></li>
                   <li style={{paddingRight:"50px"  , fontSize: "20px"}}><h5>{props.textFour}</h5></li>
                   <li style={{paddingRight:"50px"  , fontSize: "20px"}}><h5>{props.textFive}</h5></li>
                   <li style={{paddingRight:"50px"  , fontSize: "20px"}}><h5>{props.textFive}</h5></li>
+                  </Wobble>   
                 </ul>
             </button>
     );

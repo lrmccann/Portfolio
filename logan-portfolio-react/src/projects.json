@@ -21,7 +21,8 @@
     "image" : "./images/cocktail-hq.png",
     "github": "https://github.com/lrmccann/Cocktail-HQ-FE",
     "deployed": "https://lrmccann.github.io/Cocktail-HQ-FE/",
-    "description" : "This webpage was my first exposure to deploying BE repo's to Heroku, major API calls, routes, modals, controllers, etc. The front end is deployed on Github pages and optomization is in it's future!"
+    "description" : "This webpage was my first exposure to deploying BE repo's to Heroku, major API calls, routes, modals, controllers, etc. The front end is deployed on Github pages and optomization is in it's future!",
+    "tech": ""
   },
   {
     "id": 4,

@@ -1,27 +1,22 @@
 import React from "react";
 import { useHistory } from "react-router-dom";
-import API from "../../utils/API";
+import Jump from "react-reveal/Jump";
+
 import "./style.css";
 
-export function ProjectsBtn() {
+export default function ProjectsBtn() {
 
     const history = useHistory();
-    let newVar = user
-    const getUserDataById = async () => {
-        await API.getMatchesYesByName(newVar.userName)
-        .then(response => getAllMatchesForMatchesPage(response.data))
-        
-    }
     async function handleClick(user) {
-        console.log(userForMatchesPage, "anytext")
-        await getUserDataById(user)
-        .then(history.push("/matches"))
+        (history.push("/projects"))
     }
     return (
+        <Jump>
     <button 
-    className="btn" 
+    className="prjectBtn btn-primary" 
     onClick={handleClick} >
-      <p className="btn-login" > Matches </p>
+      <p className="prjectText" >Projects</p>
     </button>
+    </Jump>
     );
 }
