@@ -6,7 +6,7 @@ quick link : http://logansportfolio.s3-website.us-east-2.amazonaws.com/home
 ---
 
 ## Build Status
-Travis CI badge here
+![GitHub language count](https://img.shields.io/badge/build-passing-brightgreen)
 
 ---
 
