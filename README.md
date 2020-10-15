@@ -1,4 +1,4 @@
-![GitHub language count](https://img.shields.io/github/languages/count/lrmccann/Portfolio?color=lime%20green%20&style=plastic)     ![GitHub top language](https://img.shields.io/github/languages/top/lrmccann/Logan-react-port?style=plastic)     
+![GitHub language count](https://img.shields.io/github/languages/count/lrmccann/Portfolio?color=lime%20green%20&style=plastic)     ![GitHub top language](https://img.shields.io/github/languages/top/lrmccann/Logan-react-port?color=yello%20&style=plastic)     ![GitHub top language](https://img.shields.io/badge/HTML-5.4%25-red)
 
 
 
