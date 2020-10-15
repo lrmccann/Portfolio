@@ -1,6 +1,6 @@
 ## My Portfolio
 
-
+React portfolio about me. Full of cool effects, mixed with a touch of my personality. 
 ---
 
 ## Build Status
