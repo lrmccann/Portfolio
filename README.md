@@ -1,3 +1,10 @@
+![GitHub language count](https://img.shields.io/github/languages/count/lrmccann/Portfolio?color=lime%20green%20&style=plastic)
+
+![GitHub top language](https://img.shields.io/github/languages/top/lrmccann/Logan-react-port?style=plastic)
+
+
+
+
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
 ## Available Scripts
