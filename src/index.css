@@ -1,8 +1,11 @@
 * {
   box-sizing: border-box;
+  /* background-color:#474D74; */
 }
 
-html,body{background-color:#474D74;}
+html,body{
+  background-color:#474D74;
+}
 
 .picContHome{
 float: right;
@@ -11,7 +14,6 @@ width: 375px;
 margin-right: 12%;
 margin-top: 10%;
 background-color: rgb(36, 36, 36);
-/* background-color: rgb(51, 49, 49); */
 position: relative;
 }
 .myPicHome{
@@ -59,7 +61,7 @@ position: relative;
   float: left;
 }
 .prjctPage{
-  background-color: #474D74;;
+  /* background-color: #474D74;; */
   height: 1200px;
 }
 .prjctPageTwo{

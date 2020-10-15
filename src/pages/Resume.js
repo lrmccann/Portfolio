@@ -5,7 +5,7 @@ import projects from "../projects.json"
 import {Container , Row} from "../components/Grid";
 import Col from "../components/Col";
 import "../images/resume-img.png";
-// import style from "./index.css";
+import "../index.css";
 
 export default function () {
 
@@ -13,11 +13,13 @@ export default function () {
 
 
     return(
+        <div className="resumecont">
         <Container>
             <div style={{height:"825px" , width:"100%" }}>
             <img style={{height:"750px" , marginTop:"5%" , marginLeft:"20%"}} src={require('../images/resume-img.png')} alt="My Resume"></img>
             </div>
             </Container>
+            </div>
     )
 
 
