@@ -1,5 +1,6 @@
 ## My Portfolio
 React portfolio about me. Full of cool effects, mixed with a touch of my personality. 
+
 quick link : http://logansportfolio.s3-website.us-east-2.amazonaws.com/home
 
 ---
