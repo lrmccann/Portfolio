@@ -1,8 +1,6 @@
-import React, { Component, useEffect, useState } from "react";
-import Card from "../components/Card";
+import React, {useEffect, useState } from "react";
 import projects from "../projects.json"
-import { Container, Row } from "../components/Grid";
-import Col from "../components/Col";
+import { Container} from "../components/Grid";
 import Fade from "react-reveal/Fade";
 // import style from "./index.css";
 
@@ -18,7 +16,7 @@ export default function Projects(props) {
     // }if(projects.length !== null){
       setProjectsToMap(projects)
     // }
-  }, [projects]
+  }, []
   )
   console.log(projectsToMap)
   // if(projectsToMap.length === 0 ){
@@ -49,7 +47,7 @@ export default function Projects(props) {
             {/* {console.log(item.name)} */}
             <Container fluid>
               <div className="prjctCont">
-                <button className="flipbtn" id={item.name} onClick={(e) => (flipCards(e.target.id))}><img id={item.name} onClick={(e) => (flipCards(e.target.id))} className="icon-btn" src="../images/info-icon.svg"></img></button>
+                <button className="flipbtn" id={item.name} onClick={(e) => (flipCards(e.target.id))}><img id={item.name} alt="more info icon" onClick={(e) => (flipCards(e.target.id))} className="icon-btn" src="../images/info-icon.svg"></img></button>
                 <div>
                   <h1 style={{ textAlign: "center", paddingTop: "1%" }}>{item.name}</h1>
                   <div style={{border: "solid black 1px"}}></div>
@@ -71,35 +69,13 @@ export default function Projects(props) {
             <button className="flipbtnTwo " onClick={flipCardsBack}><h2>X</h2></button>
               <div className="prjctContFlipped" >
                 {/* <div style={{margin:"none"}}> */}
-                <img className="video" src={currentlySelectedProject.image}></img>
-                <button className="btn-primary linkbtn"> <a className="githalink" href={currentlySelectedProject.github} target="_blank"><p style={{fontSize:"20px" , marginTop:".5%"}}>Github</p></a></button>
-                  <button className="btn-primary linkbtnTwo"><a className="githalink" href={currentlySelectedProject.deployed} target="_blank"><p style={{fontSize:"20px" , marginTop:".5%" }}>Deployment</p></a></button>
+                <img className="video" src={currentlySelectedProject.image} alt="currently selected project"></img>
+                <button className="btn-primary linkbtn"> <a className="githalink" href={currentlySelectedProject.github} target="_blank" rel="noopener noreferrer"><p style={{fontSize:"20px" , marginTop:".5%"}}>Github</p></a></button>
+                  <button className="btn-primary linkbtnTwo"><a className="githalink" href={currentlySelectedProject.deployed} target="_blank" rel="noopener noreferrer"><p style={{fontSize:"20px" , marginTop:".5%" }}>Deployment</p></a></button>
                 </div>
               {/* </div> */}
             </Container>
           </div>
     )
   }
-
-  // }
-
-
-  {/* <div >
-       <Container style={{ marginTop: 30 }}>
-         <h1 className="text-center" style={{marginBottom:"3%", marginTop:"7%"}}>Projects</h1>
-         <div style={{border:"solid 2px black", marginBottom:"5%"}}></div>
-         <Row>
-             {this.state.projects.map(project => ( 
-              <Card 
-              id={project.id}
-              key={project.id}
-              name={project.name}
-              image={project.image}
-              github={project.github}
-              deployed={project.deployed}
-              />
-            ))}
-         </Row>
-       </Container>
-      </div> */}
 }

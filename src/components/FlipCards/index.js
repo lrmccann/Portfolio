@@ -1,11 +1,8 @@
 import React, { useState } from "react";
-import Col from "../Col";
-import {Row} from "../Grid";
 import Wobble from 'react-reveal/Wobble';
 import "./style.css";
 
 export default function FlipCardOne(props) {
-  const [cardBefore , setCardBefore] = useState()
   const [cardLoaded, setCardLoaded] = useState(true)
   const [cardLoadedTwo, setCardLoadedTwo] = useState(false)
   console.log(props)

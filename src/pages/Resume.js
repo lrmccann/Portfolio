@@ -1,9 +1,6 @@
-import React, { Component } from "react";
-import Card from "../components/Card";
-import projects from "../projects.json"
+import React from "react";
 // import Wrapper from "../components/Wrapper";
-import {Container , Row} from "../components/Grid";
-import Col from "../components/Col";
+import {Container} from "../components/Grid";
 import "../images/resume-img.png";
 import "../index.css";
 
