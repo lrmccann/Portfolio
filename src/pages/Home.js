@@ -1,10 +1,9 @@
 import React from "react";
-import Hero from "../components/Hero";
 import { Container, Row } from "../components/Grid";
 import Col from "../components/Col";
 import Contacts from "../components/Contacts";
 import FlipCardOne from "../components/FlipCards";
-import Photo from "../images/port-pic.jpeg";
+import "../images/port-pic.jpeg";
 import Fade from "react-reveal/Fade";
 import ProjectsBtn from "../components/Button";
 // import style from "./index.css";
@@ -20,11 +19,17 @@ function Home(props) {
           <Col size="md-12">
             <Fade top>
             <div className="picContHome">
-              <img className="myPicHome" src={Photo} alt="Picture of Logan McCann"></img>
+              <img className="myPicHome" src={require("../images/port-pic.jpeg")} alt="Logan McCann"></img>
+              <div style={{display:"flex-box"}}>
+              {/* <h4 style={{color: "white" , marginLeft:"28%"}}>Contact info</h4> */}
+              <h6 style={{color:"white" , marginLeft:"5%"}}>Email : <a href="loganrmccann@gmail.com">Click Me</a></h6>
+              <h6 style={{color:"white" , marginLeft:"5%"}}>GitHub : <a href="https://github.com/lrmccann">Click Me</a></h6>
+              <h6 style={{color:"white" , marginLeft:"5%"}}>linkedin : <a href="https://www.linkedin.com/in/logan-mccann-381855155/">Click Me</a></h6>
+              </div>
             </div>
             <div className="textHome">
               <h1 style={{ color: "white", fontSize: "50px" }}>Get to know this guy ==></h1>
-              <p style={{ fontSize: "23px", color: "white", marginTop: "2%", width: "95%" }}>I am a highly adaptable and detail-oriented web developer with extensive background in various coding languages, building responsive websites from front to back,
+              <p style={{ fontSize: "23px", color: "white", marginTop: "2%", width: "95%" }}>I am a highly adaptable and detail-oriented web developer with extensive background in various coding languages, building responsive websites from front-end to back-end,
               and developing mobile applications. Specializes in JSX and CSS. Poised to contribute creative problem solving techniques,
                excellent interpersonal skills, and time management</p>
             </div>

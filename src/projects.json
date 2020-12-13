@@ -5,7 +5,7 @@
     "image" : "./images/canine-cupid-1.png",
     "github" : "https://github.com/lrmccann/Front-End",
     "deployed" : "http://canine-cupid.s3-website.us-east-2.amazonaws.com/",
-    "description": "OG concept for Canine Cupid, later stripped and redisgned to Canine Cupid v2 in 6 days." 
+    "description": "OG concept for Canine Cupid, later stripped and redesigned to Canine Cupid v2 in 6 days." 
   },
   {
     "id": 2,
@@ -21,8 +21,7 @@
     "image" : "./images/cocktail-hq.png",
     "github": "https://github.com/lrmccann/Cocktail-HQ-FE",
     "deployed": "https://lrmccann.github.io/Cocktail-HQ-FE/",
-    "description" : "This webpage was my first exposure to deploying BE repo's to Heroku, major API calls, routes, modals, controllers, etc. The front end is deployed on Github pages and optomization is in it's future!",
-    "tech": ""
+    "description" : "This webpage was my first exposure to deploying BE repositories to Heroku, major API calls, routes, modals, controllers, etc. The front end is deployed on Github pages and optimization is in its future!"
   },
   {
     "id": 4,
@@ -30,7 +29,7 @@
     "image" : "./images/API-IPA.png",
     "github": "https://github.com/lrmccann/IPA-s-using-API-s",
     "deployed": "https://lrmccann.github.io/IPA-s-using-API-s/",
-    "description": "IPA's using API's was our first group project, it showcases my skills with HTML, CSS, and Javascript at a very begginer level using two different API's we were able to track geolocation of a given city as well as store wish list items in local storage. "
+    "description": "IPA's using API's was our first group project, it showcases my skills with HTML, CSS, and Javascript at a very beginner level using two different API's we were able to track geolocation of a given city as well as store wish list items in local storage. "
   },
   {
     "id": 5,
@@ -54,7 +53,7 @@
     "image": "./images/team-builder.png",
     "github": "https://github.com/lrmccann/10-Team-Profile-Builder",
     "deployed": "https://github.com/lrmccann/10-Team-Profile-Builder",
-    "description": "Software team generator using the command line, this application prompts the user for information about thier team (position, id # , graduate school) and the generates and HTML file with said information"
+    "description": "Software team generator using the command line, this application prompts the user for information about their team (position, id # , graduate school) and the generates and HTML file with said information"
   },
   {
     "id": 9,
@@ -62,7 +61,7 @@
     "image": "images/book-club-ezgif.gif",
     "github": "https://github.com/ishabali/Project-2-FrontEnd--Born-To-Read-Book-Club",
     "deployed": "https://nw-bookclub2020.github.io/FrontEnd.github.io/",
-    "description": "'Born to Read' is a Book Club that allows participants to read books, review books, and buy books as well as the ability to look at other's reviews of the books to optomize the likely hood of a regretless purchase. It is a space dedicated to book fanatics who love to share their reading experiences with others."
+    "description": "Born to Read' is a Book Club that allows participants to read books, review books, and buy books as well as the ability to look at other's reviews of the books to optomize the likelihood of a regretless purchase. It is a space dedicated to book fanatics who love to share their reading experiences with others."
   },
   {
     "id": 10,
@@ -78,6 +77,6 @@
     "image": "./images/coding-quiz.png",
     "github": "https://github.com/lrmccann/4-Coding-Quiz",
     "deployed": "https://lrmccann.github.io/4-Coding-Quiz/",
-    "description": "As any great web developer knows, as you proceed through your career, you will often be asked to take an assessment of you coding knowledge. This usually consists of  a combination of multiple-choice questions and interactive challenges. Using HTML, CSS, AND JS, I have created a a multiple choice application that will quiz the user on their knowledge of various languages. I have added a leaderboard for those truly skilled in the ways of Web Dev and a time for added pressure."
+    "description": "As any great web developer knows, as you proceed through your career, you will often be asked to take an assessment of your coding knowledge. This usually consists of  a combination of multiple-choice questions and interactive challenges. Using HTML, CSS, AND JS, I have created a multiple choice application that will quiz the user on their knowledge of various languages. I have added a leaderboard for those truly skilled in the ways of Web Dev and a time for added pressure."
   }
 ]

@@ -1,0 +1,162 @@
+* {
+  box-sizing: border-box;
+  /* background-color:#474D74; */
+}
+
+html,body{
+  background-color:#474D74;
+}
+
+.picContHome{
+float: right;
+height: 488px;
+width: 375px;
+margin-right: 12%;
+margin-top: 10%;
+background-color: rgb(36, 36, 36);
+position: relative;
+}
+.myPicHome{
+  float: right;
+  /* margin-right: 15%; */
+  padding:5%;
+  height: 370px;
+  position: relative;
+}
+.textHome{
+  margin-top: 13%;
+  margin-left: 10%;
+  width: 40%;
+  position: relative;
+}
+.buttonHome{
+  padding-top: 11px;
+  border-radius: 50px;
+  margin-left: 17%;
+  width: 15%;
+}
+.prjctCont{
+   border-radius: 3px 3px  16px  16px ;
+  margin-top: 2%;
+  margin-right: 2%;
+  padding-top: 1%;
+  /* margin-left: 2%; */
+  height: 275px;
+  /* width: 676px; */
+  width: 441px;
+  /* background-color: rgb(192, 192, 192); */
+  background-color: white;
+  float: left;
+  overflow: hidden;
+}
+.prjctContFlipped{
+  /* margin-top: 5%; */
+  margin-right: 2%;
+  /* padding-top: 1%; */
+  /* margin-left: 2%; */
+  height: 600px;
+  /* width: 676px; */
+  width: 1100px;
+  background-color: rgb(192, 192, 192);
+  float: left;
+}
+.prjctPage{
+  /* background-color: #474D74;; */
+  height: 1200px;
+}
+.prjctPageTwo{
+  height: 800px;
+}
+.flipbtn{
+  /* width: 300px;
+  height: 25px;
+  margin-left: 23%;
+  margin-bottom: 3%; */
+  /* margin-left: 70%; */
+  background-color: transparent;
+  width: 40px;
+  height: 10px;
+  border-radius: 50px;
+  border:none;
+  position: absolute;
+  z-index: 99;
+  color:white;
+  outline: none;
+}
+.flipbtnTwo{
+  /* width: 300px;
+  height: 25px;
+  margin-left: 23%;
+  margin-bottom: 3%; 
+   background-color: transparent; 
+/////////////////////////////////////// leave top commented out
+
+  margin-left: 70%;
+  width: 91px;
+  height: 42px;
+  border-radius: 10px 10px 10px 10px;
+  border:none;
+  position: absolute;
+  z-index: 99;
+  color:white; */
+  outline: none;
+  margin-top: 5%;
+  /* border-radius: 20px; */
+  float: right;
+  margin-right: .8%;
+  position: inherit;
+  z-index: 99;
+  margin-left: .5%;
+  color: white;
+  height: 50px;
+  width: 60px;
+  background-color: rgb(182, 47, 47);
+}
+.icon-btn{
+  height: 30px;
+  width: 40px;
+  position: relative;
+  z-index:99;
+}
+.video{
+  height: 100%;
+  width: 100%;
+  position: relative;
+  /* float: left; */
+  z-index: 0;
+}
+.linkbtn{
+  float: left;
+  position: inherit;
+  z-index: 99;
+  /* margin-left: .5%; */
+  color: white;
+  /* margin-left: 35%; */
+  /* margin-top: 30.3%; */
+  /* border-radius: 50px; */
+  height: 40px;
+  width: 100px;
+}
+.githalink{
+  color: white;
+}
+.linkbtnTwo{
+  float: left;
+  position: inherit;
+  z-index: 99;
+  margin-left: 1%;
+  /* border-radius: 50px; */
+  height: 40px;
+  width: 120px;
+  color: white;
+}
+
+/* html,
+body,
+#root,
+#root > div,
+div[data-reactroot] {
+  height: 100%;
+  padding: 0;
+  margin: 0;
+} */

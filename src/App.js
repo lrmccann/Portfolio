@@ -6,8 +6,8 @@ import Contact from "./pages/Contact";
 import Navbar from "./components/Navbar";
 import Footer from "./components/Footer";
 import Resume from "./pages/Resume";
-import "bootstrap/dist/css/bootstrap.min.css";
-// import style from "./index.css";
+// import "bootstrap/dist/css/bootstrap.min.css";
+import "./index.css";
 
 function App() {
   return (
