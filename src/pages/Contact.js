@@ -1,46 +1,48 @@
-import React, {Component} from "react";
-import ContactForm from "../components/ContactForm"
-import {Container , Row} from "../components/Grid";
-// import Row from "../components/Row";
-import Col from "../components/Col";
-// import style from "./index.css";
+import React, { useState } from "react";
+import '../styleSheets/contact.css';
 
-class Contact extends Component {
-    state = {
-      name: "",
-      subject: "",
-      message: ""
-    };
+export default function Contact() {
 
-    handleInputChange = event => {
+    const [messageName, setName] = useState("");
+    const [messageSubject, setSubject] = useState("");
+    const [messageBody, setBody] = useState("");
+
+
+    const handleInputChange = event => {
         event.preventDefault();
-        console.log(event);
-        const value = event.target.value;
-        const name = event.target.name;
-        console.log("**********");
-        console.log(value);
-        console.log(name);
-        this.setState({
-          [name]: value
-        });
+        var name = messageName;
+        var subject = messageSubject;
+        var body = messageBody;
+        console.log(name, subject, body);
     };
 
-    render () {
-        return (
-            <Container >
-                <Row>
-                    <Col size="md-12">
-                        <ContactForm
-                            inputFunction = {this.handleInputChange}
-                            subject = {this.state.subject}
-                            message = {this.state.message}
-                            name = {this.state.name}
-                        />
-                    </Col>
-                </Row>
-            </Container>
-        );
-    };
+    return (
+        <div className="container">
+            <div className="row">
+                <div className="col-md-12">
+                    <form className="formStyle" onClick={handleInputChange}>
+                        <div className="form-group">
+                            <label style={{ color: "white" }}>Name</label>
+                            <input type="text" className="form-control" defaultValue="" onInput={e => setName(e.target.value)} />
+                        </div>
+                        <div className="form-group">
+                            <label style={{ color: "white" }}>Subject</label>
+                            <input type="text" className="form-control" defaultValue="" onChange={e => setSubject(e.target.value)} />
+                        </div>
+                        <div className="form-group">
+                            <label style={{ color: "white" }}>Message</label>
+                            <textarea className="form-control" rows="6" defaultValue="" onChange={e => setBody(e.target.value)} >
+                            </textarea>
+                        </div>
+
+
+                        <div className="button-container">
+                            {/* <a type="submit" className="btn btn-primary" href={`mailto:loganrmccann@gmail.com?subject=Message from ${props.name}: ${props.subject}&body=${props.message}`}>Send</a> */}
+                            <button className="btn btn-primary">Send</button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    )
 }
-
-export default Contact

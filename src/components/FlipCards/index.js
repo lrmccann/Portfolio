@@ -27,7 +27,9 @@ export default function FlipCardOne(props) {
   if(cardLoaded === true){
       console.log(props)
     return (
-        <button className="flip-card-before" onClick={switchPictures} style={{backgroundColor:props.backgroundColor , marginLeft:props.marginLeft , paddingRight:props.paddingRight }}>
+        <button className="flip-card-before" onClick={switchPictures} style={{ 
+          // marginTop: '50%' , 
+          marginBottom: '4%' , backgroundColor:props.backgroundColor , marginLeft:props.marginLeft , paddingRight:props.paddingRight }}>
         <div style={{ color:"black" , overflow:"hidden" }}><h6>{props.headerText}</h6></div>
       </button>
     );
@@ -36,12 +38,12 @@ export default function FlipCardOne(props) {
         <button className="flip-card-after" onClick={switchPicturesTwo} style={{backgroundColor:"white" , marginLeft:props.marginLeft}} >
                 <ul style={{listStyle:"none" , border:"none"}}>
                   <Wobble>
-                <li style={{ paddingRight:"50px"  ,fontSize: "20px" }}><h5>{props.textOne}</h5></li>
-                  <li style={{paddingRight:"50px"  , fontSize: "20px"}}><h5>{props.textTwo}</h5></li>
-                  <li style={{paddingRight:"50px"  , fontSize: "20px"}}><h5>{props.textThree}</h5></li>
-                  <li style={{paddingRight:"50px"  , fontSize: "20px"}}><h5>{props.textFour}</h5></li>
-                  <li style={{paddingRight:"50px"  , fontSize: "20px"}}><h5>{props.textFive}</h5></li>
-                  <li style={{paddingRight:"50px"  , fontSize: "20px"}}><h5>{props.textFive}</h5></li>
+                <li id='flip-card-after-text'><h5>{props.textOne}</h5></li>
+                  <li id='flip-card-after-text'><h5>{props.textTwo}</h5></li>
+                  <li id='flip-card-after-text'><h5>{props.textThree}</h5></li>
+                  <li id='flip-card-after-text'><h5>{props.textFour}</h5></li>
+                  <li id='flip-card-after-text'><h5>{props.textFive}</h5></li>
+                  <li id='flip-card-after-text'><h5>{props.textFive}</h5></li>
                   </Wobble>   
                 </ul>
             </button>

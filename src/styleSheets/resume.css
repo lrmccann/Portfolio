@@ -1,0 +1,11 @@
+.resumeCont{
+    width: auto;
+    background-size: cover;
+    margin-left: 27.75%;
+    padding-top: 4%;
+}
+
+.resumeImg{
+    height: 100%;
+    width: 80%;
+}

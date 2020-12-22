@@ -1,26 +1,14 @@
 import React from "react";
-// import Wrapper from "../components/Wrapper";
-import {Container} from "../components/Grid";
+import '../styleSheets/resume.css';
 import "../images/resume-img.png";
-import "../index.css";
+import resume from '../images/Logan-McCann-Resume-Use.png';
 
-export default function () {
+export default function Resume () {
 
-
-
-
-    return(
-        <div className="resumecont">
-        <Container>
-            <div style={{height:"825px" , width:"100%" }}>
-            <img style={{height:"750px" , marginTop:"5%" , marginLeft:"20%"}} src={require('../images/resume-img.png')} alt="My Resume"></img>
-            </div>
-            </Container>
-            </div>
+    return (
+        <div className="resumeCont">
+            <img className="resumeImg" src={resume}>
+            </img>
+        </div>
     )
-
-
-
-
-
 }

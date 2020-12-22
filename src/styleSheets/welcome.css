@@ -1,0 +1,25 @@
+.homeCont{
+    /* height: 49.51vw; */
+    width: 100vw;
+    /* background-color: wheat; */
+    display: flex;
+    flex-direction: column;
+    scroll-behavior: smooth;
+    contain: content;
+}
+
+.rightSide{
+    height: 49.60vw;
+    width: 100vw;
+    display: flex;
+    flex-direction: column;
+    background-image: url('../images/try-this.bg.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    align-self: center;
+    margin-left: 13.50%;
+    /* margin-top: 38%; */
+    background-position: center;
+    background-position-y: 31.50%;
+    overflow: hidden;
+}
