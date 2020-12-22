@@ -1,8 +1,7 @@
-import React, {useEffect, useState } from "react";
+import React, { useEffect, useState } from "react";
 import projects from "../projects.json"
-import { Container} from "../components/Grid";
 import Fade from "react-reveal/Fade";
-// import style from "./index.css";
+import '../styleSheets/projects.css';
 
 export default function Projects(props) {
 
@@ -11,71 +10,72 @@ export default function Projects(props) {
   const [cardsideOne, setCardSideOne] = useState(true)
   const [cardsideTwo, setCardSideTwo] = useState(false)
   useEffect(() => {
-    // if(projects.length === 0){
-      // return (<div>Loading</div>)
-    // }if(projects.length !== null){
-      setProjectsToMap(projects)
-    // }
+    setProjectsToMap(projects)
   }, []
   )
-  console.log(projectsToMap)
-  // if(projectsToMap.length === 0 ){
-    // alert("hello")
-  // } if(projectsToMap.length !== 0){
-    async function flipCards(id) {
-     const index = projectsToMap.findIndex(p => p.name === id)
-     setCurrentlySelectedProject(projectsToMap[index])
-    //  if(currentlySelectedProject === undefined) {
-    //  }if(currentlySelectedProject !== undefined){
-       setCardSideOne(false)
-       setCardSideTwo(true)
-      //  console.log(currentlySelectedProject)
-      console.log(currentlySelectedProject)
-     }
-  //  }
+  async function flipCards(id) {
+    const index = projectsToMap.findIndex(p => p.name === id)
+    setCurrentlySelectedProject(projectsToMap[index])
+    setCardSideOne(false)
+    setCardSideTwo(true)
+  }
   function flipCardsBack() {
     setCardSideOne(true)
     setCardSideTwo(false)
   }
-  if(cardsideOne === true){
+  if (cardsideOne === true) {
     return (
       <Fade left>
-      <div className="prjctPage">
-        {(projectsToMap.map((item ) => (
-          <div key={item.name}>
-            {/* {console.log(key)} */}
-            {/* {console.log(item.name)} */}
-            <Container fluid>
-              <div className="prjctCont">
-                <button className="flipbtn" id={item.name} onClick={(e) => (flipCards(e.target.id))}><img id={item.name} alt="more info icon" onClick={(e) => (flipCards(e.target.id))} className="icon-btn" src="../images/info-icon.svg"></img></button>
-                <div>
-                  <h1 style={{ textAlign: "center", paddingTop: "1%" }}>{item.name}</h1>
-                  <div style={{border: "solid black 1px"}}></div>
-                  <h5 style={{padding:"3%" , fontSize:"15px"}}>{item.description}</h5>
+        <div className="prjctPage">
+          {(projectsToMap.map((item) => (
+            <div key={item.name}>
+              <div className="container-fluid">
+                <div className="prjctCont">
+                  <button className="flipbtn" id={item.name} onClick={(e) => (flipCards(e.target.id))}>
+                    {/* <img id={item.name} alt="more info icon" onClick={(e) => (flipCards(e.target.id))} 
+                    className="icon-btn" src="../images/info-icon.svg"></img> */}
+                                <img className="video" src={item.image} alt="currently selected project"></img>
+                                <h1 className="projectsDesc">{projects.description}</h1>
+
+                    
+                    
+                    
+                    
+                    </button>
+
+
+
+
+
+
+
+
+
+                  {/* <div>
+                    <h1 style={{ textAlign: "center", paddingTop: "1%" }}>{item.name}</h1>
+                    <div style={{ border: "solid black 1px" }}></div>
+                    <h5 style={{ padding: "3%", fontSize: "15px" }}>{item.description}</h5>
+                  </div> */}
                 </div>
               </div>
-  
-            </Container>
-          </div>
-        )))}
-      </div>
+            </div>
+          )))}
+        </div>
       </Fade>
     )
   }
-  if(cardsideTwo === true){
-    return (
-      <div className="prjctPageTwo">
-            <Container fixed>
-            <button className="flipbtnTwo " onClick={flipCardsBack}><h2>X</h2></button>
-              <div className="prjctContFlipped" >
-                {/* <div style={{margin:"none"}}> */}
-                <img className="video" src={currentlySelectedProject.image} alt="currently selected project"></img>
-                <button className="btn-primary linkbtn"> <a className="githalink" href={currentlySelectedProject.github} target="_blank" rel="noopener noreferrer"><p style={{fontSize:"20px" , marginTop:".5%"}}>Github</p></a></button>
-                  <button className="btn-primary linkbtnTwo"><a className="githalink" href={currentlySelectedProject.deployed} target="_blank" rel="noopener noreferrer"><p style={{fontSize:"20px" , marginTop:".5%" }}>Deployment</p></a></button>
-                </div>
-              {/* </div> */}
-            </Container>
-          </div>
-    )
-  }
+  // if (cardsideTwo === true) {
+  //   return (
+  //     <div className="prjctPageTwo">
+  //       <div className="container">
+  //         <button className="flipbtnTwo " onClick={flipCardsBack}><h2>X</h2></button>
+  //         <div className="prjctContFlipped" >
+  //           <img className="video" src={currentlySelectedProject.image} alt="currently selected project"></img>
+  //           <button className="btn-primary linkbtn"> <a className="githalink" href={currentlySelectedProject.github} target="_blank" rel="noopener noreferrer"><p style={{ fontSize: "20px", marginTop: ".5%" }}>Github</p></a></button>
+  //           <button className="btn-primary linkbtnTwo"><a className="githalink" href={currentlySelectedProject.deployed} target="_blank" rel="noopener noreferrer"><p style={{ fontSize: "20px", marginTop: ".5%" }}>Deployment</p></a></button>
+  //         </div>
+  //       </div>
+  //     </div>
+  //   )
+  // }
 }

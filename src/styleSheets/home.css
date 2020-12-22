@@ -1,0 +1,124 @@
+/* .contentContainer{
+    display: flex;
+    flex-direction: column;
+}
+
+.holdTheStuff{
+    background-color: black;
+    display: flex;
+    flex-direction: column;
+    width: 80vw;
+    height: 20vh;
+    position: relative;
+}
+
+
+.picContHome{
+    height: 20vh;
+    width: 24vw;
+    background-color: greenyellow;
+    position: absolute;
+}
+.myPicHome{
+    height: 20%;
+    width: 100%;
+}
+
+.homeContainer{
+    background-color: tomato;
+    display: flex;
+    flex-direction: row;
+}
+
+.holdTheCards{
+    display: flex;
+    flex-direction: row;
+    position: absolute;
+    width: 100vw; */
+/* } */
+
+
+
+
+
+.homeCont{
+    /* height: 100vh; */
+    width: 100vw;
+    /* margin-top: -40%; */
+    /* background-color: greenyellow; */
+    /* margin-left: 3%; */
+}
+
+.bioInfo{
+    /* margin-top: .50%; */
+    height: 50%;
+    width: 84%;
+    /* background-color: green; */
+    /* background-color: whitesmoke; */
+    border-radius: 25px;
+    display: flex;
+    flex-direction: row;
+    /* justify-content: flex-end; */
+    /* justify-content: center; */
+    position: absolute;
+    margin-left: 25.50%;
+    margin-top: 2%;
+}
+
+.imageCont{
+    position: relative;
+    height: 70%;
+    width: 90%;
+    background-color: rgb(202, 201, 201);
+    display: flex;
+    justify-content: center;
+    /* flex-direction: row; */
+    border-radius: 30px;
+    margin-top: 2.60%;
+    /* margin-left: 8%;
+    margin-right: 4%; */
+    margin-left: -8%;
+}
+.aboutMeText{
+    font-size: 23px;
+    color: rgb(13, 14, 58);
+    margin-left: 2%;
+    margin-top: 3.5%;
+    font-family: 'Courier New', Courier, monospace;
+    font-weight: bolder;
+}
+
+.myImage{
+    position: relative;
+    height: 90%;
+    width: 90%;
+    display: flex;
+    /* flex-direction: row; */
+    border-radius: 30px;
+    /* margin-top: 2.60%;
+    margin-left: 8%;
+    margin-right: 4%;    */
+    margin-top: 1.25%;
+    margin-left: 2%;
+    border: solid rgb(65, 65, 112) 20px;
+}
+
+.bioText{
+    width: 60%;
+    display: flex;
+    /* flex-direction: row-reverse; */
+    justify-content: flex-end;
+    margin-top: 6.75%;
+    margin-left: 2%;
+    padding-right: 3%;
+    color: whitesmoke;
+}
+
+.flipConts{
+    width: 85%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    margin-top: 40%;
+    margin-left: 12%;
+}
