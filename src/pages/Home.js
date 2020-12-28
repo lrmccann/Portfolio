@@ -1,17 +1,13 @@
 import React from "react";
-import { Container, Row } from "../components/Grid";
-import Col from "../components/Col";
-import Contacts from "../components/Contacts";
 import FlipCardOne from "../components/FlipCards";
 import "../images/port-pic.jpeg";
 import Fade from "react-reveal/Fade";
-import ProjectsBtn from "../components/Button";
-import '../styleSheets/home.css';
+import "../styleSheets/home.css";
 
 
 export default function Home () {
   return(
-        <div className="homeCont">
+        <div className="homeCont ">
           <div className="bioInfo">
             <div className="imageCont">
             <img className="myImage" src={require('../images/port-pic.jpeg')} />
