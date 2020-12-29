@@ -56,7 +56,7 @@
     border-top: solid whitesmoke 1px;
     display: flex;
     flex-direction: row;
-    padding-top: 9.5%;
+    padding-top: 11.5%;
     border-top: none;
     border-left: none;
     border-right: none;
@@ -71,36 +71,41 @@
 .homeBtn{
     height: 10%;
     width: 10%;
-    /* background-color: yellow; */
 }
+
 .homeText{
-margin-top: -.45%;
-
+    margin-top: 4.7%;
+    margin-left: 2.75%;
 }
 
-.aboutText{
-    margin-top: -1%;
+.awardsText{
+    margin-top: 3.7%;
+    margin-left: 2.75%;
 }
 
 .projectsText{
-    margin-top: -1%;
+    margin-top: 3.7%;
+    margin-left: 2.75%;
 }
 
 
 .blogText{
-    margin-top: -.50%;
+    margin-top: 4.5%;
+    margin-left: 2.75%;
 }
 
 .resumeText{
-    margin-top: -.40%;
+    margin-top: 3.75%;
+    margin-left: 2.75%;
 }
 
 .contactText{
-    margin-top: -.84%;
+    margin-top: 3.75%;
+    margin-left: 2.75%;
 }
 
 #fontAwsIcon{
-    height: 42%;
+    height: 55%;
     width: 42%;
     margin-right: -8%;
 }

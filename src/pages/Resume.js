@@ -1,7 +1,7 @@
 import React from "react";
 import '../styleSheets/resume.css';
-import "../images/resume-img.png";
-import resume from '../images/Logan-McCann-Resume-Use.png';
+// import "../images/resume-img.png";
+import resume from '../page-images/Logan-McCann-Resume-Use.png';
 
 export default function Resume () {
 

@@ -1,35 +1,40 @@
 import React from "react";
-import { Container, Row } from "../components/Grid";
-import Col from "../components/Col";
-import Contacts from "../components/Contacts";
 import FlipCardOne from "../components/FlipCards";
-import "../images/port-pic.jpeg";
+import "../page-images/port-pic.jpeg";
 import Fade from "react-reveal/Fade";
-import ProjectsBtn from "../components/Button";
-import '../styleSheets/home.css';
+import "../styleSheets/home.css";
 
 
 export default function Home () {
+
+
   return(
-        <div className="homeCont">
+        <div className="homePage" >
           <div className="bioInfo">
             <div className="imageCont">
-            <img className="myImage" src={require('../images/port-pic.jpeg')} />
+            <img className="myImage" src={require('../page-images/port-pic.jpeg')} />
             <p className="aboutMeText">I am a highly adaptable and detail-oriented web developer with extensive background in various coding languages, building responsive websites from front-end to back-end,
                and developing mobile applications. Specializes in JSX and CSS. Poised to contribute creative problem solving techniques,
            excellent interpersonal skills, and time management.</p>
             </div>
           </div>
-          <div className="cardsCont">
+          <div className="cardsCont container-fluid">
            <Fade bottom>
-           <div style={{ marginLeft : '47%', marginTop: '32.5%',  position: 'absolute',  width: "30%" , fontSize: "32px"}}><strong style={{ fontFamily: 'Poppins  sans-serif' , color:"white" }} >
-             Technical Skills</strong></div>
+           {/* <div style={{textAlign: 'center', width: "20%" , fontSize: "50px" , borderBottom: 'solid black 2px'}}>
+             <strong style={{ fontFamily: 'Poppins  sans-serif' , color:"white" }}>Skills</strong></div> */}
            <div className="flipConts">
-             <FlipCardOne
+           <div className="skillsCont">
+             <h1 className="skillsText">Skills</h1>
+             <div className="langCont">
+
+
+             </div>
+             </div>
+             {/* <FlipCardOne
             //  marginTop={"60%"}
             marginLeft={"4%"}
             paddingRight={"5%"}
-            backgroundColor={"white"}
+            backgroundColor={"rgb(202, 201, 201)"}
             headerText={"Languages"}
             textOne={"HTML5"}
             textTwo={"CSS"}
@@ -49,7 +54,7 @@ export default function Home () {
              <FlipCardOne
             // marginTop={"60%"}
             marginLeft={"3%"}
-            backgroundColor={"white"}
+            backgroundColor={"rgb(202, 201, 201)"}
             headerText={"FrameWorks"}
             textOne={"Vue.js"}
             textTwo={"Node.js"}
@@ -66,7 +71,7 @@ export default function Home () {
              <FlipCardOne
             // marginTop={"60%"}
             marginLeft={"3%"}
-            backgroundColor={"white"}
+            backgroundColor={"rgb(202, 201, 201)"}
             headerText={"Tools"}
             textOne={"GitHub"}
             textTwo={"Heroku"}
@@ -74,7 +79,7 @@ export default function Home () {
             textFour={"Robot3T"}
             TextFive={"SQL Workbench"}
             TextSix={"PowerBuild"}
-          />
+          /> */}
            {/* </Col> */}
            </div>
            </Fade>

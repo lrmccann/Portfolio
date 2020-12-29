@@ -1,4 +1,4 @@
-.homeCont{
+.welcomeCont{
     /* height: 49.51vw; */
     width: 100vw;
     /* background-color: wheat; */
@@ -13,7 +13,7 @@
     width: 100vw;
     display: flex;
     flex-direction: column;
-    background-image: url('../images/try-this.bg.jpg');
+    background-image: url('../page-images/try-this.bg.jpg');
     background-size: cover;
     background-repeat: no-repeat;
     align-self: center;

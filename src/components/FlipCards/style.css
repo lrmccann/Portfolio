@@ -6,7 +6,7 @@
     border:transparent;
     outline: none;
     position: relative;
-    border: solid black 3px;
+    border: solid rgb(46, 45, 45) 3px;
 }
 .flip-card-before:focus{
     position: relative;
