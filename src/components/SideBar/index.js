@@ -1,8 +1,7 @@
 import React from "react";
-import { Link, Redirect } from "react-router-dom";
 import "./style.css";
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faHome , faAddressCard , faFolder , faBlog , faFileAlt , faPhoneVolume  } from '@fortawesome/free-solid-svg-icons'
+import { faHome , faAddressCard , faFolder , faBlog , faFileAlt , faPhoneVolume , faTrophy  } from '@fortawesome/free-solid-svg-icons'
 import {useHistory} from 'react-router-dom';
 
 export default function SideBar() {
@@ -38,13 +37,13 @@ export default function SideBar() {
                     <FontAwesomeIcon id="fontAwsIcon" icon={faHome}/>
                     <h6 className="homeText">Home</h6>
                 </button>
-                <button className="aboutBtn" id="navBarBtn" onClick={aboutPage}>
-                <FontAwesomeIcon id="fontAwsIcon" icon={faAddressCard}/>
-                    <h6 className="aboutText">About</h6>
-                </button>
                 <button className="projectsBtn" id="navBarBtn" onClick={projectsPage}>
                 <FontAwesomeIcon id="fontAwsIcon"  icon={faFolder}/>
                     <h6 className="projectsText">Projects</h6>
+                </button>
+                <button className="awardsBtn" id="navBarBtn" onClick={aboutPage}>
+                <FontAwesomeIcon id="fontAwsIcon" icon={faTrophy}/>
+                    <h6 className="awardsText">Awards</h6>
                 </button>
                 <button className="blogBtn" id="navBarBtn" onClick={blogPage}>
                 <FontAwesomeIcon id="fontAwsIcon" icon={faBlog}/>

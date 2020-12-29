@@ -1,0 +1,49 @@
+.blogCont{
+    /* height: 49.51vw; */
+    width: 100vw;
+    /* background-color: wheat; */
+    display: flex;
+    flex-direction: column;
+    scroll-behavior: smooth;
+    contain: content;
+}
+
+.blogRightSide{
+    height: 49.60vw;
+    width: 100vw;
+    display: flex;
+    flex-direction: column;
+    background-size: cover;
+    background-repeat: no-repeat;
+    align-self: center;
+    margin-left: 13.50%;
+    /* margin-top: 38%; */
+    background-position: center;
+    background-position-y: 31.50%;
+    overflow: hidden;
+    /* background-color: whitesmoke; */
+}
+
+.dateTextOne{
+    margin-left: 8%;
+    padding-bottom: .60%;
+    border-bottom: whitesmoke 2px solid;
+    width: 83.5%;
+    color: whitesmoke;
+    margin-top: 2%;
+}
+
+.dateTextTwo{
+    margin-left: 8%;
+    padding-bottom: .60%;
+    border-bottom: whitesmoke 2px solid;
+    width: 83.5%;
+    color: whitesmoke;
+    margin-top: 3%;
+}
+
+#blogItem{
+    margin-left: 9%;
+    font-size: 23px;
+    margin-top: 1%;
+}
