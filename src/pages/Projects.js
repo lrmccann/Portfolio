@@ -26,7 +26,7 @@ export default function Projects(props) {
   }
   if (cardsideOne === true) {
     return (
-      <Fade left>
+      <Fade right>
         <div className="prjctPage">
           {(projectsToMap.map((item) => (
             <div key={item.name}>
