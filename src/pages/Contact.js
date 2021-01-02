@@ -1,5 +1,8 @@
 import React, { useState } from "react";
 import '../styleSheets/contact.css';
+import emailjs from 'emailjs-com';
+import { init } from 'emailjs-com';
+init("user_DXovDRZFuUdffdqwbkHJo");
 
 export default function Contact() {
 
@@ -13,37 +16,40 @@ export default function Contact() {
         var name = messageName;
         var subject = messageSubject;
         var body = messageBody;
-
-        
-
-
-
-
-
-
-
-
-        console.log('name :' , name)
-        console.log('subject : ' , subject)
+        console.log('name :', name)
+        console.log('subject : ', subject)
         console.log('body : ', body)
     };
 
-    const submitForm = () => {
+    const submitForm = async event => {
+        event.preventDefault();
 
+        var emailForm = ({
+            'emailSenderEmail': messageName,
+            'emailSubject': messageSubject,
+            'emailMessage': messageBody
+        });
+        emailjs.send('service_jcbz5lg', 'template_geclrfm', emailForm)
+            .then((data) => {
+                console.log('success', data.status, data.text)
+            })
+            .catch((error) => {
+                console.log('failed...', error)
+            })
     }
 
     return (
         <div className="container">
             <div className="row">
-                <h1 className="welcomeMessage">Lets Connect</h1>
+                <h1 className="welcomeMessage">Connect With Me</h1>
                 <div className="col-md-12">
                     <form className="formStyle" onInput={handleInputChange}>
                         <div className="form-group">
-                            <label id="formHeaderText">Name</label>
+                            <label id="formHeaderText">Email</label>
                             <input type="text" className="form-control" defaultValue="" onChange={e => setName(e.target.value)} />
                         </div>
                         <div className="form-group">
-                            <label id="formHeaderText">Subject</label>
+                            <label id="formHeaderText">Topic</label>
                             <input type="text" className="form-control" defaultValue="" onChange={e => setSubject(e.target.value)} />
                         </div>
                         <div className="form-group">
@@ -54,8 +60,7 @@ export default function Contact() {
 
 
                         <div className="button-container">
-                            {/* <a type="submit" className="btn btn-primary" href={`mailto:loganrmccann@gmail.com?subject=Message from ${props.name}: ${props.subject}&body=${props.message}`}>Send</a> */}
-                            <button onClick={submitForm} className="btn btn-primary">Send</button>
+                            <button onClick={submitForm} type='submit' value='submit' className="btn btn-primary">Send</button>
                         </div>
                     </form>
                 </div>

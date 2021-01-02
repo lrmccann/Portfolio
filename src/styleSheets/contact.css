@@ -1,16 +1,17 @@
 .formStyle{
+    width: 91%;
     margin-top: 12%;
     margin-bottom: 8.5%;
-    margin-left: 10%;
+    margin-left: 12%;
 }
 
 .welcomeMessage{
     color: whitesmoke;
-    margin-left: 38%;
+    margin-left: 30.75%;
     font-family: 'Courier New', Courier, monospace;
-    font-size: 50px;
+    font-size: 60px;
     margin-top: 4%;
-    margin-bottom: -7%;
+    margin-bottom: -5.5%;
 }
 
 #formHeaderText{
@@ -20,7 +21,10 @@
 }
 
 .btn{
+    margin-top: .5%;
     font-family: 'Courier New', Courier, monospace;
-    font-weight: bold;
+    /* font-weight: bold; */
     float: right;
+    width: 14%;
+    font-size: 18px;
 }

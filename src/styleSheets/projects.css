@@ -8,29 +8,23 @@
     margin-left: .68%;
     height: 355px;
     width: 400px;
-    background-color: rgb(226, 226, 226);
+    background-color: white;
     float: right;
     overflow: hidden;
     padding-top: .5%;
     padding-right: 1%;
+    padding-bottom: 2px;
 }
 
-/* .prjctContFlipped{
-    height: 335px;
-    width: 400px;
-    margin-top: 3%;
-    margin-right: .10%;
-    margin-left: .68%;
-    background-color: rgb(226, 226, 226);
-    float: right;
-    overflow: hidden;
-} */
+.backgroundImg{
+    height: 100%;
+    width: 100%;
+}
 
 .prjctContFlipped{
     margin-left: 8%;
     height: 80%;
     width: 76.5%;
-    /* background-color: rgb(192, 192, 192); */
     float: left;
     opacity: .4;
     position: fixed;
@@ -39,13 +33,12 @@
     border: solid rgb(160, 152, 152) 5px;
 }
 
-
-/* .prjctPageTwo{
-    height: 800px;
-} */
-
 .prjctPageTwo{
     height: 100%;
+}
+
+.randomCont{
+    margin-right: 11.25%;
 }
 
 .flipbtn{
@@ -59,8 +52,6 @@
     z-index: 99;
     color:white;
     margin-top: -.30%;
-    /* outline: none; */
-    /* border-bottom: solid black 3px; */
   }
 
 .flipbtn:focus{
@@ -81,15 +72,13 @@
     margin-top: 2%;
     position: inherit;
     z-index: 99;
-    /* margin-left: 101.75%; */
     color: white;
     height: 20px;
     width: 30px;
-    /* background-color: rgb(182, 47, 47); */
     background-color: transparent;
     outline: none;
     border: none;
-    margin-left: 105.5%;
+    margin-left: 107%;
     cursor: pointer;
   }
 
@@ -119,12 +108,13 @@
     width: 100%;
     z-index: 90;
     position: relative;
+    border: solid rgb(189, 187, 187) thin;
 }
 
 .accomp{
     height: 100%;
     width: 50%;
-    background-color: chartreuse;
+    background-color: transparent;
     position: absolute;
     z-index: 1;
 }

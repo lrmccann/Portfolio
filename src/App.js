@@ -5,7 +5,7 @@ import Home from "./pages/Home";
 import Contact from "./pages/Contact";
 import Resume from "./pages/Resume";
 import Blog from './pages/Blog';
-import About from './pages/About';
+import Awards from './pages/Awards';
 import Welcome from './pages/Welcome';
 import SideBar from './components/SideBar'
 import "./index.css";
@@ -19,7 +19,7 @@ function App() {
           <Route exact path="/projects" component={Projects} />
           <Route exact path="/resume" component={Resume} />
           <Route exact path="/blog" component={Blog} />
-          <Route exact path="/about" component={About} />
+          <Route exact path="/awards" component={Awards} />
           <Route exact path="/contact" component={Contact} />
     </Router>
   );

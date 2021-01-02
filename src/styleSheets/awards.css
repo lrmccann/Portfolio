@@ -1,0 +1,65 @@
+.awardsPage{
+    height: 723.2px;
+    width: 86.72%;
+    margin-left: 13.28%;
+    display: flex;
+    flex-direction: row;
+}
+
+.awardHolderLeft{
+    height: 100%;
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    border-right: solid whitesmoke 2px;
+}
+
+.awardHolderRight{
+    height: 100%;
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    border-left: solid whitesmoke 2px;
+}
+
+#columnHeader{
+    text-align: center;
+    color: whitesmoke;
+    font-family: 'Courier New', Courier, monospace;
+    border-bottom: solid 1px whitesmoke;
+    margin-left: 3%;
+    margin-right: 3%;
+    padding-bottom: 1%;
+    margin-top: 3%;
+}
+
+.awardDiv{
+    height: 16%;
+    width: 88%;
+    background-color: whitesmoke;
+    margin-left: 5%;
+    margin-top: 7%;
+    border-radius: 15px;
+    text-align: center;
+    font-family: 'Courier New', Courier, monospace;
+    padding-top: .50%;
+}
+
+.awardsDivTwo{
+    height: 16%;
+    width: 88%;
+    background-color: whitesmoke;
+    margin-left: 5%;
+    margin-top: 5%;
+    border-radius: 15px;
+    text-align: center;
+    font-family: 'Courier New', Courier, monospace;
+    padding-top: .50%;
+}
+
+#statName{
+    border-bottom: solid black 1px;
+    margin-left: 3%;
+    margin-right: 3%;
+    padding-bottom: 1.5%;
+}

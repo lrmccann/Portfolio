@@ -1,7 +1,7 @@
 import React from "react";
 import "./style.css";
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faHome , faAddressCard , faFolder , faBlog , faFileAlt , faPhoneVolume , faTrophy  } from '@fortawesome/free-solid-svg-icons'
+import { faHome , faFolder , faBlog , faFileAlt , faPhoneVolume , faTrophy  } from '@fortawesome/free-solid-svg-icons'
 import {useHistory} from 'react-router-dom';
 
 export default function SideBar() {
@@ -19,8 +19,8 @@ export default function SideBar() {
     const blogPage = () => {
         history.push('/blog')
     }
-    const aboutPage = () => {
-        history.push('/about')
+    const awardsPage = () => {
+        history.push('/awards')
     }
     const contactPage = () => {
         history.push('/contact')
@@ -41,7 +41,7 @@ export default function SideBar() {
                 <FontAwesomeIcon id="fontAwsIcon"  icon={faFolder}/>
                     <h6 className="projectsText">Projects</h6>
                 </button>
-                <button className="awardsBtn" id="navBarBtn" onClick={aboutPage}>
+                <button className="awardsBtn" id="navBarBtn" onClick={awardsPage}>
                 <FontAwesomeIcon id="fontAwsIcon" icon={faTrophy}/>
                     <h6 className="awardsText">Awards</h6>
                 </button>

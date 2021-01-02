@@ -57,10 +57,15 @@ export default function Projects(props) {
         <div className="container randomCont">
           <button className="flipbtnTwo " onClick={flipCardsBack}><h2>X</h2></button>
           <div className="prjctContFlipped" >
-            <img className="video" src={currentlySelectedProject.image} alt="currently selected project"></img>
-            <div className="accomp"></div>
+            <div className="video">
+              <div className="accomp">
+                <h1 >asdlasjkd</h1>
+                <h1>asdas</h1>
+              </div>
+              <img className="backgroundImg" src={currentlySelectedProject.image} alt="currently selected project"></img>
+              </div>
           </div>
-          <button className="githubLink"></button>
+          {/* <button className="githubLink"></button> */}
         </div>
       </div>
     )
