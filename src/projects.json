@@ -5,7 +5,11 @@
     "image" : "./project-images/canine-cupid-v2-img.jpeg",
     "github": "https://github.com/Canine-Cupid-2-0",
     "deployed": "http://canine-cupid-2-0.s3-website.us-east-2.amazonaws.com",
-    "description" : "Created for both the user and their companion, this application is a lite tinder clone focused on finding your furry friend, a friend. Complete UI rebuild, improved functionality, and IOS companion app."
+    "description" : "Created for both the user and their companion, this application is a lite tinder clone focused on finding your furry friend, a friend. Complete UI rebuild, improved functionality, and IOS companion app.",
+    "acompOne" : "Created using React, successfully utilized react-router",
+    "acompTwo" : "Styled 100% by me, undertook a complete redesign from the original version",
+    "acompThree" : "Skillfully used React's : Context , State, Props, and Components",
+    "acompFour" : "Deployed on aws S3 as a static website"
   },
   {
     "id" : 2,
@@ -13,7 +17,11 @@
     "image" : "./project-images/elevate-img.jpg",
     "github" : "https://github.com/lrmccann/Peak-fe" ,
     "deployed" : "",
-    "description" : "Elevate is my blogging application, used to document new information or further explore concepts."
+    "description" : "Elevate is my blogging application, used to document new information or further explore concepts.",
+    "acompOne" : "Created using React, successfully utilized react-router",
+    "acompTwo" : "Styled 100% by me, undertook a complete redesign from the original version",
+    "acompThree" : "Skillfully used React's : Context , State, Props, and Components",
+    "acompFour" : "Deployed on aws S3 as a static website"
 
   },
   {
@@ -72,21 +80,5 @@
     "github": "https://github.com/lrmccann/Weather-API",
     "deployed": "https://lrmccann.github.io/Weather-API/",
     "description": "Simple app to check the weather, for the week, in your area or around the U.S."
-  },
-  {
-    "id": 9,
-    "name": "Team Generator",
-    "image": "./project-images/team-man-img.png",
-    "github": "https://github.com/lrmccann/10-Team-Profile-Builder",
-    "deployed": "https://github.com/lrmccann/10-Team-Profile-Builder",
-    "description": "Software Team generator built to keep track of various roles around the office and display seniority."
-  },
-  {
-    "id": 10,
-    "name": "Coding Quiz",
-    "image": "./project-images/quiz-img.jpeg",
-    "github": "https://github.com/lrmccann/4-Coding-Quiz",
-    "deployed": "https://lrmccann.github.io/4-Coding-Quiz/",
-    "description": "Coding application built to test the user on various development concepts."
   }
 ]

@@ -1,15 +1,10 @@
 .resumeCont{
-    /* width: auto; */
     background-size: cover;
-    /* margin-left: 27.75%; */
     width: 80%;
     padding-top: 1%;
-    /* background-color: wheat; */
     height: 100%;
     margin-left: 15%;
-    /* float: right; */
     overflow-x: hidden;
-    /* position: absolute; */
 }
 
 .pdfviewer{
@@ -18,23 +13,22 @@
     background-color: transparent;
     height: 100%;
     width: 100%;
-    /* position: absolute; */
     float: right;
     border: transparent;
 }
 
 .downloadBtn{
-    height: 50px;
-    width: 10%;
-    background-color: transparent;
-    float: right;
-    margin-right: 12%;
+    height: 100%;
+    width: 20%;
+    display: flex;
+    flex-direction: row;
+    text-align: center;
     margin-bottom: -3.5%;
-    border: transparent;
 }
 
 .anchorDownload{
-    height: 40px;
+    height: 70px;
+    background-color: blue;
 }
 
 .pdfviewer .viewer-layout-container{
@@ -44,30 +38,12 @@
 .pdfviewer .viewer-layout-toolbar {
     visibility: hidden;
     background-color: rgb(226, 226, 226);
-    /* color: #fff; */
     color: black;
     width: 79.7%;
     align-self: center;
     margin-left: 10.12%;
     margin-bottom: -1%;
-    /* border: hidden;
-    outline: transparent;
-    background-color: transparent; */
   }
-/* 
-.downloadBtn{
-    height: 4.5%;
-    width: 6%;
-    position: absolute;
-    border-radius: 20px;
-    margin-top: .50%;
-    margin-left: .50%;
-    text-align: center;
-    padding-top: .5%;
-    cursor: pointer;
-    background-color:#474D74;
-    border: none;
-} */
 
 .resumeImg{
     height: 200px;

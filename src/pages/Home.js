@@ -2,6 +2,7 @@ import React from "react";
 import "../page-images/port-pic.jpeg";
 import SkillsContainer from '../components/SkillsContainer/index';
 import "../styleSheets/home.css";
+import Fade from 'react-reveal/Fade';
 
 
 export default function Home() {
@@ -16,9 +17,10 @@ export default function Home() {
           and developing mobile applications. Specializes in JSX and CSS. Poised to contribute creative problem solving techniques,
            excellent interpersonal skills, and time management.</p>
         </div>
+        {/* <div className="myLinks"></div> */}
       </div>
       <div className="skillsCont container">
-        <h1 className="skillsHeaderText">Skills That Pay The Bills $$</h1>
+        <h1 className="skillsHeaderText">SKILLS</h1>
         <SkillsContainer
           skillType={'Languages'}
           imageOne={require('../skills-icons/html-icon.png')}
@@ -30,11 +32,11 @@ export default function Home() {
           imageThree={require('../skills-icons/javascript-icon.png')}
           altThree={'Javascript Icon'}
           itemThree={'JavaScript'}
-          // itemFour={'JSX'}
           imageFour={require('../skills-icons/sass-icon.png')}
           altFour={'Sass Icon'}
           itemFour={'Sass'}
         />
+        <Fade bottom>
         <SkillsContainer
           skillType={'Libraries'}
           imageOne={require('../skills-icons/react-icon.png')}
@@ -92,6 +94,7 @@ export default function Home() {
           altFive={'SQL Workbench Icon'}
           itemFive={'Workbench'}
         />
+        </Fade>
       </div>
     </div>
   )

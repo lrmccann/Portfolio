@@ -1,16 +1,15 @@
-.container.sideBarCont{
+.sideBarCont{
     height: 100vw;
     width: 13.25%;
     position: fixed;
     display: flex;
     flex-direction: column;
     background-color: #4a4e66;
-    border-right: solid white 1px;
-    /* margin-top: 40%;  */
+    border-right: solid white 2px;
 }
 
 .btnCont{
-    height: 70%;
+    height: 74%;
     width: 100%;
     display: flex;
     flex-direction: column;
@@ -50,13 +49,12 @@
 }
 
 #navBarBtn{
-    height: 7%;
+    height: 6%;
     background-color: #4a4e66;
     width: 100%;
     border-top: solid whitesmoke 1px;
     display: flex;
     flex-direction: row;
-    padding-top: 11.5%;
     border-top: none;
     border-left: none;
     border-right: none;
@@ -68,44 +66,46 @@
     cursor: pointer;
 }
 
-.homeBtn{
-    height: 10%;
-    width: 10%;
-}
-
 .homeText{
-    margin-top: 4.7%;
-    margin-left: 2.75%;
+    align-self: center;
+    font-size: 17px;
+    padding-top: 7.80%;
 }
 
 .awardsText{
-    margin-top: 3.7%;
-    margin-left: 2.75%;
+    padding-top: 7.80%;
+    align-self: center;
+    font-size: 17px;
 }
 
 .projectsText{
-    margin-top: 3.7%;
-    margin-left: 2.75%;
+    padding-top: 5.5%;
+    align-self: center;
+    font-size: 17px;
 }
 
 
 .blogText{
-    margin-top: 4.5%;
-    margin-left: 2.75%;
+    padding-top: 7.80%;
+    align-self: center;
+    font-size: 17px;
 }
 
 .resumeText{
-    margin-top: 3.75%;
-    margin-left: 2.75%;
+    padding-top: 6.80%;
+    align-self: center;
+    font-size: 17px;
 }
 
 .contactText{
-    margin-top: 3.75%;
-    margin-left: 2.75%;
+    padding-top: 7.80%;
+    align-self: center;
+    font-size: 17px;
 }
 
 #fontAwsIcon{
-    height: 55%;
+    align-self: center;
+    height: 50%;
     width: 42%;
-    margin-right: -8%;
+    margin-right: -3%;
 }

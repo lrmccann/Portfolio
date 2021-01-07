@@ -7,28 +7,21 @@ import awards from "../stats-awards.json";
 
 export default function Awards() {
 
-    const [statsToMap , setStatsToMap] = useState([]);
-    const [awardsToMap , setAwardsToMap] = useState([]);
+    const [statsToMap, setStatsToMap] = useState([]);
+    const [awardsToMap, setAwardsToMap] = useState([]);
 
     useEffect(() => {
         setStatsToMap(stats);
         setAwardsToMap(awards);
-    } , []
-    )
-
-
-
+    }, [])
 
     return (
         <div className="awardsPage container-fixed">
             <div className="awardHolderLeft">
                 <h1 id="columnHeader">Stats</h1>
                 {statsToMap.map((item) => (
-                <div className="awardDiv">
-                <h3 id="statName" >{item.name}</h3>
-
-
-
+                    <div className="awardDiv">
+                        <h3 id="statName" >{item.name}</h3>
                     </div>
                 ))}
             </div>
@@ -36,18 +29,10 @@ export default function Awards() {
                 <h1 id="columnHeader">Awards</h1>
                 {awardsToMap.map((item) => (
                     <div className="awardsDivTwo">
-                    <h3 id="statName">{item.name}</h3>
-    
-                </div>
-
+                        <h3 id="statName">{item.name}</h3>
+                    </div>
                 ))}
-
             </div>
-
-
-
-
         </div>
     )
-
-}
+};

@@ -1,40 +1,43 @@
 .skillTypeCont{
-    margin-top: 2%;
-    height: 175px;
+    margin-top: 3%;
+    height: 205px;
     width: 100%;
-    /* background-color: rgb(202, 201, 201); */
-    background-color: whitesmoke;
-    border-radius: 8px;
+    background-color: white;
+    border-radius: 50px;
+    border: rgb(51, 49, 49) solid thin;
 }
 
 .makeFlexRow{
     display: flex;
     flex-direction: row;
     justify-content: space-evenly;
-    padding-left: 5%;
 }
 
 .makeFlexColumn{
-    padding-top: 1%;
+    width: 100%;
     display: flex;
     flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
     text-align: center;
+    margin-top: 1%;
 }
 
 #skillImg{
-    height: 60px;
-    width: 70px;
+    margin-top: 1.5%;
+    height: 65px;
+    width: 75px;
     outline: none;
-    border: none;
+    margin-bottom: 6%;
 }
 
 #skillsTypeText{
     text-align: center;
-    font-family: 'Courier New', Courier, monospace;
     font-size: 36px;
-    border-bottom: solid black 1px;
-    margin-right: 1%;
-    margin-left: 1%;
-    margin-top: .25%;
-    padding-bottom: .75%;
+    border-bottom: solid black 1.5px;
+    margin-right: 3%;
+    margin-left: 3%;
+    margin-top: 1%;
+    margin-bottom: .15%;
+    padding-bottom: .7%;
 }

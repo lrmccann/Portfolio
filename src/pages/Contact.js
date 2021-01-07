@@ -54,7 +54,7 @@ export default function Contact() {
                         </div>
                         <div className="form-group">
                             <label id="formHeaderText">Message</label>
-                            <textarea className="form-control" rows="6" defaultValue="" onChange={e => setBody(e.target.value)} >
+                            <textarea className="form-control" rows="8" defaultValue="" onChange={e => setBody(e.target.value)} >
                             </textarea>
                         </div>
 

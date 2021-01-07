@@ -8,9 +8,8 @@
 }
 
 .bioInfo{
-    height: 50%;
+    height: 48%;
     width: 74%;
-    border-radius: 15px;
     display: flex;
     flex-direction: row;
     position: absolute;
@@ -20,33 +19,40 @@
 
 .imageCont{
     position: relative;
-    height: 78%;
+    height: 94%;
     width: 100%;
     background-color: whitesmoke;
+    border: solid #474D74 25px;
     display: flex;
     justify-content: center;
-    border-radius: 15px;
     margin-top: 2.60%;
     margin-left: -8%;
 }
 .aboutMeText{
     font-size: 21.5px;
+    padding-right: 2%;
     color: rgb(13, 14, 58);
+    padding-bottom: 1%;
     margin-left: 2%;
-    margin-top: 2.5%;
-    font-family: 'Courier New', Courier, monospace;
+    margin-top: 2%;
 }
 
 .myImage{
     position: relative;
-    height: 90%;
-    width: 90%;
+    height: 88%;
+    width: 88%;
     display: flex;
     border-radius: 15px;
     margin-top: 1.25%;
     margin-left: 2%;
-    border: solid rgb(65, 65, 112) 20px;
+    border: solid black 1px;
 }
+
+/* .myLinks{
+    height: 20%;
+    width: 74%;
+    background-color: tomato;
+} */
 
 .skillsCont{
     height: auto;
@@ -58,15 +64,13 @@
     flex-direction: column;
     padding-left: 1%;
     padding-right: 1%;
+    padding-bottom: 3%;
 }
 
 .skillsHeaderText{
-    font-size: 50px;
+    font-size: 58px;
     color: black;
     height: 10%;
-    padding-left: 1%;
+    width: 100%;
     padding-top: .55%;
-    background-color: whitesmoke;
-    border-radius: 15px;
-    font-family: 'Courier New', Courier, monospace;
 }
