@@ -6,7 +6,7 @@ export default function SkillsContainer(props) {
     const arrayOfProps = [props]
     useEffect(() => {
         setPropsToMap(arrayOfProps)
-    }, []
+    }, [arrayOfProps]
     )
     return (
         <div className="skillTypeCont">

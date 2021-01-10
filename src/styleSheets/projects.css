@@ -7,12 +7,10 @@
     margin-top: .75%;
     margin-right: .10%;
     margin-left: .68%;
-    height: 355px;
+    height: 388px;
     width: 400px;
     background-color: white;
     float: right;
-    padding-top: .5%;
-    padding-right: 1%;
     padding-bottom: 1%;
     border: black solid 1px;
     margin-bottom: .75%;
@@ -43,12 +41,12 @@
 }
 
 .icon-btn{
-    height: 14%;
+    height: 13%;
     width: 5.25%;
     position: absolute;
     z-index:99;
-    margin-left: 92.5%;
-    margin-top: 56.5%;
+    margin-left: 91.80%;
+    margin-top: 61.5%;
     cursor: pointer;
 }
 .icon-btn:focus{
@@ -56,19 +54,16 @@
 }
 
 .videoBeforeFlip{
+    margin-top: 2%;
+    margin-left: 1.5%;
     height: 100%;
-    width: 100%;
+    width: 94%;
     z-index: 90;
     position: relative;
     border: solid rgb(189, 187, 187) thin; 
 }
 
-
-
-
-
-
-
+/* Style for Detailed Project Page */
 
 .prjctPageTwo{
     height: 100%;
@@ -183,7 +178,10 @@
     width: 42%;
     border: transparent;
     background-color: transparent;
-    cursor: pointer;
+}
+
+.githubLinkBtn:focus{
+    outline: none;
 }
 
 .githubLinkImg{
@@ -209,7 +207,10 @@
     width: 42%;
     border: transparent;
     background-color: transparent;
-    cursor: pointer;
+}
+
+.deploymentLinkBtn:focus{
+    outline: none;
 }
 
 .deploymentLinkImg{
@@ -235,7 +236,11 @@
     width: 42%;
     border: transparent;
     background-color: transparent;
-    cursor: pointer;
+    /* cursor: pointer; */
+}
+
+.awsS3LinkBtn:focus{
+    outline: none;
 }
 
 .awsS3LinkImg{

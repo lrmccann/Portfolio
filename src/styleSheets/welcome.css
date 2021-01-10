@@ -1,32 +1,20 @@
 .welcomeCont{
-    /* height: 49.51vw; */
     height: 100vh;
     width: 100%;
-    /* background-color: wheat; */
     display: flex;
     flex-direction: row;
     scroll-behavior: smooth;
-    /* contain: content; */
-    /* background-color: rgb(32,32,32); */
     background-color: white;
     background-image: url('../page-images/city-bg-img.jpg');
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
-    /* background-blend-mode: luminosity; */
     opacity: .7.5;
-    /* background-image: url('../page-images/try-this.bg.jpg');
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position: center;
-    background-position-y: 31.50%; */
-    /* overflow: hidden; */
 }
 
 .enterBtn{
     height: 10%;
     width: 15%;
-    /* background-color: tomato; */
     background-color: #474D74;
     align-self: center;
     position: absolute;
@@ -38,29 +26,22 @@
 
 .nameCont{
     align-self: flex-end;
-    /* margin-left: 30%; */
     height: 100%;
     width: 100%;
-    /* background-color: wheat; */
     display: flex;
     flex-direction: column;
     justify-content: flex-end;
     text-align: right;
-    /* margin-top: 10%; */
 }
 
 .firstNameCont{
     font-size: 140px;
     font-weight: 900;
-    /* color: #4a4e66; */
-    /* position: absolute; */
 }
 
 .lastNameCont{
-    /* position: absolute; */
     font-size: 140px;
     font-weight: 900;
-    /* color: #4a4e66; */
 }
 
 

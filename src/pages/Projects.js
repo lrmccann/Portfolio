@@ -3,7 +3,7 @@ import projects from "../projects.json"
 import Fade from "react-reveal/Fade";
 import '../styleSheets/projects.css';
 
-export default function Projects(props) {
+export default function Projects() {
 
   const [projectsToMap, setProjectsToMap] = useState([]);
   const [currentlySelectedProject, setCurrentlySelectedProject] = useState();
@@ -31,13 +31,13 @@ export default function Projects(props) {
             <Fade right>
               <div className="container-fluid">
                 <div className="prjctCont">
-                  <button className="flipbtn" id={item.name} onClick={(e) => (flipCards(e.target.id))}>
+                  <div className="flipbtn" id={item.name}>
                     <img id={item.name} alt="more info icon" onClick={(e) => (flipCards(e.target.id))}
                       className="icon-btn btn-sm" src="../images/3-dots-img.jpg"></img>
                     <img className="videoBeforeFlip" src={item.image} alt="currently selected project"></img>
                     <h1 className="projectsDesc">{projects.description}</h1>
-                  </button>
-                  <h3 style={{ paddingLeft: '2%', paddingTop: "1%", color: 'black' }}>{item.name}</h3>
+                  </div>
+                  <h3 style={{ paddingLeft: '2%', paddingTop: "4.5%", color: 'black' }}>{item.name}</h3>
                   <h5 style={{ paddingLeft: "3%", paddingRight: '3%', fontSize: "15px" }}>{item.description}</h5>
                 </div>
               </div>
@@ -67,16 +67,16 @@ export default function Projects(props) {
             </div>
             <div className="linksForProject">
               <div className="githubLinkCont">
-                <button className="githubLinkBtn"><img className="githubLinkImg" src={require("../page-images/github-link-img-use.png")}></img></button>
-                <h5 className="gitHubText">Github Link</h5>
+                <button className="githubLinkBtn"><img className="githubLinkImg" alt="Github Link" src={require("../page-images/github-link-img-use.png")}></img></button>
+                <h5 className="gitHubText"><a href={currentlySelectedProject.githubLinkFE} target="_blank" rel="noopener noreferrer" style={{color: 'black'}}>Github Link</a></h5>
               </div>
               <div className="deploymentLinkCont">
-                <button className="deploymentLinkBtn"><img className="deploymentLinkImg" src={require("../page-images/deployment-img-use.png")}></img></button>
-                <h5 className="deploymentText">Deployment Site</h5>
+                <button className="deploymentLinkBtn"><img className="deploymentLinkImg" alt="Deployment Link" src={require("../page-images/deployment-img-use.png")}></img></button>
+                <h5 className="deploymentText"><a href={currentlySelectedProject.deployedSite} target="_blank" rel="noopener noreferrer" style={{color: 'black'}}>Deployment Site</a></h5>
               </div>
               <div className="awsS3BucketCont">
-                <button className="awsS3LinkBtn"><img className="awsS3LinkImg" src={require("../page-images/aws-img-use-me.png")}></img></button>
-                <h5 className="awsS3Text">S3 Bucket</h5>
+                <button className="awsS3LinkBtn"><img className="awsS3LinkImg" alt="aws S3 Bucket" src={require("../page-images/aws-img-use-me.png")}></img></button>
+                <h5 className="awsS3Text"><a href={currentlySelectedProject.awsS3Link} target="_blank" rel="noopener noreferrer" style={{color: 'black'}}>S3 Bucket</a></h5>
               </div>
             </div>
           </div>
