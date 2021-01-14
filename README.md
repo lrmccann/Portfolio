@@ -1,7 +1,7 @@
 ## My Portfolio
 React portfolio about me. Full of cool effects, mixed with a touch of my personality. 
 
-quick link : loganrmccann.com
+quick link : http://loganrmccann.com/
 
 ---
 
