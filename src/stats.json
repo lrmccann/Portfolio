@@ -1,21 +1,21 @@
 [
     {
         "name" : "HackerRank",
-        "username" : "lrmccann",
-        "score" : "###"
+        "username" : "Username: lrmccann",
+        "score" : "Hackos: 109"
     },
     {
         "name" : "CodeWars",
-        "username" : "lrmccann",
-        "score" : "###"
+        "username" : "Username: lrmccann",
+        "score" : "Karma: 4"
     },
     {
         "name" : "LeetCode",
-        "username" : "lrmccann",
-        "score" : "###"
+        "username" : "Username: lrmccann",
+        "score" : "Solved: 12"
     },
     {
         "name" : "Total Code Time",
-        "score": "###"
+        "score": "2,000 Hours"
     }
 ]

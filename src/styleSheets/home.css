@@ -19,7 +19,7 @@
     background-color:#474D74;
 }
 
-.myImg{
+.imgBorder > img{
     height: 100%;
     width: 100%;
     padding-left: .14%;
@@ -70,7 +70,7 @@
     cursor: pointer;
 }
 
-.myGithubImg{
+.myGithubLink > img{
     height: 100%;
     width: 100%;
 }
@@ -86,7 +86,7 @@
     cursor: pointer;
 }
 
-.mylinkedInImg{
+.mylinkedInBtn > img{
     height: 100%;
     width: 100%;
 }
@@ -101,7 +101,7 @@
     cursor: pointer;
 }
 
-.myMediumImg{
+.myMediumBtn > img{
     height: 100%;
     width: 100%;
 }
@@ -119,7 +119,7 @@
     padding-bottom: 3%;
 }
 
-.skillsHeaderText{
+.skillsCont > h1{
     font-size: 58px;
     color: black;
     height: 10%;

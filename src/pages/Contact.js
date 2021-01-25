@@ -16,9 +16,9 @@ export default function Contact() {
         var name = messageName;
         var subject = messageSubject;
         var body = messageBody;
-        console.log('name :', name)
-        console.log('subject : ', subject)
-        console.log('body : ', body)
+        // console.log('name :', name)
+        // console.log('subject : ', subject)
+        // console.log('body : ', body)
     };
 
     const submitForm = async event => {
@@ -30,10 +30,12 @@ export default function Contact() {
             'emailMessage': messageBody
         });
         emailjs.send('service_jcbz5lg', 'template_geclrfm', emailForm)
-            .then((data) => {
-                console.log('success', data.status, data.text)
-            })
+        .then(alert("Success, I have recieved your email and I'll be in touch!"))
+            // .then((data) => {
+            //     console.log('success', data.status, data.text)
+            // })
             .catch((error) => {
+                alert("Oh no..; something happened, refresh and try again!")
                 console.log('failed...', error)
             })
     }
@@ -57,8 +59,6 @@ export default function Contact() {
                             <textarea className="form-control" rows="8" defaultValue="" onChange={e => setBody(e.target.value)} >
                             </textarea>
                         </div>
-
-
                         <div className="button-container">
                             <button onClick={submitForm} type='submit' value='submit' className="btn btn-primary">Send</button>
                         </div>

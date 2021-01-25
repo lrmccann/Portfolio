@@ -1,5 +1,5 @@
 .awardsPage{
-    height: 723.2px;
+    height: 803.2px;
     width: 86.72%;
     margin-left: 13.28%;
     display: flex;
@@ -12,6 +12,44 @@
     display: flex;
     flex-direction: column;
     border-right: solid black 2px;
+}
+
+.idkHolder{
+    height: 50%;
+    width: 100%;
+    /* background-color: rebeccapurple; */
+    display: flex;
+    flex-direction: row;
+}
+
+.usernameSide{
+    height: 100%;
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    /* background-color: bisque; */
+}
+
+.scoreSide{
+    height: 100%;
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    /* background-color: red; */
+}
+
+.awardDiv{
+    height: 16%;
+    width: 88%;
+    background-color: whitesmoke;
+    border: solid black thin;
+    margin-left: 5%;
+    margin-top: 7%;
+    border-radius: 15px;
+    text-align: center;
+    padding-top: .50%;
 }
 
 .awardHolderRight{
@@ -30,18 +68,6 @@
     margin-right: 3%;
     padding-bottom: 1%;
     margin-top: 3%;
-}
-
-.awardDiv{
-    height: 16%;
-    width: 88%;
-    background-color: whitesmoke;
-    border: solid black thin;
-    margin-left: 5%;
-    margin-top: 7%;
-    border-radius: 15px;
-    text-align: center;
-    padding-top: .50%;
 }
 
 .awardsDivTwo{

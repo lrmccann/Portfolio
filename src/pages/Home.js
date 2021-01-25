@@ -3,16 +3,27 @@ import "../page-images/port-pic.jpeg";
 import SkillsContainer from '../components/SkillsContainer/index';
 import "../styleSheets/home.css";
 import Fade from 'react-reveal/Fade';
+import {skillIconsOne , skillsIconsTwo , skillsIconsThree , skillsIconsFour , skillsIconsFive} from "../skills-icons/importSkills";
 
 
 export default function Home() {
 
+  var skillsOne = ["HTML-5" , "CSS" , "JavaScript" , "Sass"];
+  var altSkillsOne = ["HTML-5 Icon" , "CSS Icon" , "JavaScript Icon" , "Sass Icon"]
+  var skillsTwo = ["React" , "jQuery" , "Bootstrap"];
+  var altSkillsTwo = ["React Icon" , "jQuery Icon" , "Bootstrap Icon"]
+  var skillsThree = ["Vue.js" , "Node.js" , "React Native", "Expo" , "Express"];
+  var altSkillsThree = ["Vue.js Icon" , "Node.js Icon" , "Expo" , "React Native", "Express Icon"]
+  var skillsFour = ["MySQL" , "Firebase" , "MongoDB"];
+  var altSkillsFour = ["MySQL Icon" , "Firebase Icon" , "MongoDB Icon"]
+  var skillsFive = ["AWS" , "Github" , "Heroku" , "Robo3T" , "Jest", "MySQL-Workbench"];
+  var altSkillsFive = ["Github Icon" , "Heroku Icon" , "AWS Icon" , "Robo3T Icon" , "Jest" , "MySQL Workbench Icon"]
 
   return (
-    <div className="homePage" >
+    <div className="homePage">
       <div className="myBioCont container">
         <div className="imgBorder">
-          <img className="myImg" alt="Logan R McCann" src={require("../page-images/profile-pic-updated-md.jpeg")}>
+          <img alt="Logan R McCann" src={require("../page-images/profile-pic-updated-md.jpeg")}>
 
           </img>
         </div>
@@ -23,15 +34,15 @@ export default function Home() {
             excellent interpersonal skills, and time management.
            <div className="linkCont">
               <button className="myGithubLink">
-                <img className="myGithubImg" alt="Github Link" src={require('../page-images/github-for-home-page.jpg')}>
+                <img alt="Github Link" src={require('../page-images/github-for-home-page.jpg')}>
                 </img>
               </button>
               <button className="mylinkedInBtn">
-                <img className="mylinkedInImg" alt="LinkedIn Link" src={require('../page-images/linkedin-home-page.png')}>
+                <img  alt="LinkedIn Link" src={require('../page-images/linkedin-home-page.png')}>
                 </img>
               </button>
               <button className="myMediumBtn">
-                <img className="myMediumImg" alt="Medium Link" src={require('../page-images/mediumm-link.png')}></img>
+                <img alt="Medium Link" src={require('../page-images/mediumm-link.png')}></img>
               </button>
             </div>
           </p>
@@ -42,75 +53,33 @@ export default function Home() {
         <Fade bottom>
           <SkillsContainer
             skillType={'Languages'}
-            imageOne={require('../skills-icons/html-icon.png')}
-            altOne={'HTML-5 icon'}
-            itemOne={'HTML-5'}
-            imageTwo={require('../skills-icons/css-icon.png')}
-            altTwo={'CSS Icon'}
-            itemTwo={'CSS'}
-            imageThree={require('../skills-icons/javascript-icon.png')}
-            altThree={'Javascript Icon'}
-            itemThree={'JavaScript'}
-            imageFour={require('../skills-icons/sass-icon.png')}
-            altFour={'Sass Icon'}
-            itemFour={'Sass'}
+            skills={skillsOne}
+            skillImages = {skillIconsOne}
+            altSkills = {altSkillsOne}
           />
           <SkillsContainer
             skillType={'Libraries'}
-            imageOne={require('../skills-icons/react-icon.png')}
-            altOne={'React Icon'}
-            itemOne={'React'}
-            imageTwo={require('../skills-icons/jquery-icon.png')}
-            altTwo={'jQuery Icon'}
-            itemTwo={'jQuery'}
-            imageThree={require('../skills-icons/bootstrap-icon.png')}
-            altThree={'Bootstrap Icon'}
-            itemThree={'Bootstrap'}
-
+            skills={skillsTwo}
+            skillImages = {skillsIconsTwo}
+            altSkills = {altSkillsTwo}
           />
           <SkillsContainer
             skillType={'Frameworks'}
-            imageOne={require('../skills-icons/vuejs-icon.png')}
-            altOne={'Vue js Icon'}
-            itemOne={'Vue.js'}
-            imageTwo={require('../skills-icons/node-icon.png')}
-            altTwo={'Node js Icon'}
-            itemTwo={'Node.js'}
-            imageThree={require('../skills-icons/express-icon.png')}
-            altThree={'Express Icon'}
-            itemThree={'Express'}
-
+            skills={skillsThree}
+            skillImages = {skillsIconsThree}
+            altSkills = {altSkillsThree}
           />
           <SkillsContainer
             skillType={'Databases'}
-            imageOne={require('../skills-icons/mysql-icon.png')}
-            altOne={'MySQL Icon'}
-            itemOne={'MySql'}
-            imageTwo={require('../skills-icons/firebase-icon.png')}
-            altTwo={'Firebase Icon'}
-            itemTwo={'Firebase'}
-            imageThree={require('../skills-icons/mongodb-icon.png')}
-            altThree={'MongoDB Icon'}
-            itemThree={'MongoDB'}
-
+            skills={skillsFour}
+            skillImages = {skillsIconsFour}
+            altSkills = {altSkillsFour}
           />
           <SkillsContainer
             skillType={'Tools'}
-            imageOne={require('../skills-icons/github-icon.png')}
-            altOne={'Github Icon'}
-            itemOne={'Github'}
-            imageTwo={require('../skills-icons/heroku-icon.png')}
-            altTwo={'Heroku Icon'}
-            itemTwo={'Heroku'}
-            imageThree={require('../skills-icons/aws-icon.png')}
-            altThree={'aws Icon'}
-            itemThree={'AWS'}
-            imageFour={require('../skills-icons/robo3t-icon.png')}
-            altFour={'Robo 3T Icon'}
-            itemFour={'Robo3T'}
-            imageFive={require('../skills-icons/sqlWorkbench-icon.jpeg')}
-            altFive={'SQL Workbench Icon'}
-            itemFive={'Workbench'}
+            skills={skillsFive}
+            skillImages = {skillsIconsFive}
+            altSkills = {altSkillsFive}
           />
         </Fade>
       </div>

@@ -17,7 +17,7 @@
     font-weight: 600;
 }
 
-.dateTextOne{
+.blogRightSide > h1{
     margin-left: 5%;
     padding-bottom: .60%;
     border-bottom: whitesmoke 2px solid;
@@ -27,30 +27,21 @@
     padding-left: 1%;
 }
 
-.dateTextTwo{
-    margin-left: 8%;
-    padding-bottom: .60%;
-    border-bottom: whitesmoke 2px solid;
-    width: 83.5%;
-    color: whitesmoke;
-    margin-top: 3%;
+.blogRightSide > ul{
+    color: black;
 }
 
-.dateTextThree{
-    margin-left: 8%;
-    padding-bottom: .60%;
-    border-bottom: whitesmoke 2px solid;
-    width: 83.5%;
-    color: whitesmoke;
-    margin-top: 3%;
-}
-#blogItem{
+.blogRightSide > ul > li{
     margin-left: 6%;
     font-size: 25px;
     margin-top: 1%;
 }
 
-.blogDate{
+.blogRightSide > ul > li > a{
+    color: black;
+}
+
+.blogRightSide > ul > li > p {
     font-size: 17px;
     margin-left: 1%;
 }

@@ -22,6 +22,17 @@ export default function Awards() {
                 {statsToMap.map((item) => (
                     <div className="awardDiv">
                         <h3 id="statName" >{item.name}</h3>
+                    <div className="idkHolder">
+                        <div className="usernameSide">
+                            {/* <h5>Username:</h5> */}
+                            <h5>{item.username}</h5>
+
+                            </div>
+                            <div className="scoreSide">
+                                <h5>{item.score}</h5>
+
+                                </div>
+                        </div>
                     </div>
                 ))}
             </div>
