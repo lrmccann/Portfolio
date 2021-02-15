@@ -3,6 +3,7 @@ import '../styleSheets/welcome.css'
 import Fade from "react-reveal/Fade";
 import Bounce from "react-reveal/Bounce";
 import { useHistory } from 'react-router-dom';
+import SideBar from "../components/SideBar";
 
 
 export default function Welcome() {
@@ -14,7 +15,7 @@ export default function Welcome() {
   }
 
   return (
-    <div className="container-fluid welcomeCont">
+    <div className="container-fixed welcomeCont">
       <Bounce>
         <button className="enterBtn" onClick={homePage}>
           <h3 style={{ color: 'whitesmoke' }}>Enter</h3>

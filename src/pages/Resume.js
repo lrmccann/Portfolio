@@ -13,7 +13,7 @@ export default function Resume() {
         <div className='resumeCont'>
             <Worker workerUrl='https://unpkg.com/pdfjs-dist@2.5.207/build/pdf.worker.min.js'>
                 <a className="downloadBtn" target='blank' href={resumeDownload} download='../page-images/logan-resume-with-links.pdf'>
-                    <p style={{ height: '50px', width: '115px', color: 'black', border: 'solid black 1px', paddingTop: '4%' }}>Download</p>
+                    <p style={{ height: '50px', width: '115px', color: 'black', border: 'solid black 1px', paddingTop: '8.5%' }}>Download</p>
                 </a>
                 <div id="pdfviewer" className="pdfviewer">
                     <Viewer defaultScale={1.50} fileUrl={resume} />

@@ -1,15 +1,25 @@
 .welcomeCont{
-    height: 100vh;
+    /* float: left; */
+    position: absolute;
+    height: 100%;
     width: 100%;
     display: flex;
     flex-direction: row;
     scroll-behavior: smooth;
-    background-color: white;
-    background-image: url('../page-images/city-bg-img.jpg');
-    background-position: center;
+    /* background-color: white; */
+    /* background-image: url('../page-images/city-bg-img.jpg'); */
+    /* background-image: url('../page-images/canva-bg-1.png'); */
+    background-image: url('../page-images/canva-bg-2.png');
+    /* background-position: center; */
+    /* background-position: center; */
     background-repeat: no-repeat;
+    /* background-size: 100% 100%; */
     background-size: cover;
-    opacity: .7.5;
+    background-position-y: 80%;
+    /* background-size: cover; */
+    /* overflow: hidden; */
+    /* contain: content; */
+    /* opacity: .7.5; */
 }
 
 .enterBtn{

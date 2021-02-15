@@ -1,18 +1,23 @@
 .blogCont{
     height: 100%;
-    width: 100%;
+    /* height: auto; */
+    width: 93%;
     display: flex;
     flex-direction: column;
     scroll-behavior: smooth;
+    float: left;
+    overflow: scroll;
+    /* contain: content; */
+    /* overflow: auto; */
 }
 
 .blogRightSide{
-    height: 100%;
+    height: auto;
     width: 100%;
     display: flex;
     flex-direction: column;
     align-self: center;
-    overflow: hidden;
+    /* overflow: hidden; */
     margin-bottom: 3%;
     font-weight: 600;
 }

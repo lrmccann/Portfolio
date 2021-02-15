@@ -13,8 +13,8 @@ export default function Blog() {
   );
 
   return (
-    <div className="container blogCont">
-      <div className="blogRightSide">
+    <div className="container-fixed blogCont">
+      <div className="blogRightSide container-fixed">
         <h1 >January</h1>
         {(blogsToMap.map((item , myKey) => (
           <ul>

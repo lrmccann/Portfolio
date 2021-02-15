@@ -15,7 +15,7 @@ export default function SkillsContainer(props) {
                 <div className="cardHolder">
                     {skillImagesToMap.images.map((mappedIcon , iconKey) => (
                         <div key={iconKey} className="eachImage">
-                            <img src={mappedIcon} alt={props.altSkills} className="skillIcon"></img>
+                            <img  src={mappedIcon} alt={props.altSkills} className="skillIcon"></img>
                         </div>
                     ))}
                 </div>

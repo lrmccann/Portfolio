@@ -1,115 +1,149 @@
 .homePage{
     height: 100%;
-    width: 100%;
+    width: 93%;
+    float: left;
+    contain: content;
+    overflow: auto;
+    display: flex;
+    flex-direction: column;
 }
 
 .myBioCont{
-    height: 450px;
-    width: 1200px;
-    margin-left: 17%;
+    height: auto;
+    width: 100%;
     display: flex;
     flex-direction: row;
+    margin-top: 2%;
+    align-items: center;
 }
 
 .imgBorder{
-    height: 80%;
-    width: 35%;
+    height: 88%;
+    width: 40%;
     margin-top: 4%;
-    padding: 2%;
     background-color:#474D74;
 }
 
-.imgBorder > img{
-    height: 100%;
-    width: 100%;
-    padding-left: .14%;
-    padding-top: .21%;
-    padding-bottom: .19%;
-    padding-right: .18%;
-    border: solid whitesmoke 15px;
-}
+.myBioCont > img {
+    background-size: cover;
+    height: 85%;
+    width: 50%;
+    border-top: solid black thin;
+    border-left: solid black thin;
+    border-bottom: solid black thin;
+    }
 
 .myBioTextCont{
-    height: 80%;
-    width: 65%;
-    background-color:#474D74;
-    margin-left: 0%;
-    margin-top: 4%;
+    height: 85%;
+    width: 50%;
+    background-color: white;
+    opacity: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    border-top: solid black thin;
+    border-right: solid black thin;
+    border-bottom: solid black thin;
 }
 
 .myBioInfoText{
-    height: 87.3%;
-    width: 99%;
-    font-size: 22px;
-    margin-left: -3%;
-    border-top-right-radius: 35px;
-    border-bottom-right-radius: 35px;
-    border-left: solid 1px black;
-    margin-top: 3.2%;
-    background-color: whitesmoke;
-    padding: 3%;
+    align-self: center;
+    height: auto;
+    width: 95%;
+    font-size: 21px;
+    padding-top: 1%;
+    line-height: 1.55;
+    font-family: 'Courier New', Courier, monospace;
 }
 
 .linkCont{
-    height: 12%;
-    width: 80%;
-    margin-top: 3.1%;
-    margin-left: -0%;
+    height: auto;
+    width: 85%;
     display: flex;
-    flex-direction: row;
-    justify-content: space-evenly;
+    /* flex-direction: row; */
+    flex-direction: column;
+    align-items: center;
+    align-self: center;
+    margin-top: 2%;
+    margin-bottom: -3%;
 }
 
-.myGithubLink{
-    width: 13%;
+.myGithubBtn{
+    width: 33.3%;
     height: 100%;
-    display: flex;
-    justify-content: center;
     border: transparent;
     background-color: transparent;
-    cursor: pointer;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
-.myGithubLink > img{
+.myGithubBtn > a {
     height: 100%;
-    width: 100%;
+    width: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    flex-direction: column;
+}
+
+.myGithubBtn > a > img{
+    height: 91%;
+    width: 50%;
 }
 
 .mylinkedInBtn{
-    margin-top: -1.78%;
-    width: 12%;
-    height: 50px;
+    width: 33.3%;
+    height: 100%;
     display: flex;
-    justify-content: center;
+    flex-direction: column;
     border: transparent;
     background-color: transparent;
-    cursor: pointer;
+    align-items: center;
 }
 
-.mylinkedInBtn > img{
+.mylinkedInBtn > a {
     height: 100%;
-    width: 100%;
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-end;
+}
+
+.mylinkedInBtn > a > img{
+    height: 98%;
+    width: 56.5%;
 }
 
 .myMediumBtn{
-    width: 9%;
     height: 100%;
+    width: 33.3%;
     display: flex;
-    justify-content: center;
+    flex-direction: column;
     border: transparent;
+    align-items: center;
     background-color: transparent;
-    cursor: pointer;
 }
 
-.myMediumBtn > img{
+.myMediumBtn > a{
     height: 100%;
-    width: 100%;
+    width: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    flex-direction: column;
+    
+}
+
+.myMediumBtn > a > img{
+    height: 99%;
+    width: 55%;
 }
 
 .skillsCont{
-    height: 100%;
+    height: auto;
     width: 100%;
-    margin-left: 17%;
     position: relative;
     display: flex;
     flex-direction: column;

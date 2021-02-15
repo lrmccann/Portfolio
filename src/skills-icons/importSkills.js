@@ -1,8 +1,8 @@
 export const skillIconsOne = [
-    require('./html-icon.png'),
-    require('./css-icon.png'),
-    require('./javascript-icon.png'),
-    require("./sass-icon.png")
+    require('./html-icon2.png'),
+    require('./css-icon2.png'),
+    require('./javascript-icon-5.png'),
+    require("./sass-icon2.png")
 ]
 
 // export const htmlIcon = require('./html-icon.png');
@@ -11,32 +11,34 @@ export const skillIconsOne = [
 // export const sassIcon = require("./sass-icon.png");
 
 export const skillsIconsTwo = [
-    require('./react-icon.png'),
-    require('./jquery-icon.png'),
-    require('./bootstrap-icon.png')
+    require('./react-icon2.png'),
+    require('./jquery-icon2.png'),
+    require('./bootstrap-icon2.png')
 ]
 
 
 export const skillsIconsThree = [
-    require('./vuejs-icon.png'),
-    require('./node-icon.png'),
-    require('./react-native-icon-one.jpg'),
-    require('./expo-icon.png'),
-    require('./express-icon.png')
+    require('./vue-icon-2.png'),
+    require('./node-icon2.png'),
+    // require('./react-native-icon-one.jpg'),
+    require('./react-icon2.png'),
+    require('./expo-icon-try.png'),
+    // require('./express-icon.png')
 ]
 
 export const skillsIconsFour = [
-    require('./mysql-icon.png'),
-    require('./firebase-icon.png'),
-    require('./mongodb-icon.png'),
+    require('./mysql-icon-2.png'),
+    require('./firebase-icon-2.png'),
+    require('./mongo-icon-4.png'),
     // require('./mysql-icon.png'),
 ]
 
 export const skillsIconsFive = [
-    require('./aws-icon.png'),
-    require('./github-icon.png'),
-    require('./heroku-icon.png'),
-    require('./robo3t-icon.png'),
+    require('./aws-icon-2.png'),
+    require('./github-icon-2.png'),
+    require('./heroku-icon2.png'),
+    require('./robo-icon-3.png'),
     require('./jest-icon.png'),
-    require('./sqlWorkbench-icon.jpeg')
+    require('./mysql-bench-icon-1.png'),
+    require('./webpack-icon.png')
 ]

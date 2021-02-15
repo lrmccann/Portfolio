@@ -41,10 +41,10 @@ export default function Contact() {
     }
 
     return (
-        <div className="container">
-            <div className="row">
+        <div className="container-fixed contactCont">
+            <div className="contactDiv">
                 <h1 className="welcomeMessage">Connect With Me</h1>
-                <div className="col-md-12">
+                {/* <div className="col-md-12"> */}
                     <form className="formStyle" onInput={handleInputChange}>
                         <div className="form-group">
                             <label id="formHeaderText">Email</label>
@@ -63,7 +63,7 @@ export default function Contact() {
                             <button onClick={submitForm} type='submit' value='submit' className="btn btn-primary">Send</button>
                         </div>
                     </form>
-                </div>
+                {/* </div> */}
             </div>
         </div>
     )

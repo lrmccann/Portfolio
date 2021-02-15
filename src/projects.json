@@ -2,7 +2,7 @@
   {
     "id": 1,
     "name" : "Canine Cupid V.2",
-    "image" : "./project-images/canine-cupid-v2-img.jpeg",
+    "image" : "./project-images/corgi-sun-bg-1.jpg",
     "description" : "Created for both the user and their companion, this application is a lite tinder clone focused on finding your furry friend, a friend. Complete UI rebuild, improved functionality, and IOS companion app.",
     "acompOne" : "Created using React, successfully utilized react-router",
     "acompTwo" : "Styled 100% by me, undertook a complete redesign from the original version",
@@ -16,7 +16,7 @@
   {
     "id" : 2,
     "name" : "Peak",
-    "image" : "./project-images/elevate-img.jpg",
+    "image" : "./project-images/maybe-bg-4.jpg",
     "description" : "Peak is my blogging application, used to document new information or further explore concepts.",
     "acompOne" : "Javascript/jQuery front-end with Node back-end",
     "acompTwo" : "MySQL used to store users, posts, and comments",
@@ -30,7 +30,7 @@
   {
     "id" : 3,
     "name" : "Breakout",
-    "image" : "./project-images/fantasy-football-img.jpg",
+    "image" : "./project-images/breakout-bg-maybe-1.jpg",
     "description" : "Fantasy project that let's the users create teams and live out their dreams of being a championship winner.",
     "acompOne" : "React application",
     "acompTwo" : "MongoDB connection to store user data and team data",

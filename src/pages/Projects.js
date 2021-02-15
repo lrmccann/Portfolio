@@ -27,17 +27,17 @@ export default function Projects() {
     return (
       <div className="prjctPage container-fixed">
         {(projectsToMap.map((item) => (
-          <div key={item.name}>
+          <div className="something" key={item.name}>
             <Fade right>
-              <div className="container-fluid">
-                <div className="prjctCont">
+              <div className="container-fluid" >
+                <div className="prjctCont container-fixed">
                   <div className="flipbtn" id={item.name}>
                     <img id={item.name} alt="more info icon" onClick={(e) => (flipCards(e.target.id))}
                       className="icon-btn btn-sm" src="../images/3-dots-img.jpg"></img>
                     <img className="videoBeforeFlip" src={item.image} alt="currently selected project"></img>
                     <h1 className="projectsDesc">{projects.description}</h1>
                   </div>
-                  <h3 style={{ paddingLeft: '2%', paddingTop: "4.5%", color: 'black' }}>{item.name}</h3>
+                  <h3 style={{ paddingLeft: '2%', paddingTop: "2.5%", color: 'black' }}>{item.name}</h3>
                   <h5 style={{ paddingLeft: "3%", paddingRight: '3%', fontSize: "15px" }}>{item.description}</h5>
                 </div>
               </div>
@@ -49,14 +49,14 @@ export default function Projects() {
   };
   if (cardsideTwo === true) {
     return (
-      <div className="prjctPageTwo container">
+      <div className="prjctPageTwo container-fixed">
         <div className="prjctContFlipped" >
           <button className="flipBtnTwo" onClick={flipCardsBack}><h4>Back</h4></button>
-          <div className="prjctInfoCont">
+          <div className="prjctInfoCont container-fixed">
             <div className="webBackgroundImg">
               <img className="backgroundImg" src={currentlySelectedProject.image} alt="currently selected project"></img>
             </div>
-            <div className="acompCont">
+            <div className="acompCont container">
               <h3 className="acompHeaderText">Accomplishments</h3>
               <ul className="acompList">
                 <li className="acompText">{currentlySelectedProject.acompOne}</li>
@@ -65,20 +65,31 @@ export default function Projects() {
                 <li className="acompText">{currentlySelectedProject.acompFour}</li>
               </ul>
             </div>
-            <div className="linksForProject">
+            </div>
+            <div className="linksForProject container-fluid">
               <div className="githubLinkCont">
-                <button className="githubLinkBtn"><img className="githubLinkImg" alt="Github Link" src={require("../page-images/github-link-img-use.png")}></img></button>
-                <h5 className="gitHubText"><a href={currentlySelectedProject.githubLinkFE} target="_blank" rel="noopener noreferrer" style={{color: 'black'}}>Github Link</a></h5>
+              <a className="githubLinkBtn" href={currentlySelectedProject.githubLinkFE} target="_blank" rel="noopener noreferrer" style={{color: 'black'}}>
+                  <img className="githubLinkImg" alt="Github Link" src={require("../page-images/github-link-img-use.png")}></img>
+                <h6 className="gitHubText">
+                  Github
+                  </h6>
+                  </a>
               </div>
               <div className="deploymentLinkCont">
-                <button className="deploymentLinkBtn"><img className="deploymentLinkImg" alt="Deployment Link" src={require("../page-images/deployment-img-use.png")}></img></button>
-                <h5 className="deploymentText"><a href={currentlySelectedProject.deployedSite} target="_blank" rel="noopener noreferrer" style={{color: 'black'}}>Deployment Site</a></h5>
+              <a className="deploymentLinkBtn" href={currentlySelectedProject.deployedSite} target="_blank" rel="noopener noreferrer" style={{color: 'black'}}>
+                  <img className="deploymentLinkImg" alt="Deployment Link" src={require("../page-images/website-icon-num-2.png")}></img>
+                <h4 className="deploymentText">
+                    Deployed App
+                  </h4>
+                  </a>
               </div>
               <div className="awsS3BucketCont">
-                <button className="awsS3LinkBtn"><img className="awsS3LinkImg" alt="aws S3 Bucket" src={require("../page-images/aws-img-use-me.png")}></img></button>
-                <h5 className="awsS3Text"><a href={currentlySelectedProject.awsS3Link} target="_blank" rel="noopener noreferrer" style={{color: 'black'}}>S3 Bucket</a></h5>
+                <a href={currentlySelectedProject.awsS3Link} target="_blank" rel="noopener noreferrer" className="awsS3LinkBtn" style={{color: 'black'}}>  
+                  <img className="awsS3LinkImg" alt="aws S3 Bucket" src={require("../page-images/aws-img-use-me.png")}></img>
+                <h4 className="awsS3Text">S3 Bucket</h4>
+                </a>
               </div>
-            </div>
+            {/* </div> */}
           </div>
         </div>
       </div>
