@@ -1,5 +1,4 @@
 import React from "react";
-import "../page-images/port-pic.jpeg";
 import SkillsContainer from '../components/SkillsContainer/index';
 import "../styleSheets/home.css";
 import Fade from 'react-reveal/Fade';
@@ -22,36 +21,19 @@ export default function Home() {
   return (
     <div className="homePage container-fixed">
       <div className="myBioCont container">
-        {/* <div className="imgBorder"> */}
           <img alt="Logan R McCann" src={require("../page-images/large-prof-pic.png")}>
 
           </img>
-        {/* </div> */}
         <div className="myBioTextCont container">
           <p className="myBioInfoText">
-            I am a highly adaptable and detail-oriented web developer with extensive background in various coding languages, building responsive websites from front-end to back-end,
-            and developing mobile applications. Specializes in JSX and CSS. Poised to contribute creative problem solving techniques,
-            excellent interpersonal skills, and time management.
+          I am a full stack web developer living in Chicago, Illinois. I focus on crafting clean & user-friendly experiences. I currently specialize in Javascript & Node.js, and enjoy learning new languages in my free time. 
+          <br></br>
+          <br></br>
+          Being a well-organized problem solver with an obsessive attention to detail, I love to help designers, agencies, and businesses bring their ideas to life.  
+          <br></br>
+          <br></br>
+          If you are seeking a web presence or an employer looking to hire, you can contact me here. 
             </p>
-           {/* <div className="linkCont container-fixed">
-              <div className="myGithubBtn">
-              <a href="https://github.com/lrmccann" target="_blank">
-                <img alt="Github Link" src={require('../skills-icons/github-icon-2.png')}>
-                </img>
-                </a>
-              </div>
-              <button className="myMediumBtn">
-              <a href="https://medium.com/@loganrmccann" target="_blank">
-                <img alt="Medium Link" src={require('../page-images/medium-icon2.png')}></img>
-                </a>
-              </button>
-              <button className="mylinkedInBtn">
-              <a href="https://www.linkedin.com/in/logan-mccann-381855155/" target="_blank">
-                <img  alt="LinkedIn Link" src={require('../page-images/linkedin-icon2.png')}>
-                </img>
-                </a>
-              </button>
-            </div> */}
         </div>
       </div>
       <div className="skillsCont container">

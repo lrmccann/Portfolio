@@ -3,7 +3,7 @@
     "id": 1,
     "name" : "Canine Cupid V.2",
     "image" : "./project-images/corgi-sun-bg-1.jpg",
-    "description" : "Created for both the user and their companion, this application is a lite tinder clone focused on finding your furry friend, a friend. Complete UI rebuild, improved functionality, and IOS companion app.",
+    "description" : "Created for both the user and their companion, this application is a lite tinder clone focused on finding your furry friend, a friend.",
     "acompOne" : "Created using React, successfully utilized react-router",
     "acompTwo" : "Styled 100% by me, undertook a complete redesign from the original version",
     "acompThree" : "Skillfully used React's : Context , State, Props, and Components",
@@ -87,7 +87,7 @@
   {
     "id": 6,
     "name" : "Canine Cupid",
-    "image" : "./project-images/canine-cupid-img.jpg",
+    "image" : "./project-images/dog-icon-transparent-2.png",
     "description": "Soft release of lite tinder clone used by you and you pup to plan a fun walk in the park with that cute corgi across the street.",
     "acompOne" : "React application",
     "acompTwo" : "First build of Canine-Cupid-V2",

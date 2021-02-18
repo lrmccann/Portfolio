@@ -1,87 +1,121 @@
-import React from "react";
+import React, { useState } from "react";
 import "./style.css";
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faHome, faFolder, faBlog, faFileAlt, faPhoneVolume, faTrophy, faBold, faAddressBook } from '@fortawesome/free-solid-svg-icons'
+import { faHome, faFolder, faFileAlt, faTrophy, faBold, faAddressBook } from '@fortawesome/free-solid-svg-icons';
 import { useHistory } from 'react-router-dom';
 
 
-export default function SideBar() {
+export default function SideBar(props) {
     let history = useHistory();
-
+    // HOME BTN FUNC
     const homePage = () => {
-        history.push('/home')
+        history.push('/home');
     }
-    const projectsPage = () => {
-        history.push('/projects')
+    const [homeNavLink, setHomeNavLink] = useState(<FontAwesomeIcon id="fontAwsIcon" icon={faHome} />)
+    const hoverHomeLink = e => {
+        e.preventDefault();
+        setHomeNavLink(<h5>Home</h5>)
     }
+    const resetHomeLink = e => {
+        e.preventDefault();
+        setHomeNavLink(<FontAwesomeIcon id="fontAwsIcon" icon={faHome} />)
+    }
+    //
+    // PROJECTS BTN FUNC
+    const projectPage = () => {
+        history.push('/projects');
+    }
+    const [projectsNavLink, setprojectNavLink] = useState(<FontAwesomeIcon id="fontAwsIcon" icon={faFolder} />)
+    const hoverProjectLink = e => {
+        e.preventDefault();
+        setprojectNavLink(<h5>Projects</h5>)
+    }
+    const resetProjectLink = e => {
+        e.preventDefault();
+        setprojectNavLink(<FontAwesomeIcon id="fontAwsIcon" icon={faFolder} />)
+    }
+    //
+    // RESUME BTN FUNC
     const resumePage = () => {
-        history.push('/resume')
+        history.push('/resume');
     }
+    const [resumeNavLink, setResumeNavLink] = useState(<FontAwesomeIcon id="fontAwsIcon" icon={faFileAlt} />)
+    const hoverResumeLink = e => {
+        e.preventDefault();
+        setResumeNavLink(<h5>Resume</h5>)
+    }
+    const resetResumeLink = e => {
+        e.preventDefault();
+        setResumeNavLink(<FontAwesomeIcon id="fontAwsIcon" icon={faFileAlt} />)
+    }
+    //
+    // BLOG BTN FUNC
     const blogPage = () => {
-        history.push('/blog')
+        history.push('/blog');
     }
-    const awardsPage = () => {
-        history.push('/awards')
+    const [blogNavLink, setBlogNavLink] = useState(<FontAwesomeIcon id="fontAwsIcon" icon={faBold} />)
+    const hoverBlogLink = e => {
+        e.preventDefault();
+        setBlogNavLink(<h5>Blog</h5>)
     }
+    const resetBlogLink = e => {
+        e.preventDefault();
+        setBlogNavLink(<FontAwesomeIcon id="fontAwsIcon" icon={faBold} />)
+    }
+    //
+    // CONTACT BTN FUNC
     const contactPage = () => {
-        history.push('/contact')
+        history.push('/contact');
     }
-
+    const [contactNavLink, setContactNavLink] = useState(<FontAwesomeIcon id="fontAwsIcon" icon={faAddressBook} />)
+    const hoverContactLink = e => {
+        e.preventDefault();
+        setContactNavLink(<h5>Contact</h5>)
+    }
+    const resetContactLink = e => {
+        e.preventDefault();
+        setContactNavLink(<FontAwesomeIcon id="fontAwsIcon" icon={faAddressBook} />)
+    }
+    //
     return (
-        // <div className=" sideBarCont container-fluid">
-        <div className=" sideBarCont container-fixed">
+        <div className="sideBarCont container-fixed">
             <div className="myInfoDiv">
-            <img src={require("../../page-images/canva-logo-2.png")} className="randomclassname"></img>
-                {/* <p className="firstNameText" id="myInfoText">Logan</p><br></br><p className="lastNameText" id="myInfoText">McCann</p>
-                <p className="ocText">Full Stack Engineer</p> */}
+                <img src={require("../../page-images/canva-logo-2.png")} className="randomclassname"></img>
             </div>
             <div className="btnCont">
-                <button className="homeBtn" id="navBarBtn" onClick={homePage}>
-                    <FontAwesomeIcon id="fontAwsIcon" icon={faHome} />
-                    {/* <h6 className="homeText">Home</h6> */}
+                <button className="homeBtn" id="navBarBtn" onMouseEnter={hoverHomeLink} onMouseLeave={resetHomeLink} onClick={homePage}>
+                    {homeNavLink}
                 </button>
-                <button className="projectsBtn" id="navBarBtn" onClick={projectsPage}>
-                    <FontAwesomeIcon id="fontAwsIcon" icon={faFolder} />
-                    {/* <h6 className="projectsText">Projects</h6> */}
+                <button className="projectsBtn" id="navBarBtn" onMouseEnter={hoverProjectLink} onMouseLeave={resetProjectLink} onClick={projectPage}>
+                    {projectsNavLink}
                 </button>
-                {/* <button className="awardsBtn" id="navBarBtn" onClick={awardsPage}>
-                    <FontAwesomeIcon id="fontAwsIcon" icon={faTrophy} />
-                    <h5 className="awardsText">Awards</h5>
-                </button> */}
-                <button className="resumeBtn" id="navBarBtn" onClick={resumePage}>
-                    <FontAwesomeIcon id="fontAwsIcon" icon={faFileAlt} />
-                    {/* <h6 className="resumeText">Resume</h6> */}
+                <button className="resumeBtn" id="navBarBtn" onMouseEnter={hoverResumeLink} onMouseLeave={resetResumeLink} onClick={resumePage}>
+                    {resumeNavLink}
                 </button>
-                <button className="blogBtn" id="navBarBtn" onClick={blogPage}>
-                    <FontAwesomeIcon id="fontAwsIcon" icon={faBold} />
-                    {/* <h6 className="blogText">Blog</h6> */}
+                <button className="blogBtn" id="navBarBtn" onMouseEnter={hoverBlogLink} onMouseLeave={resetBlogLink} onClick={blogPage}>
+                    {blogNavLink}
                 </button>
-                <button className="contactBtn" id="navBarBtn" onClick={contactPage}>
-                    <FontAwesomeIcon id="fontAwsIcon" icon={faAddressBook} />
-                    {/* <h6 className="contactText">Contact</h6> */}
+                <button className="contactBtn" id="navBarBtn" onMouseEnter={hoverContactLink} onMouseLeave={resetContactLink} onClick={contactPage}>
+                    {contactNavLink}
                 </button>
-
             </div>
             <div className="socialMediaLinks">
-            <div className="myGithubBtn">
-              <a href="https://github.com/lrmccann" target="_blank">
-                <img alt="Github Link" src={require('../../skills-icons/github-icon-2.png')}>
-                </img>
-                </a>
-              </div>
-              <div className="myMediumBtn">
-              <a href="https://medium.com/@loganrmccann" target="_blank">
-                <img alt="Medium Link" src={require('../../page-images/medium-icon2.png')}></img>
-                </a>
-              </div>
-              <div className="mylinkedInBtn">
-              <a href="https://www.linkedin.com/in/logan-mccann-381855155/" target="_blank">
-                <img  alt="LinkedIn Link" src={require('../../page-images/linkedin-icon2.png')}>
-                </img>
-                </a>
-              </div>
+                <div className="myGithubBtn">
+                    <a href="https://github.com/lrmccann" target="_blank">
+                        <img alt="Github Link" src={require('../../page-images/github-icon-2.png')}></img>
+                    </a>
+                </div>
+                <div className="myMediumBtn">
+                    <a href="https://medium.com/@loganrmccann" target="_blank">
+                        <img alt="Medium Link" src={require('../../page-images/medium-icon2.png')}></img>
+                    </a>
+                </div>
+                <div className="mylinkedInBtn">
+                    <a href="https://www.linkedin.com/in/logan-mccann-381855155/" target="_blank">
+                        <img alt="LinkedIn Link" src={require('../../page-images/linkedin-icon2.png')}></img>
+                    </a>
+                </div>
             </div>
         </div>
-    )
-
-}
+    );
+};

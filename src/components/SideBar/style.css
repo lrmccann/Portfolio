@@ -16,10 +16,13 @@
 }
 
 .myInfoDiv{
-    /* height: 18.90%; */
-    /* height: 19.5%; */
-    height: 15%;
+    display: flex;
+    flex-direction: column;
+    /* justify-items: center; */
+    /* align-self: center; */
+    height: 16%;
     width: 100%;
+    /* background-color: red; */
     /* border-bottom: solid black thin; */
 
     /* display: flex; */
@@ -34,6 +37,7 @@
 }
 
 .randomclassname{
+    /* background-color: red; */
     height: 100%;
     width: 100%;
     /* background-color: rebeccapurple; */
@@ -101,6 +105,9 @@
 }
 #navBarBtn:hover{
     cursor: pointer;
+}
+#navBarBtn:focus{
+    outline: none;
 }
 
 .homeText{

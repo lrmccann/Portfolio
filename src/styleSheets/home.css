@@ -26,8 +26,10 @@
 
 .myBioCont > img {
     background-size: cover;
-    height: 85%;
-    width: 50%;
+    /* height: 85%;
+    width: 50%; */
+    height: 77.5%;
+    width: 35%;
     border-top: solid black thin;
     border-left: solid black thin;
     border-bottom: solid black thin;
@@ -35,9 +37,9 @@
 
 .myBioTextCont{
     height: 85%;
-    width: 50%;
+    width: 70%;
     background-color: white;
-    opacity: 100%;
+    /* opacity: 100%; */
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -48,11 +50,14 @@
 
 .myBioInfoText{
     align-self: center;
-    height: auto;
+    /* height: auto; */
+    height: 80%;
     width: 95%;
-    font-size: 21px;
-    padding-top: 1%;
-    line-height: 1.55;
+    font-size: 18px;
+    font-weight: bold;
+    /* font-size: 21px; */
+    /* padding-top: 1%; */
+    line-height: 1.40;
     font-family: 'Courier New', Courier, monospace;
 }
 

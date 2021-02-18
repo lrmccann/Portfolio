@@ -25,71 +25,75 @@ export default function Projects() {
   };
   if (cardsideOne === true) {
     return (
-      <div className="prjctPage container-fixed">
+      <div className="projectPage container-fixed">
         {(projectsToMap.map((item) => (
-          <div className="something" key={item.name}>
-            <Fade right>
-              <div className="container-fluid" >
-                <div className="prjctCont container-fixed">
-                  <div className="flipbtn" id={item.name}>
-                    <img id={item.name} alt="more info icon" onClick={(e) => (flipCards(e.target.id))}
-                      className="icon-btn btn-sm" src="../images/3-dots-img.jpg"></img>
-                    <img className="videoBeforeFlip" src={item.image} alt="currently selected project"></img>
-                    <h1 className="projectsDesc">{projects.description}</h1>
-                  </div>
-                  <h3 style={{ paddingLeft: '2%', paddingTop: "2.5%", color: 'black' }}>{item.name}</h3>
-                  <h5 style={{ paddingLeft: "3%", paddingRight: '3%', fontSize: "15px" }}>{item.description}</h5>
+          <Fade right key={item.name}>
+            <div className="container-fixed">
+              <div className="cardCont container-fixed">
+                <div id={item.name}>
+                  <img src={item.image} alt="currently selected project"></img>
                 </div>
+                <img id={item.name} alt="more info icon" onClick={(e) => (flipCards(e.target.id))}
+                  className="btn-sm" src={require("../page-images/3-dots-img.jpg")}></img>
+                <h2>{item.name}</h2>
+                <h5>{item.description}</h5>
               </div>
-            </Fade>
-          </div>
+            </div>
+          </Fade>
         )))}
       </div>
     )
   };
   if (cardsideTwo === true) {
     return (
-      <div className="prjctPageTwo container-fixed">
-        <div className="prjctContFlipped" >
-          <button className="flipBtnTwo" onClick={flipCardsBack}><h4>Back</h4></button>
-          <div className="prjctInfoCont container-fixed">
-            <div className="webBackgroundImg">
-              <img className="backgroundImg" src={currentlySelectedProject.image} alt="currently selected project"></img>
+      <div className="flippedProjectPage container-fixed">
+        <div className="flippedProjectDiv container-fixed" >
+          <button onClick={flipCardsBack}><h4>Back</h4></button>
+          <div className="imgAndAcompCont container-fixed">
+            <div className="webBackgroundImg container">
+              <img src={currentlySelectedProject.image} alt="currently selected project"></img>
             </div>
-            <div className="acompCont container">
-              <h3 className="acompHeaderText">Accomplishments</h3>
-              <ul className="acompList">
-                <li className="acompText">{currentlySelectedProject.acompOne}</li>
-                <li className="acompText">{currentlySelectedProject.acompTwo}</li>
-                <li className="acompText">{currentlySelectedProject.acompThree}</li>
-                <li className="acompText">{currentlySelectedProject.acompFour}</li>
+            <div className="acompCont container-fixed">
+              <h3>Accomplishments</h3>
+              <ul>
+                <li>{currentlySelectedProject.acompOne}</li>
+                <li>{currentlySelectedProject.acompTwo}</li>
+                <li>{currentlySelectedProject.acompThree}</li>
+                <li>{currentlySelectedProject.acompFour}</li>
               </ul>
             </div>
             </div>
-            <div className="linksForProject container-fluid">
+            <div className="hashtagBar container-fixed">
+              <span>
+                <h4>Keywords:</h4>
+              </span>
+              <div>
+                <h5>React</h5>
+                </div>
+            </div>
+            <div className="linksForProject container-fixed">
               <div className="githubLinkCont">
               <a className="githubLinkBtn" href={currentlySelectedProject.githubLinkFE} target="_blank" rel="noopener noreferrer" style={{color: 'black'}}>
                   <img className="githubLinkImg" alt="Github Link" src={require("../page-images/github-link-img-use.png")}></img>
-                <h6 className="gitHubText">
+                <h5 className="gitHubText">
                   Github
-                  </h6>
+                  </h5>
                   </a>
               </div>
               <div className="deploymentLinkCont">
               <a className="deploymentLinkBtn" href={currentlySelectedProject.deployedSite} target="_blank" rel="noopener noreferrer" style={{color: 'black'}}>
                   <img className="deploymentLinkImg" alt="Deployment Link" src={require("../page-images/website-icon-num-2.png")}></img>
-                <h4 className="deploymentText">
+                <h5 className="deploymentText">
                     Deployed App
-                  </h4>
+                  </h5>
                   </a>
               </div>
               <div className="awsS3BucketCont">
                 <a href={currentlySelectedProject.awsS3Link} target="_blank" rel="noopener noreferrer" className="awsS3LinkBtn" style={{color: 'black'}}>  
                   <img className="awsS3LinkImg" alt="aws S3 Bucket" src={require("../page-images/aws-img-use-me.png")}></img>
-                <h4 className="awsS3Text">S3 Bucket</h4>
+                <h5 className="awsS3Text">S3 Bucket</h5>
                 </a>
               </div>
-            {/* </div> */}
           </div>
         </div>
       </div>
