@@ -1,6 +1,4 @@
 .projectPage {
-    /* padding-top: 1.75%; */
-    padding-top: .75%;
     height: 100%;
     width: 93%;
     float: left;
@@ -8,71 +6,88 @@
     contain: content;
 }
 
-/* // div inside of map func, is display "grid" after media break point and prjctCont's display is "contents" after media break point */
-
-.cardCont {
-    /* margin-top: 1.25%; */
-    margin-top: 1.5%;
-    margin-left: 2.5%;
-    height: 400px;
-    width: 400px;
-    background-color: white;
-    float: left;
-    border: black solid 1px;
-    z-index: 99;
-}
-
-.cardCont > div {
-    background-color: transparent;
-    display: flex;
-    flex-direction: row;
-    height: 63%;
+.projectPage > h1{
+    background-color: #475667;
+    font-size: 50px;
+    padding-left: 1%;
+    color: white;
+    letter-spacing: 1.9px;
+    height: auto;
+    font-family: "Roboto" , "sans-serif";
     width: 100%;
-    border: none;
-    color:white;
+    padding-top: 1%;
+    padding-bottom: 1%;
+    margin-bottom: 2%;
 }
 
-.cardCont > div > img {
+/* // div inside of map func, is display "grid" after media break point and prjctCont's display is "contents" after media break point */
+.realCard{
+    float: left;
+    margin-left: 2.6%;
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 2%;
+    background-color: ghostwhite;
+    font-family: "Roboto" , "sans-serif";
+    height: 380px;
+    width: 400px;
+    box-shadow: 0 2px 5px 0 rgb(0 0 0 / 16%), 0 2px 10px 0 rgb(0 0 0 / 12%);
+}
+
+.prjctImage{
+    height: 60%;
+    width: 100%;
+}
+
+.infoHolder{
+    height: 40%;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    border-top: solid black thin;
+    background-color: white;
+    padding: 9px;
+}
+
+.infoHolder > div{
+    height: auto;
+    width: 100%;
+}
+
+.infoHolder > div  > h3{
+    height: auto;
+    width: 90%;
+    font-size: 34px;
+    white-space: nowrap;
+    float: left;
+}
+
+.infoHolder > div > img{
+    float: right;
+    height: 50%;
+    width: 1.60%;
+    margin-top: 1.75%;
+    margin-right: 1%;
+    cursor: pointer;
+}
+
+.scripHolder {
     height: 100%;
     width: 100%;
-    z-index: 90;
-    background-color: red;
 }
 
-.cardCont > img {
-    height: 7.35%;
-    width: 5.26%;
-    float: right;
-    cursor: pointer;
-    margin-right: 1%;
-    margin-top: 2%;
-    /* background-color: gray; */
-}
-
-.cardCont > img:focus {
-    outline: none;
-}
-
-.cardCont > h2 {
-    padding-left: 1%;
-    padding-top: 1%;
-    color: #474D74;
-    /* border-bottom: solid black 2px; */
-}
-
-.cardCont > h5 {
-    height: auto;
-    width: 80%;
-    margin-left: 5%;
-    /* background-color: gold; */
-    /* padding-left: 3%; */
-    /* padding-left: 3%; */
-    font-size: 15px;
+.scripHolder > p{
+    font-size: 18px;
+    height: 100%;
+    width: 95%;
+    overflow: auto;
+    text-align: left;
 }
 
 /* Style for Detailed Project Page */
 
 .flippedProjectPage {
+    font-family: "Roboto" , "sans-serif";
     height: 100%;
     width: 93%;
     overflow: auto;
@@ -80,9 +95,6 @@
     float: left;
     display: flex;
     flex-direction: column;
-    /* 
-    justify-content: center; 
-    */
     align-items: center;
 }
 
@@ -93,6 +105,7 @@
     display: flex;
     flex-direction: column;
     align-content: center;
+    /* font-family: "Roboto" , "sans-serif"; */
 }
 
 .flippedProjectDiv > button {
@@ -163,7 +176,7 @@
 .acompCont > ul {
     height: auto;
     width: 100%;
-    font-family: 'Courier New', Courier, monospace;
+    /* font-family: 'Courier New', Courier, monospace; */
     padding-left: 9%;
     padding-right: 4%;
 }
@@ -188,7 +201,7 @@
 .hashtagBar > span {
     height: 100%;
     width: 11%;
-    background-color: whitesmoke;
+    background-color: white;
     border-right: solid black thin;
     padding: .25%;
 }
@@ -210,9 +223,12 @@
 }
 
 .hashtagBar > div > h5 {
-    height: auto;
-    width: auto;
-    margin-left: 2%;
+    margin: auto;
+    padding-left: 9%;
+    font-size: 22px;
+    /* height: auto; */
+    /* width: auto; */
+    /* margin-left: 2%; */
 }
 
 .linksForProject {
@@ -246,8 +262,6 @@
 }
 
 .githubLinkImg{
-    /* height: 78%;
-    width: 19.75%; */
     height: 72%;
     width: 16%;
 }
@@ -280,8 +294,6 @@
 }
 
 .deploymentLinkImg{
-    /* height: 81%; */
-    /* width: 21.5%; */
     height: 72%;
     width: 16%;
     border-radius: 40px;
@@ -313,8 +325,6 @@
 }
 
 .awsS3LinkImg{
-    /* height: 80.75%;
-    width: 22%; */
     height: 72%;
     width: 16%;
 }

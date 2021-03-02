@@ -13,17 +13,16 @@ export default function Blog() {
   );
 
   return (
-    <div className="container-fixed blogCont">
-      <div className="blogRightSide container-fixed">
-        <h1 >January</h1>
-        {(blogsToMap.map((item , myKey) => (
-          <ul>
-            <li key={myKey}><a href={item.link}>{item.title}</a>
-              <p className="blogDate">({item.monthCreated})</p>
-            </li>
-          </ul>
-        )))}
-      </div>
+    <div className="blogRightSide container-fixed">
+      <h1>Blog</h1>
+      <h2>March</h2>
+      {(blogsToMap.map((item, myKey) => (
+        <ul>
+          <li key={myKey}><a href={item.link}>{item.title}</a>
+            <p className="blogDate">({item.monthCreated})</p>
+          </li>
+        </ul>
+      )))}
     </div>
   )
 }

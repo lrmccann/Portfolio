@@ -2,7 +2,7 @@
   {
     "id": 1,
     "name" : "Canine Cupid V.2",
-    "image" : "./project-images/corgi-sun-bg-1.jpg",
+    "image" : "./project-images/scooby-gf-1.png",
     "description" : "Created for both the user and their companion, this application is a lite tinder clone focused on finding your furry friend, a friend.",
     "acompOne" : "Created using React, successfully utilized react-router",
     "acompTwo" : "Styled 100% by me, undertook a complete redesign from the original version",
@@ -87,7 +87,7 @@
   {
     "id": 6,
     "name" : "Canine Cupid",
-    "image" : "./project-images/dog-icon-transparent-2.png",
+    "image" : "./project-images/corgi-sun-bg-1.jpg",
     "description": "Soft release of lite tinder clone used by you and you pup to plan a fun walk in the park with that cute corgi across the street.",
     "acompOne" : "React application",
     "acompTwo" : "First build of Canine-Cupid-V2",
@@ -102,7 +102,7 @@
     "id": 7,
     "name": "Logan Portfolio",
     "image": "./project-images/portfolio-use-img.png",
-    "description": "My portfolio, designed to give an overall impression of my ability to create fluid, eye-catching, high-quality web applications using various frameworks and languages.",
+    "description": "My portfolio, created to showcase my UI skills",
     "acompOne" : "My personal portfolio built using React",
     "acompTwo" : "Multiple JSON files to allow for easy editing",
     "acompThree" : "Utilized React effects",

@@ -26,17 +26,19 @@ export default function Projects() {
   if (cardsideOne === true) {
     return (
       <div className="projectPage container-fixed">
+        <h1>Projects</h1>
         {(projectsToMap.map((item) => (
           <Fade right key={item.name}>
-            <div className="container-fixed">
-              <div className="cardCont container-fixed">
-                <div id={item.name}>
-                  <img src={item.image} alt="currently selected project"></img>
+            <div className="realCard">
+              <img className="prjctImage" src={item.image} alt="currently selected project"></img>
+              <div className="infoHolder">
+                <div>
+                  <h3>{item.name}</h3>
+                  <img src={require("../page-images/3-dots-img.jpg")} alt="three dots to display more options" id={item.name} onClick={(e) => (flipCards(e.target.id))}></img>
                 </div>
-                <img id={item.name} alt="more info icon" onClick={(e) => (flipCards(e.target.id))}
-                  className="btn-sm" src={require("../page-images/3-dots-img.jpg")}></img>
-                <h2>{item.name}</h2>
-                <h5>{item.description}</h5>
+                <div className="scripHolder">
+                  <p>{item.description}</p>
+                </div>
               </div>
             </div>
           </Fade>
@@ -62,38 +64,38 @@ export default function Projects() {
                 <li>{currentlySelectedProject.acompFour}</li>
               </ul>
             </div>
+          </div>
+          <div className="hashtagBar container-fixed">
+            <span>
+              <h4>Keywords:</h4>
+            </span>
+            <div>
+              <h5>React</h5>
             </div>
-            <div className="hashtagBar container-fixed">
-              <span>
-                <h4>Keywords:</h4>
-              </span>
-              <div>
-                <h5>React</h5>
-                </div>
-            </div>
-            <div className="linksForProject container-fixed">
-              <div className="githubLinkCont">
-              <a className="githubLinkBtn" href={currentlySelectedProject.githubLinkFE} target="_blank" rel="noopener noreferrer" style={{color: 'black'}}>
-                  <img className="githubLinkImg" alt="Github Link" src={require("../page-images/github-link-img-use.png")}></img>
+          </div>
+          <div className="linksForProject container-fixed">
+            <div className="githubLinkCont">
+              <a className="githubLinkBtn" href={currentlySelectedProject.githubLinkFE} target="_blank" rel="noopener noreferrer" style={{ color: 'black' }}>
+                <img className="githubLinkImg" alt="Github Link" src={require("../page-images/github-link-img-use.png")}></img>
                 <h5 className="gitHubText">
                   Github
                   </h5>
-                  </a>
-              </div>
-              <div className="deploymentLinkCont">
-              <a className="deploymentLinkBtn" href={currentlySelectedProject.deployedSite} target="_blank" rel="noopener noreferrer" style={{color: 'black'}}>
-                  <img className="deploymentLinkImg" alt="Deployment Link" src={require("../page-images/website-icon-num-2.png")}></img>
+              </a>
+            </div>
+            <div className="deploymentLinkCont">
+              <a className="deploymentLinkBtn" href={currentlySelectedProject.deployedSite} target="_blank" rel="noopener noreferrer" style={{ color: 'black' }}>
+                <img className="deploymentLinkImg" alt="Deployment Link" src={require("../page-images/website-icon-num-2.png")}></img>
                 <h5 className="deploymentText">
-                    Deployed App
+                  Deployed App
                   </h5>
-                  </a>
-              </div>
-              <div className="awsS3BucketCont">
-                <a href={currentlySelectedProject.awsS3Link} target="_blank" rel="noopener noreferrer" className="awsS3LinkBtn" style={{color: 'black'}}>  
-                  <img className="awsS3LinkImg" alt="aws S3 Bucket" src={require("../page-images/aws-img-use-me.png")}></img>
+              </a>
+            </div>
+            <div className="awsS3BucketCont">
+              <a href={currentlySelectedProject.awsS3Link} target="_blank" rel="noopener noreferrer" className="awsS3LinkBtn" style={{ color: 'black' }}>
+                <img className="awsS3LinkImg" alt="aws S3 Bucket" src={require("../page-images/aws-img-use-me.png")}></img>
                 <h5 className="awsS3Text">S3 Bucket</h5>
-                </a>
-              </div>
+              </a>
+            </div>
           </div>
         </div>
       </div>

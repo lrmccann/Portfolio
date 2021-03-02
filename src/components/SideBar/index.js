@@ -1,12 +1,14 @@
 import React, { useState } from "react";
 import "./style.css";
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faHome, faFolder, faFileAlt, faTrophy, faBold, faAddressBook } from '@fortawesome/free-solid-svg-icons';
-import { useHistory } from 'react-router-dom';
+import { faHome, faFolder, faFileAlt, faBold, faAddressBook } from '@fortawesome/free-solid-svg-icons';
+import { useHistory, useLocation } from 'react-router-dom';
 
 
 export default function SideBar(props) {
     let history = useHistory();
+    let location = useLocation();
+    console.log(location.pathname, "path name")
     // HOME BTN FUNC
     const homePage = () => {
         history.push('/home');
@@ -14,7 +16,7 @@ export default function SideBar(props) {
     const [homeNavLink, setHomeNavLink] = useState(<FontAwesomeIcon id="fontAwsIcon" icon={faHome} />)
     const hoverHomeLink = e => {
         e.preventDefault();
-        setHomeNavLink(<h5>Home</h5>)
+        setHomeNavLink(<h5 id="textAfterFlip">Home</h5>)
     }
     const resetHomeLink = e => {
         e.preventDefault();
@@ -28,7 +30,7 @@ export default function SideBar(props) {
     const [projectsNavLink, setprojectNavLink] = useState(<FontAwesomeIcon id="fontAwsIcon" icon={faFolder} />)
     const hoverProjectLink = e => {
         e.preventDefault();
-        setprojectNavLink(<h5>Projects</h5>)
+        setprojectNavLink(<h5 id="textAfterFlip">Projects</h5>)
     }
     const resetProjectLink = e => {
         e.preventDefault();
@@ -42,7 +44,7 @@ export default function SideBar(props) {
     const [resumeNavLink, setResumeNavLink] = useState(<FontAwesomeIcon id="fontAwsIcon" icon={faFileAlt} />)
     const hoverResumeLink = e => {
         e.preventDefault();
-        setResumeNavLink(<h5>Resume</h5>)
+        setResumeNavLink(<h5 id="textAfterFlip">Resume</h5>)
     }
     const resetResumeLink = e => {
         e.preventDefault();
@@ -56,7 +58,7 @@ export default function SideBar(props) {
     const [blogNavLink, setBlogNavLink] = useState(<FontAwesomeIcon id="fontAwsIcon" icon={faBold} />)
     const hoverBlogLink = e => {
         e.preventDefault();
-        setBlogNavLink(<h5>Blog</h5>)
+        setBlogNavLink(<h5 id="textAfterFlip">Blog</h5>)
     }
     const resetBlogLink = e => {
         e.preventDefault();
@@ -70,7 +72,7 @@ export default function SideBar(props) {
     const [contactNavLink, setContactNavLink] = useState(<FontAwesomeIcon id="fontAwsIcon" icon={faAddressBook} />)
     const hoverContactLink = e => {
         e.preventDefault();
-        setContactNavLink(<h5>Contact</h5>)
+        setContactNavLink(<h5 id="textAfterFlip">Contact</h5>)
     }
     const resetContactLink = e => {
         e.preventDefault();
@@ -80,7 +82,7 @@ export default function SideBar(props) {
     return (
         <div className="sideBarCont container-fixed">
             <div className="myInfoDiv">
-                <img src={require("../../page-images/canva-logo-2.png")} className="randomclassname"></img>
+                <img alt="Logan McCann" src={require("../../page-images/canva-logo-2.png")}></img>
             </div>
             <div className="btnCont">
                 <button className="homeBtn" id="navBarBtn" onMouseEnter={hoverHomeLink} onMouseLeave={resetHomeLink} onClick={homePage}>
@@ -101,17 +103,17 @@ export default function SideBar(props) {
             </div>
             <div className="socialMediaLinks">
                 <div className="myGithubBtn">
-                    <a href="https://github.com/lrmccann" target="_blank">
+                    <a href="https://github.com/lrmccann" target="_blank" rel="noopener noreferrer">
                         <img alt="Github Link" src={require('../../page-images/github-icon-2.png')}></img>
                     </a>
                 </div>
                 <div className="myMediumBtn">
-                    <a href="https://medium.com/@loganrmccann" target="_blank">
+                    <a href="https://medium.com/@loganrmccann" target="_blank" rel="noopener noreferrer">
                         <img alt="Medium Link" src={require('../../page-images/medium-icon2.png')}></img>
                     </a>
                 </div>
                 <div className="mylinkedInBtn">
-                    <a href="https://www.linkedin.com/in/logan-mccann-381855155/" target="_blank">
+                    <a href="https://www.linkedin.com/in/logan-mccann-381855155/" target="_blank" rel="noopener noreferrer">
                         <img alt="LinkedIn Link" src={require('../../page-images/linkedin-icon2.png')}></img>
                     </a>
                 </div>

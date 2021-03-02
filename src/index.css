@@ -1,7 +1,5 @@
 html, body {
-  background-color: white;
   background-image: url('./page-images/city-bg-img.jpg');
-  background-attachment: fixed;
   background-position: center;
   background-size: cover;
   font-family: Verdana, Geneva, Tahoma, sans-serif;

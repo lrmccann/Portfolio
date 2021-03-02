@@ -6,34 +6,41 @@
     overflow: auto;
     contain: content;
 }
+
+.resumeCont > h1{
+    background-color: #475667;
+    font-size: 50px;
+    padding-left: 1%;
+    color: white;
+    letter-spacing: 1px;
+    height: auto;
+    font-family: "Roboto" , "sans-serif";
+    width: 100%;
+    padding-top: 1%;
+    padding-bottom: 1%;
+    margin-bottom: -1%;
+}
+
 .resumeCont > a {
     height: 6.5%;
     width: 4.5%;
-    margin-right: 2%;
-    border: solid black 1px;
-    float: right;
-    margin-top: 1%;
-    /* background-color: whitesmoke; */
-    /* display: flex;
-    flex-direction: row; */
-    /* justify-content: center; */
+    position: absolute;
     text-align: center;
+    right: 15.74%;
+    top: 17.64%;
+    z-index: 1;
 }
 
 .downloadIcon {
     height: 100%;
     width: 100%;
     font-size: 35px;
-    /* background-color: red; */
-    /* border: solid black 1px; */
-    /* padding-top: 8.5%; */
 }
 
 .pdfviewer{
     border: hidden;
     outline: transparent;
     background-color: transparent;
-    /* background-color: red; */
     height: auto;
     width: 100%;
     border: transparent;
@@ -50,6 +57,4 @@
     color: black;
     width: 79.7%;
     align-self: center;
-    margin-left: 10.12%;
-    margin-bottom: -1%;
   }
