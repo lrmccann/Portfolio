@@ -16,8 +16,8 @@ export default function Welcome() {
     <div className="container-fixed welcomeCont" onClick={homePage}>
       <div className="nameCont">
         <Fade right>
-          <h1>Hi, Im Logan</h1>
-          <h2>I Design and Build User Interafces</h2>
+          <h1>Hi, I'm Logan.</h1>
+          <h2>I Design and Build User Interfaces.</h2>
         </Fade>
       </div>
     </div>
