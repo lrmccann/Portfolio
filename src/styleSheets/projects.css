@@ -4,9 +4,26 @@
     float: left;
     overflow: auto;
     contain: content;
+    /* display: flex; */
+    /* flex-direction: column; */
+    /* flex-wrap: nowrap; */
+
 }
 
-.projectPage > h1{
+.idk-yet{
+    float: left;
+    height: auto;
+    width: 100%;
+    /* background-color: red; */
+    display: inline-block;
+    /* overflow: auto; */
+    /* contain: content; */
+    
+}
+
+.projectPage > div > h1{
+    /* text-align: justify; */
+    /* text-align-last: center; */
     background-color: #475667;
     font-size: 50px;
     padding-left: 1%;
@@ -23,16 +40,61 @@
 /* // div inside of map func, is display "grid" after media break point and prjctCont's display is "contents" after media break point */
 .realCard{
     float: left;
-    margin-left: 2.6%;
+    /* margin-left: 2.6%; */
     display: flex;
     flex-direction: column;
-    margin-bottom: 2%;
+    /* margin-bottom: 2%; */
     background-color: ghostwhite;
     font-family: "Roboto" , "sans-serif";
     height: 380px;
-    width: 400px;
+    width: 380px;
     box-shadow: 0 2px 5px 0 rgb(0 0 0 / 16%), 0 2px 10px 0 rgb(0 0 0 / 12%);
 }
+
+
+/* VERY IMPORTANT ID FOR CARD DIV */
+#card-id-1{
+    margin-left: 3.75%;
+}
+
+#card-id-2{
+    margin-left: 3.75%;
+}
+
+#card-id-3{
+    margin-left: 3.75%;
+}
+
+#card-id-4{
+    margin-left: 3.75%;
+    margin-top: 1.5%;
+}
+
+#card-id-5{
+    margin-left: 3.75%;
+    margin-top: 1.5%;
+}
+
+#card-id-6{
+    margin-left: 3.75%;
+    margin-top: 1.5%;
+}
+
+#card-id-7{
+    margin-left: 3.75%;
+    margin-top: 1.5%;
+}
+
+#card-id-8{
+    margin-left: 3.75%;
+    margin-top: 1.5%;
+}
+
+#card-id-9{
+    margin-left: 3.75%;
+    margin-top: 1.5%;
+}
+/*  VERY IMPORTANT ID FOR CARD DIV*/
 
 .prjctImage{
     height: 60%;
@@ -86,7 +148,7 @@
 
 /* Style for Detailed Project Page */
 
-.flippedProjectPage {
+.project-page-two {
     font-family: "Roboto" , "sans-serif";
     height: 100%;
     width: 93%;
@@ -98,7 +160,7 @@
     align-items: center;
 }
 
-.flippedProjectDiv{
+.project-div{
     height: auto;
     margin-top: .50%;
     width: 90%;
@@ -108,7 +170,8 @@
     /* font-family: "Roboto" , "sans-serif"; */
 }
 
-.flippedProjectDiv > button {
+.project-div > button {
+    box-shadow: 0 2px 5px 0 rgb(0 0 0 / 16%), 0 2px 10px 0 rgb(0 0 0 / 12%);
     margin-top: 1.5%;
     padding-top: .50%;
     color: black;
@@ -121,7 +184,7 @@
     margin-bottom: .50%;
   }
 
-.flippedProjectDiv > button:focus {
+.project-div > button:focus {
     outline: none;
 }
 
@@ -130,7 +193,8 @@
     width: 100%;
     z-index: 90;
     position: relative;
-    border: solid black thin;
+    /* outline: solid thin violet; */
+    /* border: solid black thin; */
     display: flex;
     flex-direction: row;
     margin-top: .50%;
@@ -151,29 +215,40 @@
 }
 
 .webBackgroundImg > img {
-    height: 100%;
-    min-height: 460px;
-    max-height: 460px;
+    box-shadow: 0 2px 5px 0 rgb(0 0 0 / 16%), 0 2px 10px 0 rgb(0 0 0 / 12%);
+    /* outline: solid black thin; */
+    margin-right: 23.4%;
+    height: auto;
+    /* min-height: 460px; */
+    /* max-height: 460px; */
     width: 100%;
-    max-width: 615px;
-    min-width: 615px;
+    /* max-width: 615px; */
+    /* min-width: 615px; */
 }
 
 .acompCont{
+    /* outline: solid black thin; */
     height: 100%;
-    width: 50%;
+    width: 40%;
     background-color: white; 
     float: left;
+    box-shadow: 0 2px 5px 0 rgb(0 0 0 / 16%), 0 2px 10px 0 rgb(0 0 0 / 12%);
 }
 
 .acompCont > h3 {
+    font-size: 32px;
+    box-shadow: 0 2px 5px 0 rgb(0 0 0 / 6%), 0 2px 4px 0 rgb(0 0 0 / 2%);
+    /* color: white; */
+    /* background-color: #475667; */
     text-align: center;
-    margin-top: 1.5%;
-    border-bottom: solid black 1px;
+    /* margin-top: 1.5%; */
+    padding-top: 2%;
+    /* border-bottom: solid white 1px; */
     padding-bottom: 2%;
 }
 
 .acompCont > ul {
+    list-style: square;
     height: auto;
     width: 100%;
     /* font-family: 'Courier New', Courier, monospace; */
@@ -183,11 +258,12 @@
 
 .acompCont > ul > li {
     margin-top: 3.5%;
-    font-size: 21px;
-    color: black;
+    font-size: 22px;
+    /* color: black; */
 }
 
 .hashtagBar {
+    box-shadow: 0 2px 5px 0 rgb(0 0 0 / 16%), 0 2px 10px 0 rgb(0 0 0 / 12%);
     height: auto;
     width: 100%;
     background-color: white;
@@ -229,6 +305,7 @@
 }
 
 .linksForProject {
+    box-shadow: 0 2px 5px 0 rgb(0 0 0 / 16%), 0 2px 10px 0 rgb(0 0 0 / 12%);
     height: auto;
     width: 100%;
     background-color: white; 
@@ -293,7 +370,7 @@
 .deploymentLinkImg{
     height: 72%;
     width: 16%;
-    border-radius: 40px;
+    /* border-radius: 40px; */
 }
 
 .deploymentText{

@@ -38,7 +38,7 @@ export default function Contact() {
         <div className="container-fixed contactCont">
             <h1>Contact</h1>
             <div className="contactDiv">
-                <h2 className="welcomeMessage">Let's stay in touch!</h2>
+                <h2 className="welcomeMessage">Let's Connect!</h2>
                 <form className="formStyle" onInput={handleInputChange}>
                     <div className="form-group">
                         <label id="formHeaderText">Email</label>

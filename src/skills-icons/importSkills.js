@@ -1,7 +1,7 @@
 export const skillIconsOne = [
     require('./html-icon2.png'),
     require('./css-icon2.png'),
-    require('./javascript-icon-5.png'),
+    require('./javascript-icon-1.png'),
     require("./sass-icon2.png")
 ];
 

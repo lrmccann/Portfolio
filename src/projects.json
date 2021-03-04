@@ -2,7 +2,8 @@
   {
     "id": 1,
     "name" : "Canine Cupid V.2",
-    "image" : "./project-images/scooby-gf-1.png",
+    "image" : "./project-images/canine-cupid-v2-img-3.png",
+    "smallImage" : "./project-images-mini/canine-v2-mini-img.png",
     "description" : "Created for both the user and their companion, this application is a lite tinder clone focused on finding your furry friend, a friend.",
     "acompOne" : "Created using React, successfully utilized react-router",
     "acompTwo" : "Styled 100% by me, undertook a complete redesign from the original version",
@@ -16,7 +17,8 @@
   {
     "id" : 2,
     "name" : "Peak",
-    "image" : "./project-images/maybe-bg-4.jpg",
+    "image" : "./project-images/peak-img.png",
+    "smallImage" : "./project-images-mini/peak-mini-img.jpg",
     "description" : "Peak is my blogging application, used to document new information or further explore concepts.",
     "acompOne" : "Javascript/jQuery front-end with Node back-end",
     "acompTwo" : "MySQL used to store users, posts, and comments",
@@ -30,7 +32,8 @@
   {
     "id" : 3,
     "name" : "Breakout",
-    "image" : "./project-images/breakout-bg-maybe-1.jpg",
+    "image" : "./project-images/breakout-img-1.png",
+    "smallImage" : "./project-images-mini/breakout-mini-img.png",
     "description" : "Fantasy project that let's the users create teams and live out their dreams of being a championship winner.",
     "acompOne" : "React application",
     "acompTwo" : "MongoDB connection to store user data and team data",
@@ -45,7 +48,8 @@
   {
     "id": 4,
     "name" : "Cocktail HQ",
-    "image" : "./project-images/cocktail-hq-img.png",
+    "image" : "./project-images/cocktail-hq-img-1.png",
+    "smallImage" : "./project-images-mini/cocktail-hq-mini-img.png",
     "description" : "Web app centered around alcohol, allowing the user to find new drinks, review drinks they’ve tried, and pin their favorite.",
     "acompOne" : "Javascript/jQuery application",
     "acompTwo" : "Content served from Node backend",
@@ -59,7 +63,8 @@
   {
     "id": 5,
     "name" : "IPA's using API's",
-    "image" : "./project-images/ipa-using-api-img.png",
+    "image" : "./project-images/ipas-img-2.png",
+    "smallImage" : "./project-images-mini/ipas-mini-img.png",
     "description": "Web application that brings quick and accurate search functionality to locate breweries in your city.",
     "acompOne" : "javascript/jQuery application",
     "acompTwo" : "First project assigned to me",
@@ -73,7 +78,8 @@
   {
     "id": 5,
     "name" : "Canine Cupid Mobile",
-    "image" : "./project-images/canine-cupid-mobile-img.png",
+    "image" : "./project-images/canine-cupid-mobile-img-1.png",
+    "smallImage" : "./project-images-mini/canine-mobile-mini-img.png",
     "description": "Companion application for Canine Cupid, making it easier for users to match on the go.",
     "acompOne" : "React Native IOS application",
     "acompTwo" : "Firebase backend (auth, img storing, querying)",
@@ -87,7 +93,8 @@
   {
     "id": 6,
     "name" : "Canine Cupid",
-    "image" : "./project-images/corgi-sun-bg-1.jpg",
+    "image" : "./project-images/canine-og-img.png",
+    "smallImage" : "./project-images-mini/canine-mini-img.png",
     "description": "Soft release of lite tinder clone used by you and you pup to plan a fun walk in the park with that cute corgi across the street.",
     "acompOne" : "React application",
     "acompTwo" : "First build of Canine-Cupid-V2",
@@ -101,7 +108,8 @@
   {
     "id": 7,
     "name": "Logan Portfolio",
-    "image": "./project-images/portfolio-use-img.png",
+    "image": "./project-images/logan-port-img-1.png",
+    "smallImage" : "./project-images-mini/logan-port-mini-img.png",
     "description": "My portfolio, created to showcase my UI skills",
     "acompOne" : "My personal portfolio built using React",
     "acompTwo" : "Multiple JSON files to allow for easy editing",
@@ -115,7 +123,8 @@
   {
     "id": 8,
     "name": "API Weather App",
-    "image": "./project-images/api-weather-img.jpg",
+    "image": "./project-images/weather-watch-img-1.png",
+    "smallImage" : "./project-images-mini/weather-watch-mini-img.png",
     "description": "Simple app to check the weather, for the week, in your area or around the U.S.",
     "acompOne" : "",
     "acompTwo" : "",

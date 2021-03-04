@@ -26,11 +26,12 @@ export default function Projects() {
   if (cardsideOne === true) {
     return (
       <div className="projectPage container-fixed">
+        <div className="idk-yet container-fixed">
         <h1>Projects</h1>
         {(projectsToMap.map((item) => (
           <Fade right key={item.name}>
-            <div className="realCard">
-              <img className="prjctImage" src={item.image} alt="currently selected project"></img>
+            <div id={"card-id-" + item.id} className="realCard">
+              <img className="prjctImage" src={item.smallImage} alt="currently selected project"></img>
               <div className="infoHolder">
                 <div>
                   <h3>{item.name}</h3>
@@ -43,13 +44,14 @@ export default function Projects() {
             </div>
           </Fade>
         )))}
+        </div>
       </div>
     )
   };
   if (cardsideTwo === true) {
     return (
-      <div className="flippedProjectPage container-fixed">
-        <div className="flippedProjectDiv container-fixed" >
+      <div className="project-page-two container-fixed">
+        <div className="project-div container-fixed" >
           <button onClick={flipCardsBack}><h4>Back</h4></button>
           <div className="imgAndAcompCont container-fixed">
             <div className="webBackgroundImg container">
@@ -76,7 +78,7 @@ export default function Projects() {
           <div className="linksForProject container-fixed">
             <div className="githubLinkCont">
               <a className="githubLinkBtn" href={currentlySelectedProject.githubLinkFE} target="_blank" rel="noopener noreferrer" style={{ color: 'black' }}>
-                <img className="githubLinkImg" alt="Github Link" src={require("../page-images/github-link-img-use.png")}></img>
+                <img className="githubLinkImg" alt="Github Link" src={require("../page-images/github-lg.png")}></img>
                 <h5 className="gitHubText">
                   Github
                   </h5>
@@ -84,7 +86,7 @@ export default function Projects() {
             </div>
             <div className="deploymentLinkCont">
               <a className="deploymentLinkBtn" href={currentlySelectedProject.deployedSite} target="_blank" rel="noopener noreferrer" style={{ color: 'black' }}>
-                <img className="deploymentLinkImg" alt="Deployment Link" src={require("../page-images/website-icon-num-2.png")}></img>
+                <img className="deploymentLinkImg" alt="Deployment Link" src={require("../page-images/web-lg.png")}></img>
                 <h5 className="deploymentText">
                   Deployed App
                   </h5>
@@ -92,7 +94,7 @@ export default function Projects() {
             </div>
             <div className="awsS3BucketCont">
               <a href={currentlySelectedProject.awsS3Link} target="_blank" rel="noopener noreferrer" className="awsS3LinkBtn" style={{ color: 'black' }}>
-                <img className="awsS3LinkImg" alt="aws S3 Bucket" src={require("../page-images/aws-img-use-me.png")}></img>
+                <img className="awsS3LinkImg" alt="aws S3 Bucket" src={require("../page-images/amazon-lg.png")}></img>
                 <h5 className="awsS3Text">S3 Bucket</h5>
               </a>
             </div>
