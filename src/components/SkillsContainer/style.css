@@ -11,7 +11,7 @@
         justify-content: space-around;
     }
     [class*="cardKeeper"]{
-        justify-content: space-around;
+        
     }
     [class*="skillIcon"]{
         height: 100%;
@@ -100,6 +100,7 @@
     width: 100%;
     display: flex;
     flex-direction: row;
+    justify-content: space-around;
 }
 
 .eachImage{
@@ -112,6 +113,7 @@
 }
 
 .cardKeeper{
+    justify-content: space-around;
     height: 30%;
     width: 100%;
     display: flex;

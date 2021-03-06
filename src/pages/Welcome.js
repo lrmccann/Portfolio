@@ -13,6 +13,7 @@ export default function Welcome() {
   }
 
   return (
+    <div className="welcome-page container-fixed">
     <div className="container-fixed welcomeCont" onClick={homePage}>
       <div className="nameCont">
         <Fade right>
@@ -20,6 +21,7 @@ export default function Welcome() {
           <h2>I Design and Build User Interfaces.</h2>
         </Fade>
       </div>
+    </div>
     </div>
   )
 }

@@ -38,7 +38,6 @@ export default function Home() {
         </div>
       </div>
       <div className="skillsCont container-fixed">
-        {/* <div className="container-fixed idkAnything"> */}
         <Fade bottom>
           <SkillsContainer
             skillType={'Languages'}
@@ -73,6 +72,5 @@ export default function Home() {
         </Fade>
         </div>
       </div>
-    // </div>
   )
 }

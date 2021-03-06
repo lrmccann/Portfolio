@@ -1,23 +1,21 @@
+.welcome-page{
+    height: 100%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
 .welcomeCont{
-    /* float: left; */
     position: absolute;
     height: 100%;
     width: 100%;
     display: flex;
     flex-direction: row;
     scroll-behavior: smooth;
-    /* background-color: white; */
     background-image: url('../page-images/canva-bg-2.png');
-    /* background-position: center; */
-    /* background-position: center; */
     background-repeat: no-repeat;
-    /* background-size: 100% 100%; */
     background-size: cover;
     background-position-y: 80%;
-    /* background-size: cover; */
-    /* overflow: hidden; */
-    /* contain: content; */
-    /* opacity: .7.5; */
 }
 
 
@@ -27,7 +25,6 @@
     display: flex;
     padding-left: 2%;
     font-size: 60px;
-    /* background-color: tomato; */
     background-color: white;
 }
 
@@ -39,28 +36,14 @@
     font-size: 40px;
     padding-left: 2%;
 }
-/* .enterBtn{
-    height: 10%;
-    width: 15%;
-    background-color: #474D74;
-    align-self: center;
-    position: absolute;
-    right: 40%;
-    margin-bottom: 3.80%;
-    cursor: pointer;
-    border: transparent;
-} */
 
 .nameCont{
-    /* align-self: flex-end; */
     align-self: flex-start;
     height: 100%;
     width: 100%;
     display: flex;
     flex-direction: column;
     margin-top: 2%;
-    /* justify-content: flex-end; */
-    /* text-align: right; */
 }
 
 .firstNameCont{
@@ -71,26 +54,4 @@
 .lastNameCont{
     font-size: 140px;
     font-weight: 900;
-}
-
-
-
-
-
-
-
-
-.rightSide{
-    /* height: 49.60vw;
-    width: 100vw; */
-    /* display: flex;
-    flex-direction: column; */
-    /* background-size: cover;
-    background-repeat: no-repeat; */
-    /* align-self: center; */
-    margin-left: 13.50%;
-    /* margin-top: 38%; */
-    /* background-position: center;
-    background-position-y: 31.50%; */
-    /* overflow: hidden; */
 }

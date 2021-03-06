@@ -12,14 +12,12 @@
     }
     [class*="downloadIcon"]{
         font-size: 18px;
-        /* background-color: rebeccapurple; */
     }
     [class*="downloadBtn"]{
         right: 6.74%;
         top: 20.64%;
     }
  }
-
 
 /* MEDIUM DEVICES (LANDSCAPE TABLETS, 768px AND UP) */
 @media only screen and (min-width: 768px) and (max-width: 991px) { 
@@ -57,10 +55,8 @@
 
 .resumeCont{
     background-size: cover;
-    /* width: 93%; */
-    /* background-color: rebeccapurple; */
-    /* overflow: auto; */
     contain: content;
+    overflow: auto;
 }
 
 .resumeCont > h1{
@@ -78,8 +74,6 @@
     width: 4.5%;
     position: absolute;
     text-align: center;
-    /* right: 15.74%; */
-    /* top: 21.64%; */
     z-index: 1;
 }
 
@@ -108,6 +102,5 @@
     visibility: hidden;
     background-color: rgb(226, 226, 226);
     color: black;
-    /* width: 79.7%; */
     align-self: center;
   }

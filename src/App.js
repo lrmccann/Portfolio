@@ -16,30 +16,35 @@ export default function App() {
   let [loading , setLoading] = useState(true);
   let [color, setColor] = useState('#000000');
 
-//   useEffect(()=> {
-//     setTimeout(()=>{
-//       setLoading(false);
-//     }, 2100)
-//   })
+  useEffect(()=> {
+    setTimeout(()=>{
+      setLoading(false);
+    }, 3100)
+  })
 
-//   const override = css`
-//   display: block;
-//   margin: 0 auto;
-//   border-color: red;
-//   margin-top: 18%;
-// `;
+  const override = css`
+  display: block;
+  position : absolute;
+  margin: 0 auto;
+  border-color: red;
+  margin-top: 80%;
+  margin-left: 32%;
+`;
   return (
     <>
     {
-      // loading ?
-      // <BounceLoader css={override} color={color} loading={loading} size={150} />
-      // :
       <Router>
       <Switch>
           <Route exact path="/" component={Welcome} />
           </Switch>
-      <SideBar/>
       <React.StrictMode>
+              <SideBar />
+              {/* {loading ?
+       <BounceLoader css={override} color={color} loading={loading} size={150} />
+       :
+          <Route exact path="/home" component={Home} />
+          
+          } */}
           <Route exact path="/home" component={Home} />
           <Route exact path="/projects" component={Projects} />
           <Route exact path="/resume" component={Resume} />

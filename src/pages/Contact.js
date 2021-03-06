@@ -10,7 +10,6 @@ export default function Contact() {
     const [messageSubject, setSubject] = useState("");
     const [messageBody, setBody] = useState("");
 
-
     const handleInputChange = event => {
         event.preventDefault();
         var name = messageName;
@@ -33,7 +32,6 @@ export default function Contact() {
                 console.log('failed...', error)
             })
     }
-
     return (
         <div className="container-fixed contactCont">
             <h1 id="contact-header">Contact</h1>
