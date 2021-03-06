@@ -56,50 +56,46 @@ export default function Projects() {
     return (
       <div className="project-page-two container-fixed">
         <div className="project-div container-fixed" >
-          <button onClick={flipCardsBack}><h4>Back</h4></button>
+          <button id="exit-btn" onClick={flipCardsBack}><h4>Back</h4></button>
           <div className="imgAndAcompCont container-fixed">
-            <div className="webBackgroundImg container">
-              <img src={currentlySelectedProject.image} alt="currently selected project"></img>
+            <div className="webBackgroundImg container-fixed">
+              <img id="prjct-img-lg" src={currentlySelectedProject.image} alt="currently selected project"></img>
             </div>
             <div className="acompCont container-fixed">
-              <h3>Accomplishments</h3>
-              <ul>
-                <li>{currentlySelectedProject.acompOne}</li>
-                <li>{currentlySelectedProject.acompTwo}</li>
-                <li>{currentlySelectedProject.acompThree}</li>
-                <li>{currentlySelectedProject.acompFour}</li>
+              <h3 id="acomp-header">Accomplishments</h3>
+              <ul id="acomp-list">
+                <li id="acomp-item">{currentlySelectedProject.acompOne}</li>
+                <li id="acomp-item">{currentlySelectedProject.acompTwo}</li>
+                <li id="acomp-item">{currentlySelectedProject.acompThree}</li>
+                <li id="acomp-item">{currentlySelectedProject.acompFour}</li>
               </ul>
             </div>
           </div>
-          <div className="hashtagBar container-fixed">
-            <span>
-              <h4>Keywords:</h4>
+          <div className="hashtag-bar container-fixed">
+            <span id="hashtag-span">
+              <h4 id="keywords-header">Tech</h4>
             </span>
             <div>
-              <h5>React</h5>
+              <h5 id="hashtag-list">React</h5>
             </div>
           </div>
           <div className="linksForProject container-fixed">
-            <div className="githubLinkCont">
-              <a className="githubLinkBtn" href={currentlySelectedProject.githubLinkFE} target="_blank" rel="noopener noreferrer" style={{ color: 'black' }}>
-                <img className="githubLinkImg" alt="Github Link" src={require("../page-images/github-lg.png")}></img>
-                <h5 className="gitHubText">
-                  Github
-                  </h5>
+            <div id="link-btn-cont">
+              <a id="link-btn" href={currentlySelectedProject.githubLinkFE} target="_blank" rel="noopener noreferrer" style={{ color: 'black' }}>
+                <img id="link-img" alt="Github Link" src={require("../page-images/github-lg.png")}></img>
+                {/* <h5 id="link-text">Github</h5> */}
               </a>
             </div>
-            <div className="deploymentLinkCont">
-              <a className="deploymentLinkBtn" href={currentlySelectedProject.deployedSite} target="_blank" rel="noopener noreferrer" style={{ color: 'black' }}>
-                <img className="deploymentLinkImg" alt="Deployment Link" src={require("../page-images/web-lg.png")}></img>
-                <h5 className="deploymentText">
-                  Deployed App
-                  </h5>
+            <div id="link-btn-cont" >
+              <a id="link-btn" href={currentlySelectedProject.deployedSite} target="_blank" rel="noopener noreferrer" style={{ color: 'black' }}>
+                <img id="link-img" alt="Deployment Link" src={require("../page-images/web-lg.png")}></img>
+                {/* <h5 id="link-text">Deployed App</h5> */}
               </a>
             </div>
-            <div className="awsS3BucketCont">
-              <a href={currentlySelectedProject.awsS3Link} target="_blank" rel="noopener noreferrer" className="awsS3LinkBtn" style={{ color: 'black' }}>
-                <img className="awsS3LinkImg" alt="aws S3 Bucket" src={require("../page-images/amazon-lg.png")}></img>
-                <h5 className="awsS3Text">S3 Bucket</h5>
+            <div id="link-btn-cont">
+              <a id="link-btn" href={currentlySelectedProject.awsS3Link} target="_blank" rel="noopener noreferrer" style={{ color: 'black' }}>
+                <img id="link-img" alt="aws S3 Bucket" src={require("../page-images/amazon-lg.png")}></img>
+                {/* <h5 id="link-text">S3 Bucket</h5> */}
               </a>
             </div>
           </div>

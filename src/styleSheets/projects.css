@@ -36,6 +36,71 @@
         font-size: 13px;
     }
     /* STYLE FOR FLIPPED PAGE */
+    [class*="project-page-two"]{
+        width: 100%;
+    }
+    [class*="project-div"]{
+        width: 100%;
+        /* background-color: salmon; */
+    }
+    [class*="imgAndAcompCont"]{
+        width: 100%;
+        align-self: center;
+        flex-direction: column;
+    }
+    #exit-btn{
+        width: 25%;
+        margin-left: 2.4%;
+        /* align-self: flex-end; */
+    }
+    [class*="webBackgroundImg"]{
+        height: 100%;
+        width: 100%;
+    }
+    #prjct-img-lg{
+        height: 20%;
+        width: 95%;
+    }
+    [class*="acompCont"]{
+        margin: auto;
+        height: auto;
+        margin-top: 3%;
+        width: 95%;
+    }
+    #acomp-header{
+        font-size: 22px;
+    }
+    #acomp-list{
+        padding-right: 8%;
+        padding-left: 10%;
+    }
+    #acomp-item{
+        font-size: 16px;
+    }
+    [class*="hashtag-bar"]{
+        margin-top: 3%;
+        /* height: 10%; */
+        width: 95%;
+        align-self: center;
+    }
+    #hashtag-span{
+        width: auto;
+    }
+    #keywords-header{
+        padding: 5px;
+        white-space: nowrap;
+        font-size: 18px;
+        font-weight: 600;
+    }
+    #hashtag-list{
+        font-size: 15px;
+    }
+    [class*="linksForProject"]{
+        align-self: center;
+        padding: 5px;
+        width: 95%;
+        margin-top: 3%;
+    }
  }
 
 /* SMALL SCREEN DEVICES (PORTRAIT TABLET/LARGE PHONES, 600px AND UP) */
@@ -142,7 +207,73 @@
         font-size: 18px;
     }
     /* STYLE FOR FLIPPED PAGE */
-
+    [class*="project-page-two"]{
+        width: 93%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    [class*="project-div"]{
+        margin-top: .50%;
+        width: 95%;
+    }
+    [class*="imgAndAcompCont"]{
+        align-self: center;
+        width: 95%;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        /* justify-content: center; */
+    }
+    #exit-btn{
+        width: 12%;
+        align-self: flex-end;
+    }
+    [class*="webBackgroundImg"]{
+        max-height: 460px;
+        min-height: 460px;
+        max-width: 615px;
+        min-width: 615px;
+        height: 100%;
+        width: 50%;
+    }
+    #prjct-img-lg{
+        /* margin-right: 23.4%; */
+        height: auto;
+        width: 100%;
+        /* min-height: 460px; */
+        /* max-height: 460px; */
+        /* max-width: 615px; */
+        /* min-width: 615px; */
+    }
+    [class*="acompCont"]{
+        height: 100%;
+        width: 40%;
+    }
+    #acomp-header{
+        font-size: 32px;
+    }
+    #acomp-list{
+        padding-left: 9%;
+        padding-right: 4%;
+    }
+    #acomp-item{
+        font-size: 22px;
+    }
+    [class*="hashtag-bar"]{
+        margin-top: 1%;
+        width: 100%;
+    }
+    #hastag-span{
+        width: 11%;
+    }
+    #hashtag-list{
+        font-size: 22px;
+    }
+    [class*="linksForProject"]{
+        width: 100%;
+        margin-top: 1%;
+    }
  }
 .projectPage {
     height: 100%;
@@ -172,56 +303,6 @@
     background-color: ghostwhite;
     font-family: "Roboto" , "sans-serif";
     box-shadow: 0 2px 5px 0 rgb(0 0 0 / 16%), 0 2px 10px 0 rgb(0 0 0 / 12%);
-}
-
-
-/* VERY IMPORTANT ID FOR CARD DIV */
-/* #card-id-1{
-    margin-left: 3.75%;
-}
-
-#card-id-2{
-    margin-left: 3.75%;
-}
-
-#card-id-3{
-    margin-left: 3.75%;
-}
-
-#card-id-4{
-    margin-left: 3.75%;
-    margin-top: 1.5%;
-}
-
-#card-id-5{
-    margin-left: 3.75%;
-    margin-top: 1.5%;
-}
-
-#card-id-6{
-    margin-left: 3.75%;
-    margin-top: 1.5%;
-}
-
-#card-id-7{
-    margin-left: 3.75%;
-    margin-top: 1.5%;
-}
-
-#card-id-8{
-    margin-left: 3.75%;
-    margin-top: 1.5%;
-}
-
-#card-id-9{
-    margin-left: 3.75%;
-    margin-top: 1.5%;
-} */
-/*  VERY IMPORTANT ID FOR CARD DIV*/
-
-.prjctImage{
-    /* height: 60%; */
-    /* width: 100%; */
 }
 
 .infoHolder{
@@ -256,11 +337,9 @@
 .scripHolder {
     height: 100%;
     width: 100%;
-    /* background-color: royalblue; */
 }
 
 #description-text{
-    /* font-size: 18px; */
     height: 100%;
     width: 95%;
     overflow: auto;
@@ -272,35 +351,24 @@
 .project-page-two {
     font-family: "Roboto" , "sans-serif";
     height: 100%;
-    width: 93%;
     overflow: auto;
     contain: content;
-    float: left;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
 }
 
 .project-div{
     height: auto;
-    margin-top: .50%;
-    width: 90%;
     display: flex;
     flex-direction: column;
-    align-content: center;
-    /* font-family: "Roboto" , "sans-serif"; */
 }
 
-.project-div > button {
+#exit-btn {
     box-shadow: 0 2px 5px 0 rgb(0 0 0 / 16%), 0 2px 10px 0 rgb(0 0 0 / 12%);
     margin-top: 1.5%;
     padding-top: .50%;
     color: black;
     border: solid black 1px;
     height: auto;
-    width: 12%;
     background-color: white; 
-    align-self: flex-end;
     cursor: pointer;
     margin-bottom: .50%;
   }
@@ -311,50 +379,32 @@
 
 .imgAndAcompCont {
     height: auto;
-    width: 100%;
     z-index: 90;
     position: relative;
     display: flex;
-    flex-direction: row;
+    /* flex-direction: row; */
     margin-top: .50%;
+    /* background-color: palegreen; */
 }
 
 .webBackgroundImg {
-    height: 100%;
-    max-height: 460px;
-    min-height: 460px;
-    width: 50%;
-    max-width: 615px;
-    min-width: 615px;
     float: left;
     display: flex;
     flex-direction: row;
     justify-content: center;
-    align-content: center;
 }
 
 .webBackgroundImg > img {
     box-shadow: 0 2px 5px 0 rgb(0 0 0 / 16%), 0 2px 10px 0 rgb(0 0 0 / 12%);
-    /* outline: solid black thin; */
-    margin-right: 23.4%;
-    height: auto;
-    /* min-height: 460px; */
-    /* max-height: 460px; */
-    width: 100%;
-    /* max-width: 615px; */
-    /* min-width: 615px; */
 }
 
 .acompCont{
-    height: 100%;
-    width: 40%;
     background-color: white; 
     float: left;
     box-shadow: 0 2px 5px 0 rgb(0 0 0 / 16%), 0 2px 10px 0 rgb(0 0 0 / 12%);
 }
 
 .acompCont > h3 {
-    font-size: 32px;
     box-shadow: 0 2px 5px 0 rgb(0 0 0 / 6%), 0 2px 4px 0 rgb(0 0 0 / 2%);
     text-align: center;
     padding-top: 2%;
@@ -372,46 +422,45 @@
 
 .acompCont > ul > li {
     margin-top: 3.5%;
-    font-size: 22px;
 }
 
-.hashtagBar {
+.hashtag-bar {
     box-shadow: 0 2px 5px 0 rgb(0 0 0 / 16%), 0 2px 10px 0 rgb(0 0 0 / 12%);
-    height: auto;
-    width: 100%;
+    /* height: auto; */
     background-color: white;
-    margin-top: 1%;
     border: solid black 1px;
     display: flex;
     flex-direction: row;
     overflow: auto;
 }
 
-.hashtagBar > span {
+.hashtag-bar > span {
     height: 100%;
-    width: 11%;
-    background-color: white;
+    /* width: 11%; */
+    /* background-color: white; */
     border-right: solid black thin;
-    padding: .25%;
+    /* padding: .25%; */
 }
 
-.hashtagBar > span > h4 {
+.hashtag-bar > span > h4 {
     height: 100%;
-    width: 10%;
+    width: 12%;
     text-align: center;
+    /* margin: auto; */
 }
 
-.hashtagBar > div {
+.hashtag-bar > div {
     height: auto;
     width: auto;
     white-space: nowrap;
-    display: flex;
-    flex-direction: row;
+    display: inline-block;
+    /* display: flex; */
+    /* flex-direction: row; */
     align-items: center;
     scrollbar-width: 1px;
 }
 
-.hashtagBar > div > h5 {
+.hashtag-list {
     margin: auto;
     padding-left: 9%;
     font-size: 22px;
@@ -420,105 +469,42 @@
 .linksForProject {
     box-shadow: 0 2px 5px 0 rgb(0 0 0 / 16%), 0 2px 10px 0 rgb(0 0 0 / 12%);
     height: auto;
-    width: 100%;
     background-color: white; 
-    margin-top: 1%;
     border: solid black 1px;
     display: flex;
     flex-direction: row;
     justify-content: space-evenly;
 }
 
-.githubLinkCont{
+#link-btn-cont{
     height: 100%;
     width: 33%;
 }
 
-.githubLinkBtn{
+#link-btn{
     height: 100%;
     width: 100%;
     border: transparent;
     display: flex;
-    flex-direction: row;
     justify-content: center;
     align-items: center;
 }
 
-.githubLinkBtn:focus{
+#link-btn:hover{
+    background-color: rgb(206, 206, 206);
+}
+
+#link-btn:focus{
     outline: none;
 }
 
-.githubLinkImg{
+#link-img{
     height: 72%;
     width: 16%;
+    margin-right: 2%;
 }
 
-.gitHubText{
-    display: flex;
+#link-text{
     height: 30%;
-    margin-left: 1%;
-    white-space: nowrap;
-}
-
-.deploymentLinkCont{
-    height: 100%;
-    width: 33%;
-}
-
-.deploymentLinkBtn{
-    border-right: solid black thin;
-    border-left: solid black thin;
-    height: 100%;
-    width: 100%;
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    align-items: center;
-}
-
-.deploymentLinkBtn:focus{
-    outline: none;
-}
-
-.deploymentLinkImg{
-    height: 72%;
-    width: 16%;
-}
-
-.deploymentText{
-    white-space: nowrap;
-    display: flex;
-    height: 30%;
-    margin-left: 1%;
-}
-
-.awsS3BucketCont{
-    height: 100%;
-    width: 33%;
-}
-
-.awsS3LinkBtn{
-    height: 100%;
-    width: 100%;
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    align-items: center;
-}
-
-.awsS3LinkBtn:focus{
-    outline: none;
-}
-
-.awsS3LinkImg{
-    height: 72%;
-    width: 16%;
-}
-
-.awsS3Text{
-    display: flex;
-    height: 30%;
-    margin-left: 1%;
-    margin-right: -1.5%;
     white-space: nowrap;
 }

@@ -2,7 +2,7 @@
   {
     "id": 1,
     "name" : "Canine Cupid V.2",
-    "image" : "./project-images/canine-cupid-v2-img-3.png",
+    "image" : "./project-images/canine-lg-img.png",
     "smallImage" : "./project-images-mini/canine-v2-img.png",
     "description" : "Lite tinder clone focused on finding your furry friend, a friend.",
     "acompOne" : "React app utilizing: context, state, hooks, router, etc.",
