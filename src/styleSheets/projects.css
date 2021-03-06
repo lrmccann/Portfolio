@@ -3,7 +3,7 @@
     [class*="projectPage"] {
         /* height: auto; */
         width: 100%;
-        background-color: gold;
+        /* background-color: gold; */
     }
     [class*="idk-yet"]{
         display: flex;

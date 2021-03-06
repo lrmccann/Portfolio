@@ -1,13 +1,13 @@
 /* SMALL SCREEN DEVICES (PHONES, 600px AND BELOW) */
 @media only screen and (max-width: 599px)  { 
     [class*="homePage"] {
-        background-color: gold; 
+        /* background-color: gold;  */
         width: 100%;
     }
     [class*="textAndImgCont"]{
         height: auto;
         max-width: 90%;
-        background-color: green;
+        /* background-color: green; */
         flex-wrap: wrap;
         margin: auto;
     }
@@ -40,7 +40,7 @@
 /* SMALL SCREEN DEVICES (PORTRAIT TABLET/LARGE PHONES, 600px AND UP) */
 @media only screen and (min-width: 600px) and (max-width: 767px)  { 
     [class*="homePage"] {
-        background-color: saddlebrown; 
+        /* background-color: saddlebrown;  */
         height: 100%;
         width: 93%;
         float: left;
@@ -51,7 +51,7 @@
     }
     [class*="bioTextDiv"]{
         height: auto;
-        background-color: fuchsia;
+        /* background-color: fuchsia; */
         width: 100%;
     }
     #profile-picture {
@@ -64,7 +64,7 @@
 /* MEDIUM DEVICES (LANDSCAPE TABLETS, 768px AND UP) */
 @media only screen and (min-width: 768px) and (max-width: 991px) { 
     [class*="homePage"] {
-        background-color: red; 
+        /* background-color: red;  */
         height: 100%;
         width: 93%;
         float: left;
@@ -74,7 +74,7 @@
 /* LARGE DEVICES (LAPTOPS/DESKTOPS, 992px AND UP) */
 @media only screen and (min-width: 992px) and (max-width: 1199px)  { 
     [class*="homePage"] {
-        background-color: teal; 
+        /* background-color: teal;  */
         height: 100%;
         width: 93%;
         float: left;
@@ -85,7 +85,7 @@
     }
     [class*="bioTextDiv"]{
         height: auto;
-        background-color: fuchsia;
+        /* background-color: fuchsia; */
         width: 100%;
     }
     #profile-picture {

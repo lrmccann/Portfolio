@@ -36,7 +36,7 @@ export default function Contact() {
 
     return (
         <div className="container-fixed contactCont">
-            <h1>Contact</h1>
+            <h1 id="contact-header">Contact</h1>
             <div className="contactDiv">
                 <h2 className="welcomeMessage">Let's Connect!</h2>
                 <form className="formStyle" onInput={handleInputChange}>
@@ -54,7 +54,7 @@ export default function Contact() {
                         </textarea>
                     </div>
                     <div className="button-container">
-                        <button onClick={submitForm} type='submit' value='submit' className="btn btn-primary">Send</button>
+                        <button onClick={submitForm} type='submit' value='submit' className="submit-btn btn-primary">Send</button>
                     </div>
                 </form>
             </div>
