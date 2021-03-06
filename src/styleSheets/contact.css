@@ -1,3 +1,34 @@
+/* SMALL SCREEN DEVICES (PHONES, 600px AND BELOW) */
+@media only screen and (max-width: 599px)  { 
+    [class*="contactCont"]{
+        
+    }
+ }
+
+
+/* MEDIUM DEVICES (LANDSCAPE TABLETS, 768px AND UP) */
+@media only screen and (min-width: 768px) and (max-width: 991px) { 
+    [class*="contactCont"]{
+        
+    }
+}
+
+/* LARGE DEVICES (LAPTOPS/DESKTOPS, 992px AND UP) */
+@media only screen and (min-width: 992px) and (max-width: 1199px)  { 
+    [class*="contactCont"]{
+        
+    }
+ }
+
+/* XL DEVICES (LARGE LAPTOPS AND DESKTOPS, 1200px AND UP) */
+@media only screen and (min-width: 1200px){ 
+    [class*="contactCont"]{
+
+    }
+ }
+
+
+
 .contactCont{
     float: left;
     height: 100%;
