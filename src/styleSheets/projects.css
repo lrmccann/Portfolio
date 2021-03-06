@@ -1,9 +1,7 @@
 /* SMALL SCREEN DEVICES (PHONES, 600px AND BELOW) */
 @media only screen and (max-width: 599px)  { 
     [class*="projectPage"] {
-        /* height: auto; */
         width: 100%;
-        /* background-color: gold; */
     }
     [class*="idk-yet"]{
         display: flex;

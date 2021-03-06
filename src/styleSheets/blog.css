@@ -14,7 +14,7 @@
         width: 100%;
         text-align: center;
         font-size: 30px;
-        padding-left: 8%;
+        /* padding-left: 8%; */
     }
     #blog-list{
         text-align: center;
@@ -75,7 +75,6 @@
 
 
 .blogCont{
-    scroll-behavior: smooth;
     /* height: 100%; */
     /* width: 93%; */
     display: flex;
@@ -117,6 +116,7 @@
 }
 
 .blogRightSide > ul{
+    width: 90%;
     list-style: none;
     color: black;
 }
