@@ -276,6 +276,7 @@
     }
  }
 .projectPage {
+    scroll-behavior: smooth;
     height: 100%;
     overflow: auto;
     contain: content;
