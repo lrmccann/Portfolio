@@ -1,8 +1,78 @@
+/* SMALL SCREEN DEVICES (PHONES, 600px AND BELOW) */
+@media only screen and (max-width: 599px)  { 
+    [class*="skillsDiv"] {
+        height: auto;
+        width: 90%;
+    }
+    #skill-title-header{
+        font-size: 18px;
+    }
+    [class*="cardHolder"]{
+        justify-content: space-around;
+    }
+    [class*="cardKeeper"]{
+        justify-content: space-around;
+    }
+    [class*="skillIcon"]{
+        height: 100%;
+        width: 100%;
+    }
+    [class*="skillText"]{
+        font-size: 8px;
+    }
+ }
+
+/* SMALL SCREEN DEVICES (PORTRAIT TABLET/LARGE PHONES, 600px AND UP) */
+@media only screen and (min-width: 600px) and (max-width: 767px)  { 
+    [class*="skillsDiv"] {
+    }
+ }
+
+
+/* MEDIUM DEVICES (LANDSCAPE TABLETS, 768px AND UP) */
+@media only screen and (min-width: 768px) and (max-width: 991px) { 
+    [class*="skillsDiv"] {
+
+    }
+}
+
+/* LARGE DEVICES (LAPTOPS/DESKTOPS, 992px AND UP) */
+@media only screen and (min-width: 992px) and (max-width: 1199px)  { 
+    [class*="skillsDiv"] {
+    }
+
+ }
+
+/* XL DEVICES (LARGE LAPTOPS AND DESKTOPS, 1200px AND UP) */
+@media only screen and (min-width: 1200px){ 
+    [class*="skillsDiv"] {
+        height: auto;
+        width: 85%;
+    }
+    #skill-title-header{
+        font-size: 36px;
+    }
+    [class*="cardHolder"]{
+        
+    }
+    [class*="cardKeeper"]{
+
+    }
+    [class*="skillIcon"]{
+        height: 75%;
+        min-height: 75%;
+        width: 80%;
+        min-width: 80%;
+    }
+    [class*="skillText"]{
+        font-size: 20px;
+    }
+ }
+
+
 .skillsDiv{
     margin-top: 2%;
     background-color: white;
-    height: auto;
-    width: 85%;
     padding-top: .5%;
     padding-bottom: 1%;
     box-shadow: 0 2px 5px 0 rgb(0 0 0 / 16%), 0 2px 10px 0 rgb(0 0 0 / 12%);
@@ -10,10 +80,7 @@
 
 .skillsDiv > h2{
     text-align: center;
-    font-size: 36px;
     border-bottom: solid black 1.5px;
-    margin-right: 3%;
-    margin-left: 2%;
     margin-top: 1%;
     margin-bottom: .15%;
     padding-bottom: 1.5%;
@@ -44,13 +111,6 @@
     align-items: center;
 }
 
-.skillIcon{
-    height: 75%;
-    min-height: 75%;
-    width: 80%;
-    min-width: 80%;
-}
-
 .cardKeeper{
     height: 30%;
     width: 100%;
@@ -64,8 +124,4 @@
     display: flex;
     flex-direction: column;
     text-align: center;
-}
-
-.skillText{
-    font-size: 20px;
 }

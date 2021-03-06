@@ -2,6 +2,7 @@ import React, { useEffect, useState } from "react";
 import projects from "../projects.json"
 import Fade from "react-reveal/Fade";
 import '../styleSheets/projects.css';
+import Truncate from 'react-truncate';
 
 export default function Projects() {
 
@@ -23,22 +24,25 @@ export default function Projects() {
     setCardSideOne(true);
     setCardSideTwo(false);
   };
+  
   if (cardsideOne === true) {
     return (
       <div className="projectPage container-fixed">
         <div className="idk-yet container-fixed">
-        <h1>Projects</h1>
+        <h1 id="project-header">Projects</h1>
         {(projectsToMap.map((item) => (
           <Fade right key={item.name}>
             <div id={"card-id-" + item.id} className="realCard">
               <img className="prjctImage" src={item.smallImage} alt="currently selected project"></img>
               <div className="infoHolder">
                 <div>
-                  <h3>{item.name}</h3>
+                  <h3 id="prjctTitle">{item.name}</h3>
                   <img src={require("../page-images/3-dots-img.jpg")} alt="three dots to display more options" id={item.name} onClick={(e) => (flipCards(e.target.id))}></img>
                 </div>
                 <div className="scripHolder">
-                  <p>{item.description}</p>
+                  <Truncate lines={2}>
+                  <p id="description-text">{item.description}</p>
+                  </Truncate>
                 </div>
               </div>
             </div>

@@ -10,7 +10,7 @@ export default function SkillsContainer(props) {
 
     return (
         <div className="skillsDiv container-fluid">
-            <h2>{props.skillType}</h2>
+            <h2 id="skill-title-header">{props.skillType}</h2>
             <div className="rowDiv">
                 <div className="cardHolder">
                     {skillImagesToMap.images.map((mappedIcon, iconKey) => (

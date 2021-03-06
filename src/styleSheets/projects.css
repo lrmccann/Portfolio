@@ -1,59 +1,182 @@
+/* SMALL SCREEN DEVICES (PHONES, 600px AND BELOW) */
+@media only screen and (max-width: 599px)  { 
+    [class*="projectPage"] {
+        /* height: auto; */
+        width: 100%;
+        background-color: gold;
+    }
+    [class*="idk-yet"]{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    #project-header{
+        font-size: 35px;
+        padding-top: 2%;
+        padding-bottom: 2%;
+        margin-bottom: 4%;
+    }
+    [class*="realCard"] {
+        height: 320px;
+        width: 348px;
+        margin-bottom: 6%;
+    }
+    [class*="prjctImage"]{
+        height: 70%;
+        width: 100%;
+    }
+    [class*="infoHolder"]{
+        height: 40%;
+        padding: 8px;
+    }
+    #prjctTitle{
+        font-size: 24px;
+    }
+    #description-text{
+        font-size: 13px;
+    }
+    /* STYLE FOR FLIPPED PAGE */
+ }
+
+/* SMALL SCREEN DEVICES (PORTRAIT TABLET/LARGE PHONES, 600px AND UP) */
+@media only screen and (min-width: 600px) and (max-width: 767px)  { 
+    [class*="homePage"] {
+
+    }
+    /* STYLE FOR FLIPPED PAGE */
+
+ }
+
+
+/* MEDIUM DEVICES (LANDSCAPE TABLETS, 768px AND UP) */
+@media only screen and (min-width: 768px) and (max-width: 991px) { 
+    [class*="homePage"] {
+
+    }
+    /* STYLE FOR FLIPPED PAGE */
+
+}
+
+/* LARGE DEVICES (LAPTOPS/DESKTOPS, 992px AND UP) */
+@media only screen and (min-width: 992px) and (max-width: 1199px)  { 
+    [class*="homePage"] {
+
+    }
+    /* STYLE FOR FLIPPED PAGE */
+
+ }
+
+/* XL DEVICES (LARGE LAPTOPS AND DESKTOPS, 1200px AND UP) */
+@media only screen and (min-width: 1200px){ 
+    [class*="projectPage"] {
+        height: 100%;
+        width: 93%;
+    }
+    [class*="idk-yet"]{
+        padding-bottom: 2%;
+        display: inline-block;
+    }
+    #project-header{
+        font-size: 50px;
+        padding-top: 1%;
+        padding-bottom: 1%;
+        margin-bottom: 2%;
+    }
+    [class*="realCard"] {
+        height: 380px;
+        width: 380px;
+    }
+    #card-id-1{
+        margin-left: 3.75%;
+    }
+    
+    #card-id-2{
+        margin-left: 3.75%;
+    }
+    
+    #card-id-3{
+        margin-left: 3.75%;
+    }
+    
+    #card-id-4{
+        margin-left: 3.75%;
+        margin-top: 1.5%;
+    }
+    
+    #card-id-5{
+        margin-left: 3.75%;
+        margin-top: 1.5%;
+    }
+    
+    #card-id-6{
+        margin-left: 3.75%;
+        margin-top: 1.5%;
+    }
+    
+    #card-id-7{
+        margin-left: 3.75%;
+        margin-top: 1.5%;
+    }
+    
+    #card-id-8{
+        margin-left: 3.75%;
+        margin-top: 1.5%;
+    }
+    
+    #card-id-9{
+        margin-left: 3.75%;
+        margin-top: 1.5%;
+    }
+    [class*="prjctImage"]{
+        height: 60%;
+        width: 100%;
+    }
+    [class*="infoHolder"]{
+        height: 40%;
+        padding: 9px;
+    }
+    #prjctTitle{
+        font-size: 34px;
+    }
+    #description-text{
+        font-size: 18px;
+    }
+    /* STYLE FOR FLIPPED PAGE */
+
+ }
 .projectPage {
     height: 100%;
-    width: 93%;
-    float: left;
     overflow: auto;
     contain: content;
-    /* display: flex; */
-    /* flex-direction: column; */
-    /* flex-wrap: nowrap; */
-
 }
-
 .idk-yet{
-    float: left;
     height: auto;
     width: 100%;
-    /* background-color: red; */
-    display: inline-block;
-    /* overflow: auto; */
-    /* contain: content; */
-    
 }
 
-.projectPage > div > h1{
-    /* text-align: justify; */
-    /* text-align-last: center; */
+#project-header{
     background-color: #475667;
-    font-size: 50px;
     padding-left: 1%;
     color: white;
     letter-spacing: 1.9px;
     height: auto;
     font-family: "Roboto" , "sans-serif";
     width: 100%;
-    padding-top: 1%;
-    padding-bottom: 1%;
-    margin-bottom: 2%;
 }
 
 /* // div inside of map func, is display "grid" after media break point and prjctCont's display is "contents" after media break point */
 .realCard{
     float: left;
-    /* margin-left: 2.6%; */
     display: flex;
     flex-direction: column;
-    /* margin-bottom: 2%; */
     background-color: ghostwhite;
     font-family: "Roboto" , "sans-serif";
-    height: 380px;
-    width: 380px;
     box-shadow: 0 2px 5px 0 rgb(0 0 0 / 16%), 0 2px 10px 0 rgb(0 0 0 / 12%);
 }
 
 
 /* VERY IMPORTANT ID FOR CARD DIV */
-#card-id-1{
+/* #card-id-1{
     margin-left: 3.75%;
 }
 
@@ -93,22 +216,20 @@
 #card-id-9{
     margin-left: 3.75%;
     margin-top: 1.5%;
-}
+} */
 /*  VERY IMPORTANT ID FOR CARD DIV*/
 
 .prjctImage{
-    height: 60%;
-    width: 100%;
+    /* height: 60%; */
+    /* width: 100%; */
 }
 
 .infoHolder{
-    height: 40%;
     display: flex;
     flex-direction: column;
     width: 100%;
     border-top: solid black thin;
     background-color: white;
-    padding: 9px;
 }
 
 .infoHolder > div{
@@ -116,10 +237,9 @@
     width: 100%;
 }
 
-.infoHolder > div  > h3{
+#prjctTitle{
     height: auto;
     width: 90%;
-    font-size: 34px;
     white-space: nowrap;
     float: left;
 }
@@ -136,10 +256,11 @@
 .scripHolder {
     height: 100%;
     width: 100%;
+    /* background-color: royalblue; */
 }
 
-.scripHolder > p{
-    font-size: 18px;
+#description-text{
+    /* font-size: 18px; */
     height: 100%;
     width: 95%;
     overflow: auto;
@@ -193,8 +314,6 @@
     width: 100%;
     z-index: 90;
     position: relative;
-    /* outline: solid thin violet; */
-    /* border: solid black thin; */
     display: flex;
     flex-direction: row;
     margin-top: .50%;
@@ -227,7 +346,6 @@
 }
 
 .acompCont{
-    /* outline: solid black thin; */
     height: 100%;
     width: 40%;
     background-color: white; 
@@ -238,12 +356,8 @@
 .acompCont > h3 {
     font-size: 32px;
     box-shadow: 0 2px 5px 0 rgb(0 0 0 / 6%), 0 2px 4px 0 rgb(0 0 0 / 2%);
-    /* color: white; */
-    /* background-color: #475667; */
     text-align: center;
-    /* margin-top: 1.5%; */
     padding-top: 2%;
-    /* border-bottom: solid white 1px; */
     padding-bottom: 2%;
 }
 
@@ -259,7 +373,6 @@
 .acompCont > ul > li {
     margin-top: 3.5%;
     font-size: 22px;
-    /* color: black; */
 }
 
 .hashtagBar {
@@ -370,7 +483,6 @@
 .deploymentLinkImg{
     height: 72%;
     width: 16%;
-    /* border-radius: 40px; */
 }
 
 .deploymentText{

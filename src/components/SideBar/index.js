@@ -82,7 +82,10 @@ export default function SideBar(props) {
     return (
         <div className="sideBarCont container-fixed">
             <div className="myInfoDiv">
-                <img alt="Logan McCann" src={require("../../page-images/canva-logo-2.png")}></img>
+                <img 
+                alt="Logan McCann" 
+                src={require("../../page-images/canva-logo-2.png")}
+                ></img>
             </div>
             <div className="btnCont">
                 <button className="homeBtn" id="navBarBtn" onMouseEnter={hoverHomeLink} onMouseLeave={resetHomeLink} onClick={homePage}>
@@ -102,19 +105,24 @@ export default function SideBar(props) {
                 </button>
             </div>
             <div className="socialMediaLinks">
-                <div className="myGithubBtn">
-                    <a href="https://github.com/lrmccann" target="_blank" rel="noopener noreferrer">
-                        <img alt="Github Link" src={require('../../page-images/github-icon-2.png')}></img>
+                {/* <div id="social-media-btn" className="myGithubBtn">
+                    <a id="social-media-a-tag" href="https://github.com/lrmccann" target="_blank" rel="noopener noreferrer">
+                        <img id="social-media-icon" alt="Github Link" src={require('../../page-images/github-icon-2.png')}></img>
+                    </a>
+                </div> */}
+                                <div id="social-media-btn" className="myGithubBtn">
+                    <a id="social-media-a-tag" href="https://github.com/lrmccann" target="_blank" rel="noopener noreferrer">
+                        <img id="social-media-icon" alt="Github Link" src={require('../../page-images/github-mini-img.png')}></img>
                     </a>
                 </div>
-                <div className="myMediumBtn">
-                    <a href="https://medium.com/@loganrmccann" target="_blank" rel="noopener noreferrer">
-                        <img alt="Medium Link" src={require('../../page-images/medium-icon2.png')}></img>
+                <div id="social-media-btn" className="myMediumBtn">
+                    <a id="social-media-a-tag" href="https://medium.com/@loganrmccann" target="_blank" rel="noopener noreferrer">
+                        <img id="social-media-icon" alt="Medium Link" src={require('../../page-images/medium-icon2.png')}></img>
                     </a>
                 </div>
-                <div className="mylinkedInBtn">
-                    <a href="https://www.linkedin.com/in/logan-mccann-381855155/" target="_blank" rel="noopener noreferrer">
-                        <img alt="LinkedIn Link" src={require('../../page-images/linkedin-icon2.png')}></img>
+                <div id="social-media-btn" className="mylinkedInBtn">
+                    <a id="social-media-a-tag" href="https://www.linkedin.com/in/logan-mccann-381855155/" target="_blank" rel="noopener noreferrer">
+                        <img id="social-media-icon" alt="LinkedIn Link" src={require('../../page-images/linkedin-icon2.png')}></img>
                     </a>
                 </div>
             </div>

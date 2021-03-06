@@ -20,12 +20,13 @@ export default function Home() {
 
   return (
     <div className="homePage container-fixed">
-      <h1>Home</h1>
-      <div className="textAndImgCont container-fluid">
-        <img alt="Logan R McCann" src={require("../page-images/prof-pic-1.png")}></img>
-        <div className="bioTextDiv">
-          <h2>About</h2>
-          <p>
+      <h1 id="home-header">Home</h1>
+      <div className="textAndImgCont container-fixed">
+        {/* <img id="profile-picture" alt="Logan R McCann" src={require("../page-images/prof-pic-1.png")}></img> */}
+        <img id="profile-picture" alt="Logan R McCann" src={require("../page-images/large-prof-pic.png")}></img>
+        <div className="bioTextDiv container-fixed">
+          <h2 id="abt-me-text">About Me</h2>
+          <p id="bio-text">
             I am a full stack web developer living in Brooklyn, New York. I focus on crafting clean & user-friendly experiences. I currently specialize in Javascript & Node.js, and enjoy learning new languages in my free time.
           <br></br>
             <br></br>
@@ -37,6 +38,7 @@ export default function Home() {
         </div>
       </div>
       <div className="skillsCont container-fixed">
+        {/* <div className="container-fixed idkAnything"> */}
         <Fade bottom>
           <SkillsContainer
             skillType={'Languages'}
@@ -69,7 +71,8 @@ export default function Home() {
             altSkills={altSkillsFive}
           />
         </Fade>
+        </div>
       </div>
-    </div>
+    // </div>
   )
 }
