@@ -17,7 +17,6 @@
         right: 0;
         height: 0%;
         width: 15%;
-        /* background-color: red; */
     }
     [class*="btnCont"]{
         height: 65%;
@@ -73,29 +72,82 @@
     }
  }
 
-/* SMALL SCREEN DEVICES (PORTRAIT TABLET/LARGE PHONES, 600px AND UP) */
-@media only screen and (min-width: 600px) and (max-width: 767px)  { 
-    [class*="homePage"] {
-
-    }
- }
-
 /* MEDIUM DEVICES (LANDSCAPE TABLETS, 768px AND UP) */
-@media only screen and (min-width: 768px) and (max-width: 991px) { 
-    [class*="homePage"] {
-
+@media only screen and (min-width: 600px) and (max-width: 991px) { 
+    [class*="sideBarCont"] {
+        position: sticky;
+        z-index: 2;
+        height: 10%;
+        width: 100%;
+        overflow: auto;
+        contain: content;
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
     }
-}
-
-/* LARGE DEVICES (LAPTOPS/DESKTOPS, 992px AND UP) */
-@media only screen and (min-width: 992px) and (max-width: 1199px)  { 
-    [class*="homePage"] {
-
+    [class*="myInfoDiv"]{
+        position: absolute;
+        z-index: 1;
+        right: 0;
+        height: 0%;
+        width: 15%;
+    }
+    [class*="btnCont"]{
+        height: 65%;
+        width: 100%;
+        display: flex;
+        flex-direction: row;
+        overflow: auto;
+        contain: content;
+        justify-content: space-between;
+    }
+    #navBarBtn{
+        border-top: none;
+        border-left: none;
+        border-right: none;
+        border-bottom: none;
+        height: 100%;
+        background-color: white;
+        width: 25%;
+    }
+    [class*="socialMediaLinks"]{
+        border-top: solid black thin;
+        height: 35%;
+        width: 100%;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-evenly;
+        align-items: center;
+        align-self: flex-start;
+        background-color: rgb(217, 223, 228);
+    }
+    #fontAwsIcon{
+        height: 30px;
+        min-height: 30px;
+        max-height: 30px;
+        width: 50px;
+        min-width: 50px;
+        max-width: 50px;
+        margin: auto;
+    }
+    #social-media-btn{
+        width: 8%;
+        height: 90%;
+        border: transparent;
+    }
+    #social-media-a-tag{
+        height: 100%;
+        width: 100%;
+        align-items: center;
+    }
+    #social-media-icon{
+        height: 95%;
+        width: 95%;
     }
 }
 
 /* XL DEVICES (LARGE LAPTOPS AND DESKTOPS, 1200px AND UP) */
-@media only screen and (min-width: 1200px){ 
+@media only screen and (min-width: 992px){ 
     [class*="sideBarCont"] {
         z-index: 1;
         height: 100%;

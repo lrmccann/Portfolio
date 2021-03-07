@@ -36,61 +36,46 @@
  }
 
 /* SMALL SCREEN DEVICES (PORTRAIT TABLET/LARGE PHONES, 600px AND UP) */
-@media only screen and (min-width: 600px) and (max-width: 767px)  { 
+@media only screen and (min-width: 600px) and (max-width: 991px)  { 
     [class*="homePage"] {
-        /* background-color: saddlebrown;  */
-        height: 100%;
-        width: 93%;
-        float: left;
+        width: 100%;
     }
     [class*="textAndImgCont"]{
-        /* background-color: green; */
-        flex-wrap: wrap;
-    }
-    [class*="bioTextDiv"]{
         height: auto;
-        /* background-color: fuchsia; */
-        width: 100%;
+        max-width: 90%;
+        flex-wrap: wrap;
+        margin: auto;
     }
     #profile-picture {
         height: auto;
         width: 100%;
     }
- }
-
-
-/* MEDIUM DEVICES (LANDSCAPE TABLETS, 768px AND UP) */
-@media only screen and (min-width: 768px) and (max-width: 991px) { 
-    [class*="homePage"] {
-        /* background-color: red;  */
-        height: 100%;
-        width: 93%;
-        float: left;
-    }
-}
-
-/* LARGE DEVICES (LAPTOPS/DESKTOPS, 992px AND UP) */
-@media only screen and (min-width: 992px) and (max-width: 1199px)  { 
-    [class*="homePage"] {
-        height: 100%;
-        width: 93%;
-        float: left;
-    }
-    [class*="textAndImgCont"]{
-        flex-wrap: wrap;
-    }
     [class*="bioTextDiv"]{
         height: auto;
         width: 100%;
+        padding: 2px 0px 7px 7px;
     }
-    #profile-picture {
+    #home-header{
+        padding-top: 2%;
+        padding-bottom: 2%;
+        font-size: 35px;
+    }
+    #abt-me-text{
+        font-size: 24px;
+    }
+    #bio-text{
         height: auto;
-        width: 100%;
+        width: 90%;
+        font-size: 14px;
+        text-align: center;
+        line-height: 1.40;
     }
  }
+
+
 
 /* XL DEVICES (LARGE LAPTOPS AND DESKTOPS, 1200px AND UP) */
-@media only screen and (min-width: 1200px){ 
+@media only screen and (min-width: 992px){ 
     [class*="homePage"] {
         overflow: auto;
         contain: content;

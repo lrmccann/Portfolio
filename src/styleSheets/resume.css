@@ -20,21 +20,28 @@
  }
 
 /* MEDIUM DEVICES (LANDSCAPE TABLETS, 768px AND UP) */
-@media only screen and (min-width: 768px) and (max-width: 991px) { 
+@media only screen and (min-width: 600px) and (max-width: 991px) { 
     [class*="resumeCont"]{
-        
+        height: auto;
+        width: 100%;
+        float: left;
+    }
+    #resume-header{
+        padding-top: 2%;
+        padding-bottom: 2%;
+        font-size: 35px;
+    }
+    [class*="downloadIcon"]{
+        font-size: 30px;
+    }
+    [class*="downloadBtn"]{
+        right: 9.74%;
+        top: 13.64%;
     }
 }
 
-/* LARGE DEVICES (LAPTOPS/DESKTOPS, 992px AND UP) */
-@media only screen and (min-width: 992px) and (max-width: 1199px)  { 
-    [class*="resumeCont"]{
-        
-    }
- }
-
 /* XL DEVICES (LARGE LAPTOPS AND DESKTOPS, 1200px AND UP) */
-@media only screen and (min-width: 1200px){ 
+@media only screen and (min-width: 992px){ 
     [class*="resumeCont"]{
         height: 100%;
         width: 93%;

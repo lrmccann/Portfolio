@@ -18,6 +18,7 @@ export default function Home() {
   var skillsFive = ["AWS", "Github", "Heroku", "Robo3T", "Jest", "Workbench", "Webpack"];
   var altSkillsFive = ["Github Icon", "Heroku Icon", "AWS Icon", "Robo3T Icon", "Jest", "MySQL Workbench Icon", "Webpack"]
 
+    console.log(window.innerWidth)
   return (
     <div className="homePage container-fixed">
       <h1 id="home-header">Home</h1>

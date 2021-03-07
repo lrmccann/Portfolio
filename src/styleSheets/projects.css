@@ -99,35 +99,108 @@
  }
 
 /* SMALL SCREEN DEVICES (PORTRAIT TABLET/LARGE PHONES, 600px AND UP) */
-@media only screen and (min-width: 600px) and (max-width: 767px)  { 
-    [class*="homePage"] {
-
+@media only screen and (min-width: 600px) and (max-width: 991px)  { 
+    [class*="projectPage"] {
+        width: 100%;
+    }
+    [class*="idk-yet"]{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    #project-header{
+        font-size: 35px;
+        padding-top: 2%;
+        padding-bottom: 2%;
+        margin-bottom: 4%;
+    }
+    [class*="realCard"] {
+        height: 320px;
+        width: 348px;
+        margin-bottom: 6%;
+    }
+    [class*="prjctImage"]{
+        height: 70%;
+        width: 100%;
+    }
+    [class*="infoHolder"]{
+        height: 40%;
+        padding: 8px;
+    }
+    #prjctTitle{
+        font-size: 24px;
+    }
+    #description-text{
+        font-size: 13px;
     }
     /* STYLE FOR FLIPPED PAGE */
-
- }
-
-
-/* MEDIUM DEVICES (LANDSCAPE TABLETS, 768px AND UP) */
-@media only screen and (min-width: 768px) and (max-width: 991px) { 
-    [class*="homePage"] {
-
+    [class*="project-page-two"]{
+        width: 100%;
     }
-    /* STYLE FOR FLIPPED PAGE */
-
-}
-
-/* LARGE DEVICES (LAPTOPS/DESKTOPS, 992px AND UP) */
-@media only screen and (min-width: 992px) and (max-width: 1199px)  { 
-    [class*="homePage"] {
-
+    [class*="project-div"]{
+        width: 100%;
     }
-    /* STYLE FOR FLIPPED PAGE */
+    [class*="imgAndAcompCont"]{
+        width: 100%;
+        align-self: center;
+        flex-direction: column;
+    }
+    #exit-btn{
+        width: 25%;
+        margin-left: 2.4%;
+    }
+    [class*="webBackgroundImg"]{
+        height: 100%;
+        width: 100%;
+    }
+    #prjct-img-lg{
+        height: 20%;
+        width: 95%;
+    }
+    [class*="acompCont"]{
+        margin: auto;
+        height: auto;
+        margin-top: 3%;
+        width: 95%;
+    }
+    #acomp-header{
+        font-size: 22px;
+    }
+    #acomp-list{
+        padding-right: 8%;
+        padding-left: 10%;
+    }
+    #acomp-item{
+        font-size: 16px;
+    }
+    [class*="hashtag-bar"]{
+        margin-top: 3%;
+        width: 95%;
+        align-self: center;
+    }
+    #hashtag-span{
+        width: auto;
+    }
+    #keywords-header{
+        padding: 5px;
+        white-space: nowrap;
+        font-size: 18px;
+        font-weight: 600;
+    }
+    #hashtag-list{
+        font-size: 15px;
+    }
+    [class*="linksForProject"]{
+        align-self: center;
+        padding: 5px;
+        width: 95%;
+        margin-top: 3%;
+    }
 
  }
 
 /* XL DEVICES (LARGE LAPTOPS AND DESKTOPS, 1200px AND UP) */
-@media only screen and (min-width: 1200px){ 
+@media only screen and (min-width: 992px){ 
     [class*="projectPage"] {
         height: 100%;
         width: 93%;
