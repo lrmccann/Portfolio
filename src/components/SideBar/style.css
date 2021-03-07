@@ -5,7 +5,7 @@
         z-index: 2;
         height: 10%;
         width: 100%;
-        overflow: auto;
+        /* overflow: auto; */
         contain: content;
         display: flex;
         flex-direction: row;
@@ -38,7 +38,7 @@
     }
     [class*="socialMediaLinks"]{
         border-top: solid black thin;
-        height: 35%;
+        height: 38%;
         width: 100%;
         display: flex;
         flex-direction: row;
@@ -57,27 +57,36 @@
         margin: auto;
     }
     #social-media-btn{
-        width: 8%;
-        height: 90%;
+        /* background-color: red; */
+        width: 12.5%;
+        height: 100%;
         border: transparent;
+        cursor: pointer;
+    }
+    #social-media-btn{
+        outline: none;
     }
     #social-media-a-tag{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        /* justify-items: center; */
         height: 100%;
         width: 100%;
-        align-items: center;
     }
     #social-media-icon{
-        height: 95%;
-        width: 95%;
+        height: 85%;
+        width: 50%;
     }
  }
 
 /* MEDIUM DEVICES (LANDSCAPE TABLETS, 768px AND UP) */
-@media only screen and (min-width: 600px) and (max-width: 991px) { 
+@media screen and (min-width: 600px) and (max-width: 991px) { 
     [class*="sideBarCont"] {
         position: sticky;
         z-index: 2;
-        height: 10%;
+        height: 14%;
         width: 100%;
         overflow: auto;
         contain: content;
@@ -102,13 +111,17 @@
         justify-content: space-between;
     }
     #navBarBtn{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
         border-top: none;
         border-left: none;
         border-right: none;
         border-bottom: none;
         height: 100%;
+        /* background-color: hotpink; */
         background-color: white;
-        width: 25%;
+        width: 15%;
     }
     [class*="socialMediaLinks"]{
         border-top: solid black thin;
@@ -122,27 +135,33 @@
         background-color: rgb(217, 223, 228);
     }
     #fontAwsIcon{
-        height: 30px;
-        min-height: 30px;
-        max-height: 30px;
-        width: 50px;
-        min-width: 50px;
-        max-width: 50px;
+        height: 26px;
+        min-height: 26px;
+        max-height: 26px;
+        width: 46px;
+        min-width: 46px;
+        max-width: 46px;
         margin: auto;
     }
     #social-media-btn{
-        width: 8%;
-        height: 90%;
+        width: 12%;
+        height: 94%;
         border: transparent;
+        /* background-color: red; */
+
     }
     #social-media-a-tag{
         height: 100%;
         width: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
         align-items: center;
+        /* align-items: center; */
     }
     #social-media-icon{
         height: 95%;
-        width: 95%;
+        width: 26%;
     }
 }
 
@@ -213,8 +232,8 @@
         margin-right: -3%;
     }
     #social-media-btn{
-        width: 25%;
-        height: 25%;
+        width: 15%;
+        height: 100%;
         border: transparent;
         display: flex;
         flex-direction: column;
