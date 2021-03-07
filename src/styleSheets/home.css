@@ -39,7 +39,7 @@
 @media screen and (min-width: 600px) and (max-width: 991px)  { 
     [class*="homePage"] {
         height: auto;
-        max-height: 95%;
+        max-height: 100%;
         width: 100%;
         float: left;
     }
@@ -55,6 +55,7 @@
         height: auto;
         width: 50%;
         margin-bottom: 1%;
+        max-height: 385.688;
     }
     [class*="bioTextDiv"]{
         height: 97.8%;
