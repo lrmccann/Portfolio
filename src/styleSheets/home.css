@@ -39,16 +39,14 @@
 @media screen and (min-width: 600px) and (max-width: 991px)  { 
     [class*="homePage"] {
         height: auto;
+        max-height: 95%;
         width: 100%;
         float: left;
-        /* background-color: khaki; */
     }
     [class*="textAndImgCont"]{
         height: auto;
         width: 95%;
-        /* background-color: hotpink; */
         max-width: 95%;
-        /* flex-wrap: wrap; */
         margin: auto;
         display: flex;
         flex-direction: row;
@@ -75,7 +73,6 @@
         font-size: 26px;
     }
     #bio-text{
-        /* float: left; */
         height: auto;
         width: 80%;
         font-size: 15px;

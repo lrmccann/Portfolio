@@ -2,53 +2,11 @@ import React, { useEffect, useState } from "react";
 import "./style.css";
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faHome, faFolder, faFileAlt, faBold, faAddressBook } from '@fortawesome/free-solid-svg-icons';
-import { useHistory, useLocation } from 'react-router-dom';
+import { useHistory } from 'react-router-dom';
 
 
 export default function SideBar(props) {
     let history = useHistory();
-    let location = useLocation();
-
-    const [screenWidth , setScreenWidth] = useState(window.innerWidth);
-    const [githubImg , setGithubImg] = useState(require('../../page-images/github-mini-img.png'));
-    const [mediumBtn , setMediumImg] = useState(require('../../page-images/medium-icon2.png'));
-    const [linkedinImg , setlinkedinImg] = useState(require('../../page-images/linkedin-icon2.png'));
-
-
-    useEffect(() => {
-        function handleResize(){
-            setScreenWidth(window.innerWidth);
-        }
-        window.addEventListener('resize' , handleResize)
-        return _ => {
-            window.removeEventListener('resize' , handleResize);
-        }
-    })
-
-    useEffect(() => {
-        if(screenWidth <= 599){
-            setGithubImg(require('../../page-images/canva-logo-2.png'));
-            setMediumImg();
-            setlinkedinImg();
-        }   
-        else if(screenWidth >= 600 && screenWidth <= 991){
-            setGithubImg(require('../../page-images/city-bg-img.jpg'));
-            setMediumImg();
-            setlinkedinImg();
-        }
-        else if(screenWidth >= 992){
-            setGithubImg(require('../../page-images/amazon-lg.png'));
-            setMediumImg();
-            setlinkedinImg();
-        }
-    })
-
-    console.log(screenWidth, "screen width my boi")
-
-
-
-
-
 
     // HOME BTN FUNC
     const homePage = () => {

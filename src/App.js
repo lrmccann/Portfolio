@@ -1,4 +1,6 @@
-import React, { useEffect, useState } from "react";
+import React
+// , { useEffect, useState } 
+from "react";
 import { BrowserRouter as Router, Route, Switch} from "react-router-dom";
 import Projects from "./pages/Projects";
 import Home from "./pages/Home";
@@ -8,28 +10,28 @@ import Blog from './pages/Blog';
 import Awards from './pages/Awards';
 import Welcome from './pages/Welcome';
 import SideBar from './components/SideBar';
-import BounceLoader from "react-spinners/BounceLoader";
-import { css } from "@emotion/core";
+// import BounceLoader from "react-spinners/BounceLoader";
+// import { css } from "@emotion/core";
 import "./index.css";
 
 export default function App() {
-  let [loading , setLoading] = useState(true);
-  let [color, setColor] = useState('#000000');
+//   let [loading , setLoading] = useState(true);
+//   let [color, setColor] = useState('#000000');
 
-  useEffect(()=> {
-    setTimeout(()=>{
-      setLoading(false);
-    }, 3100)
-  })
+//   useEffect(()=> {
+//     setTimeout(()=>{
+//       setLoading(false);
+//     }, 3100)
+//   })
 
-  const override = css`
-  display: block;
-  position : absolute;
-  margin: 0 auto;
-  border-color: red;
-  margin-top: 80%;
-  margin-left: 32%;
-`;
+//   const override = css`
+//   display: block;
+//   position : absolute;
+//   margin: 0 auto;
+//   border-color: red;
+//   margin-top: 80%;
+//   margin-left: 32%;
+// `;
   return (
     <>
     {
@@ -43,7 +45,6 @@ export default function App() {
        <BounceLoader css={override} color={color} loading={loading} size={150} />
        :
           <Route exact path="/home" component={Home} />
-          
           } */}
           <Route exact path="/home" component={Home} />
           <Route exact path="/projects" component={Projects} />

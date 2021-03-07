@@ -14,6 +14,7 @@ export default function Resume() {
 
 
     useEffect(() => {
+        setScreenWidth(window.innerWidth)
         if (screenWidth <= 599) {
             setZoomScale(.59)
         }
@@ -22,7 +23,7 @@ export default function Resume() {
         } else {
             setZoomScale(1.50)
         }
-    })
+    }, [setScreenWidth, screenWidth])
 
     return (
         <div className='resumeCont container-fixed'>
