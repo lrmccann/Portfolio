@@ -8,21 +8,21 @@ html, body {
 
 html {
   overflow: hidden;
+  contain: content;
   height: 100%;
 }
 
 body {
   overflow: auto;
+  contain: content;
   height: 100%;
 }
 
 
-html, body, #app, #app>div {
+html, body, #app, #app > div {
   height: 100%;
 }
 
 html, body, #root, .App {
   height: 100%;
 }
-
-h1{}
