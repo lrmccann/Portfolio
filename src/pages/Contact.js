@@ -1,7 +1,7 @@
 import React, { useState } from "react";
-import '../styleSheets/contact.css';
 import emailjs from 'emailjs-com';
 import { init } from 'emailjs-com';
+import '../styleSheets/contact.css';
 init("user_DXovDRZFuUdffdqwbkHJo");
 
 export default function Contact() {
@@ -19,7 +19,6 @@ export default function Contact() {
 
     const submitForm = async event => {
         event.preventDefault();
-
         var emailForm = ({
             'emailSenderEmail': messageName,
             'emailSubject': messageSubject,
@@ -33,22 +32,25 @@ export default function Contact() {
             })
     }
     return (
-        <div className="container-fixed contactCont">
+        <div className="contact-page container-fixed">
             <h1 id="contact-header">Contact</h1>
-            <div className="contactDiv">
-                <h2 className="welcomeMessage">Let's Connect!</h2>
-                <form className="formStyle" onInput={handleInputChange}>
+            <div className="contact-div">
+                <h2 className="connect-header">Let's Connect!</h2>
+                <form className="form-area" onInput={handleInputChange}>
                     <div className="form-group">
-                        <label id="formHeaderText">Email</label>
-                        <input type="text" className="form-control" defaultValue="" onChange={e => setName(e.target.value)} />
+                        <label id="form-label">Email</label>
+                        <input type="text" className="form-control" defaultValue=""
+                            onChange={e => setName(e.target.value)} />
                     </div>
                     <div className="form-group">
-                        <label id="formHeaderText">Topic</label>
-                        <input type="text" className="form-control" defaultValue="" onChange={e => setSubject(e.target.value)} />
+                        <label id="form-label">Topic</label>
+                        <input type="text" className="form-control" defaultValue=""
+                            onChange={e => setSubject(e.target.value)} />
                     </div>
                     <div className="form-group">
-                        <label id="formHeaderText">Message</label>
-                        <textarea className="form-control" rows="6" defaultValue="" onChange={e => setBody(e.target.value)} >
+                        <label id="form-label">Message</label>
+                        <textarea className="form-control" rows="6" defaultValue=""
+                            onChange={e => setBody(e.target.value)} >
                         </textarea>
                     </div>
                     <div className="button-container">
