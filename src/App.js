@@ -1,7 +1,5 @@
-import React
-// , { useEffect, useState } 
-from "react";
-import { BrowserRouter as Router, Route, Switch} from "react-router-dom";
+import React from "react";
+import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
 import Projects from "./pages/Projects";
 import Home from "./pages/Home";
 import Contact from "./pages/Contact";
@@ -10,51 +8,28 @@ import Blog from './pages/Blog';
 import Awards from './pages/Awards';
 import Welcome from './pages/Welcome';
 import SideBar from './components/SideBar';
-// import BounceLoader from "react-spinners/BounceLoader";
-// import { css } from "@emotion/core";
 import "./index.css";
 
 export default function App() {
-//   let [loading , setLoading] = useState(true);
-//   let [color, setColor] = useState('#000000');
 
-//   useEffect(()=> {
-//     setTimeout(()=>{
-//       setLoading(false);
-//     }, 3100)
-//   })
-
-//   const override = css`
-//   display: block;
-//   position : absolute;
-//   margin: 0 auto;
-//   border-color: red;
-//   margin-top: 80%;
-//   margin-left: 32%;
-// `;
   return (
     <>
-    {
-      <Router>
-      <Switch>
-          <Route exact path="/" component={Welcome} />
+      {
+        <Router>
+          <Switch>
+            <Route exact path="/" component={Welcome} />
           </Switch>
-      <React.StrictMode>
-              <SideBar />
-              {/* {loading ?
-       <BounceLoader css={override} color={color} loading={loading} size={150} />
-       :
-          <Route exact path="/home" component={Home} />
-          } */}
-          <Route exact path="/home" component={Home} />
-          <Route exact path="/projects" component={Projects} />
-          <Route exact path="/resume" component={Resume} />
-          <Route exact path="/blog" component={Blog} />
-          <Route exact path="/awards" component={Awards} />
-          <Route exact path="/contact" component={Contact} />
+          <React.StrictMode>
+            <SideBar />
+            <Route exact path="/home" component={Home} />
+            <Route exact path="/projects" component={Projects} />
+            <Route exact path="/resume" component={Resume} />
+            <Route exact path="/blog" component={Blog} />
+            <Route exact path="/awards" component={Awards} />
+            <Route exact path="/contact" component={Contact} />
           </React.StrictMode>
-    </Router>
-    }
+        </Router>
+      }
     </>
   );
 }
