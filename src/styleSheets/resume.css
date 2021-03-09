@@ -1,19 +1,22 @@
 /* SMALL SCREEN DEVICES (PHONES, 600px AND BELOW) */
 @media only screen and (max-width: 599px)  { 
-    [class*="resumeCont"]{
+    [class*="resume-page"]{
         height: auto;
         width: 100%;
         float: left;
     }
+
     #resume-header{
         padding-top: 2%;
         padding-bottom: 2%;
         font-size: 35px;
     }
-    [class*="downloadIcon"]{
+
+    [class*="download-icon"]{
         font-size: 18px;
     }
-    [class*="downloadBtn"]{
+
+    [class*="download-btn"]{
         right: 6.74%;
         top: 20.64%;
     }
@@ -21,20 +24,23 @@
 
 /* MEDIUM DEVICES (LANDSCAPE TABLETS, 768px AND UP) */
 @media only screen and (min-width: 600px) and (max-width: 991px) { 
-    [class*="resumeCont"]{
+    [class*="resume-page"]{
         height: auto;
         width: 100%;
         float: left;
     }
+
     #resume-header{
         padding-top: 2%;
         padding-bottom: 2%;
         font-size: 35px;
     }
-    [class*="downloadIcon"]{
+
+    [class*="download-icon"]{
         font-size: 30px;
     }
-    [class*="downloadBtn"]{
+
+    [class*="download-btn"]{
         right: 12.74%;
         top: 13.84%;
     }
@@ -42,32 +48,37 @@
 
 /* XL DEVICES (LARGE LAPTOPS AND DESKTOPS, 1200px AND UP) */
 @media only screen and (min-width: 992px){ 
-    [class*="resumeCont"]{
+    [class*="resume-page"]{
         height: 100%;
         width: 93%;
     }
+
     #resume-header{
         padding-top: 1%;
         padding-bottom: 1%;
         font-size: 50px;
     }
-    [class*="downloadIcon"]{
+    
+    [class*="download-icon"]{
         font-size: 35px;
     }
-    [class*="downloadBtn"]{
+
+    [class*="download-btn"]{
         right: 15.74%;
         top: 21.64%;
     }
  }
 
-.resumeCont{
+/* END RESPONSIVE STYLE */
+
+.resume-page{
     scroll-behavior: smooth;
     background-size: cover;
     contain: content;
     overflow: auto;
 }
 
-.resumeCont > h1{
+.resume-page > h1{
     background-color: #475667;
     padding-left: 1%;
     color: white;
@@ -77,7 +88,7 @@
     width: 100%;
 }
 
-.downloadBtn {
+.download-btn {
     height: 6.5%;
     width: 4.5%;
     position: absolute;
@@ -85,13 +96,12 @@
     z-index: 1;
 }
 
-.downloadIcon {
+.download-icon {
     height: 100%;
     width: 100%;
 }
 
 .pdfviewer{
-    border: hidden;
     outline: transparent;
     background-color: transparent;
     height: auto;
