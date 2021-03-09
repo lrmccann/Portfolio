@@ -1,7 +1,7 @@
 import * as React from "react";
-import '../styleSheets/welcome.css'
 import Fade from "react-reveal/Fade";
 import { useHistory } from 'react-router-dom';
+import '../styleSheets/welcome.css'
 
 
 export default function Welcome() {
@@ -14,8 +14,8 @@ export default function Welcome() {
 
   return (
     <div className="welcome-page container-fixed">
-    <div className="container-fixed welcomeCont" onClick={homePage}>
-      <div className="nameCont">
+    <div className="welcome-cont container-fixed" onClick={homePage}>
+      <div className="text-cont">
         <Fade right>
           <h1>Hi, I'm Logan.</h1>
           <h2>I Design and Build User Interfaces.</h2>

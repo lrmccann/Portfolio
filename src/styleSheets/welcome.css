@@ -5,7 +5,7 @@
     flex-direction: column;
 }
 
-.welcomeCont{
+.welcome-cont{
     position: absolute;
     height: 100%;
     width: 100%;
@@ -18,26 +18,7 @@
     background-position-y: 80%;
 }
 
-
-.nameCont > h1{
-    padding-top: .50%;
-    padding-bottom: .50%;
-    display: flex;
-    padding-left: 2%;
-    font-size: 60px;
-    background-color: white;
-}
-
-.nameCont > h2{
-    padding-top: .50%;
-    padding-bottom: .50%;
-    display: flex;
-    background-color: white;
-    font-size: 40px;
-    padding-left: 2%;
-}
-
-.nameCont{
+.text-cont{
     align-self: flex-start;
     height: 100%;
     width: 100%;
@@ -46,12 +27,20 @@
     margin-top: 2%;
 }
 
-.firstNameCont{
-    font-size: 140px;
-    font-weight: 900;
+.text-cont > h1{
+    padding-top: .50%;
+    padding-bottom: .50%;
+    display: flex;
+    padding-left: 2%;
+    font-size: 60px;
+    background-color: white;
 }
 
-.lastNameCont{
-    font-size: 140px;
-    font-weight: 900;
+.text-cont > h2{
+    padding-top: .50%;
+    padding-bottom: .50%;
+    display: flex;
+    background-color: white;
+    font-size: 40px;
+    padding-left: 2%;
 }
