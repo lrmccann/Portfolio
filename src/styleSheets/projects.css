@@ -1,96 +1,119 @@
 /* SMALL SCREEN DEVICES (PHONES, 600px AND BELOW) */
 @media only screen and (max-width: 599px)  { 
-    [class*="projectPage"] {
+    [class*="project-page"] {
         width: 100%;
     }
-    [class*="idk-yet"]{
+
+    [class*="margin-cont"]{
         display: flex;
         flex-direction: column;
         align-items: center;
     }
+
     #project-header{
         font-size: 35px;
         padding-top: 2%;
         padding-bottom: 2%;
         margin-bottom: 4%;
     }
-    [class*="realCard"] {
+
+    [class*="project-card"] {
         height: 320px;
         width: 348px;
         margin-bottom: 6%;
     }
-    [class*="prjctImage"]{
+
+    [class*="project-image"]{
         height: 70%;
         width: 100%;
     }
-    [class*="infoHolder"]{
+
+    [class*="card-bottom"]{
         height: 40%;
         padding: 8px;
     }
-    #prjctTitle{
+
+    #project-title{
         font-size: 24px;
     }
+
     #description-text{
         font-size: 13px;
     }
-    /* STYLE FOR FLIPPED PAGE */
+
+/* STYLE FOR FLIPPED PAGE */
+
     [class*="project-page-two"]{
         width: 100%;
     }
+
     [class*="project-div"]{
         width: 100%;
     }
-    [class*="imgAndAcompCont"]{
+    
+    [class*="img-accomp-cont"]{
         width: 100%;
         align-self: center;
         flex-direction: column;
     }
+
     #exit-btn{
         width: 25%;
         margin-left: 2.4%;
     }
-    [class*="webBackgroundImg"]{
+
+    [class*="project-img-cont"]{
         height: 100%;
         width: 100%;
     }
+
     #prjct-img-lg{
         height: 20%;
         width: 95%;
     }
-    [class*="acompCont"]{
+
+    [class*="acomp-cont"]{
         margin: auto;
         height: auto;
         margin-top: 3%;
         width: 95%;
     }
+
     #acomp-header{
         font-size: 22px;
     }
+
     #acomp-list{
         padding-right: 8%;
         padding-left: 10%;
     }
+
     #acomp-item{
         font-size: 16px;
     }
+
     [class*="hashtag-bar"]{
         margin-top: 3%;
         width: 95%;
         align-self: center;
     }
+
     #hashtag-span{
         width: auto;
     }
+
     #keywords-header{
         padding: 5px;
         white-space: nowrap;
         font-size: 18px;
         font-weight: 600;
     }
+
     #hashtag-list{
         font-size: 15px;
     }
-    [class*="linksForProject"]{
+
+    [class*="link-bar"]{
         align-self: center;
         padding: 5px;
         width: 95%;
@@ -100,101 +123,124 @@
 
 /* SMALL SCREEN DEVICES (PORTRAIT TABLET/LARGE PHONES, 600px AND UP) */
 @media only screen and (min-width: 600px) and (max-width: 991px)  { 
-    [class*="projectPage"] {
+    [class*="project-page"] {
         width: 100%;
     }
-    [class*="idk-yet"]{
+
+    [class*="margin-cont"]{
         display: inline;
         align-items: center;
     }
+
     #project-header{
         font-size: 35px;
         padding-top: 2%;
         padding-bottom: 2%;
         margin-bottom: 4%;
     }
-    [class*="realCard"] {
+
+    [class*="project-card"] {
         height: 340px;
         width: 358px;
         margin-bottom: 4%;
         margin-left: 4%;
     }
-    [class*="prjctImage"]{
+
+    [class*="project-image"]{
         height: 70%;
         width: 100%;
     }
-    [class*="infoHolder"]{
+
+    [class*="card-bottom"]{
         height: 40%;
         padding: 8px;
     }
-    #prjctTitle{
+
+    #project-title{
         font-size: 24px;
     }
+    
     #description-text{
         font-size: 13px;
     }
-    /* STYLE FOR FLIPPED PAGE */
+
+/* STYLE FOR FLIPPED PAGE */
+
     [class*="project-page-two"]{
         width: 100%;
     }
+
     [class*="project-div"]{
         width: 100%;
     }
-    [class*="imgAndAcompCont"]{
+
+    [class*="img-accomp-cont"]{
         width: 100%;
         align-self: center;
         flex-direction: column;
     }
+
     #exit-btn{
         margin-right: 17.4%;
         width: 16%;
         align-self: flex-end;
     }
-    [class*="webBackgroundImg"]{
+
+    [class*="project-img-cont"]{
         height: auto;
         width: 100%;
         flex-direction: column;
         align-items: center;
     }
+
     #prjct-img-lg{
         height: auto;
         width: 65%;
     }
-    [class*="acompCont"]{
+
+    [class*="acomp-cont"]{
         margin: auto;
         height: auto;
         max-height: 95%;
         margin-top: 3%;
         width: 85%;
     }
+
     #acomp-header{
         font-size: 22px;
     }
+
     #acomp-list{
         padding-right: 8%;
         padding-left: 10%;
     }
+
     #acomp-item{
         font-size: 16px;
     }
+
     [class*="hashtag-bar"]{
         margin-top: 3%;
         width: 85%;
         align-self: center;
     }
+
     #hashtag-span{
         width: auto;
     }
+
     #keywords-header{
         padding: 5px;
         white-space: nowrap;
         font-size: 18px;
         font-weight: 600;
     }
+
     #hashtag-list{
         font-size: 15px;
     }
-    [class*="linksForProject"]{
+
+    [class*="link-bar"]{
         align-self: center;
         padding: 5px;
         width: 85%;
@@ -204,24 +250,28 @@
 
 /* XL DEVICES (LARGE LAPTOPS AND DESKTOPS, 1200px AND UP) */
 @media only screen and (min-width: 992px){ 
-    [class*="projectPage"] {
+    [class*="project-page"] {
         height: 100%;
         width: 93%;
     }
-    [class*="idk-yet"]{
+
+    [class*="margin-cont"]{
         padding-bottom: 2%;
         display: inline-block;
     }
+
     #project-header{
         font-size: 50px;
         padding-top: 1%;
         padding-bottom: 1%;
         margin-bottom: 2%;
     }
-    [class*="realCard"] {
+
+    [class*="project-card"] {
         height: 380px;
         width: 380px;
     }
+
     #card-id-1{
         margin-left: 3.75%;
     }
@@ -263,45 +313,50 @@
         margin-left: 3.75%;
         margin-top: 1.5%;
     }
-    [class*="prjctImage"]{
+    [class*="project-image"]{
         height: 60%;
         width: 100%;
     }
-    [class*="infoHolder"]{
+    [class*="card-bottom"]{
         height: 40%;
         padding: 9px;
     }
-    #prjctTitle{
+    #project-title{
         font-size: 34px;
     }
     #description-text{
         font-size: 18px;
     }
-    /* STYLE FOR FLIPPED PAGE */
+    
+/* STYLE FOR FLIPPED PAGE */
+
     [class*="project-page-two"]{
         width: 93%;
         display: flex;
         flex-direction: column;
         align-items: center;
     }
+    
     [class*="project-div"]{
         margin-top: .50%;
         width: 95%;
     }
-    [class*="imgAndAcompCont"]{
+
+    [class*="img-accomp-cont"]{
         align-self: center;
         width: 95%;
         display: flex;
         flex-direction: row;
         justify-content: space-between;
     }
+
     #exit-btn{
         width: 12%;
         align-self: flex-end;
         margin-right: 2.5%;
-
     }
-    [class*="webBackgroundImg"]{
+
+    [class*="project-img-cont"]{
         max-height: 460px;
         min-height: 460px;
         max-width: 615px;
@@ -310,46 +365,59 @@
         width: 50%;
         flex-direction: row;
     }
+
     #prjct-img-lg{
         height: auto;
         width: 100%;
     }
-    [class*="acompCont"]{
+
+    [class*="acomp-cont"]{
         height: 100%;
         width: 40%;
     }
+
     #acomp-header{
         font-size: 32px;
     }
+
     #acomp-list{
         padding-left: 9%;
         padding-right: 4%;
     }
+
     #acomp-item{
         font-size: 22px;
     }
+
     [class*="hashtag-bar"]{
         margin-top: 1%;
         width: 100%;
     }
+
     #hastag-span{
         width: 11%;
     }
+
     #hashtag-list{
         font-size: 22px;
     }
-    [class*="linksForProject"]{
+
+    [class*="link-bar"]{
         width: 100%;
         margin-top: 1%;
     }
  }
-.projectPage {
+
+/* END RESPONSIVE STYLE */
+
+.project-page {
     scroll-behavior: smooth;
     height: 100%;
     overflow: auto;
     contain: content;
 }
-.idk-yet{
+
+.margin-cont{
     height: auto;
     width: 100%;
 }
@@ -364,7 +432,7 @@
     width: 100%;
 }
 
-.realCard{
+.project-card{
     float: left;
     display: flex;
     flex-direction: column;
@@ -373,7 +441,7 @@
     box-shadow: 0 2px 5px 0 rgb(0 0 0 / 16%), 0 2px 10px 0 rgb(0 0 0 / 12%);
 }
 
-.infoHolder{
+.card-bottom{
     display: flex;
     flex-direction: column;
     width: 100%;
@@ -381,19 +449,19 @@
     background-color: white;
 }
 
-.infoHolder > div{
+.card-bottom > div{
     height: auto;
     width: 100%;
 }
 
-#prjctTitle{
+#project-title{
     height: auto;
     width: 90%;
     white-space: nowrap;
     float: left;
 }
 
-.infoHolder > div > img{
+.card-bottom > div > img{
     float: right;
     height: 50%;
     width: 1.60%;
@@ -402,7 +470,7 @@
     cursor: pointer;
 }
 
-.scripHolder {
+.project-desc-cont {
     height: 100%;
     width: 100%;
 }
@@ -439,14 +507,13 @@
     background-color: white; 
     cursor: pointer;
     margin-bottom: .50%;
-    /* margin-right: 2.5%; */
   }
 
 .project-div > button:focus {
     outline: none;
 }
 
-.imgAndAcompCont {
+.img-accomp-cont {
     height: auto;
     z-index: 90;
     position: relative;
@@ -454,30 +521,30 @@
     margin-top: .50%;
 }
 
-.webBackgroundImg {
+.project-img-cont {
     float: left;
     display: flex;
     justify-content: center;
 }
 
-.webBackgroundImg > img {
+.project-img-cont > img {
     box-shadow: 0 2px 5px 0 rgb(0 0 0 / 16%), 0 2px 10px 0 rgb(0 0 0 / 12%);
 }
 
-.acompCont{
+.acomp-cont{
     background-color: white; 
     float: left;
     box-shadow: 0 2px 5px 0 rgb(0 0 0 / 16%), 0 2px 10px 0 rgb(0 0 0 / 12%);
 }
 
-.acompCont > h3 {
+.acomp-cont > h3 {
     box-shadow: 0 2px 5px 0 rgb(0 0 0 / 6%), 0 2px 4px 0 rgb(0 0 0 / 2%);
     text-align: center;
     padding-top: 2%;
     padding-bottom: 2%;
 }
 
-.acompCont > ul {
+.acomp-cont > ul {
     list-style: square;
     height: auto;
     width: 100%;
@@ -486,7 +553,7 @@
     padding-right: 4%;
 }
 
-.acompCont > ul > li {
+.acomp-cont > ul > li {
     margin-top: 3.5%;
 }
 
@@ -525,7 +592,7 @@
     font-size: 22px;
 }
 
-.linksForProject {
+.link-bar {
     box-shadow: 0 2px 5px 0 rgb(0 0 0 / 16%), 0 2px 10px 0 rgb(0 0 0 / 12%);
     height: auto;
     background-color: white; 
