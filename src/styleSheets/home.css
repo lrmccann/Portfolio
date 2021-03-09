@@ -1,31 +1,37 @@
 /* SMALL SCREEN DEVICES (PHONES, 600px AND BELOW) */
 @media only screen and (max-width: 599px)  { 
-    [class*="homePage"] {
+    [class*="home-page"] {
         width: 100%;
     }
-    [class*="textAndImgCont"]{
+
+    [class*="about-me-cont"]{
         height: auto;
         max-width: 90%;
         flex-wrap: wrap;
         margin: auto;
     }
+
     #profile-picture {
         height: auto;
         width: 100%;
     }
-    [class*="bioTextDiv"]{
+
+    [class*="bio-cont"]{
         height: auto;
         width: 100%;
         padding: 2px 0px 7px 7px;
     }
+
     #home-header{
         padding-top: 2%;
         padding-bottom: 2%;
         font-size: 35px;
     }
-    #abt-me-text{
+
+    #bio-header{
         font-size: 24px;
     }
+
     #bio-text{
         height: auto;
         width: 90%;
@@ -37,13 +43,14 @@
 
 /* SMALL SCREEN DEVICES (PORTRAIT TABLET/LARGE PHONES, 600px AND UP) */
 @media screen and (min-width: 600px) and (max-width: 991px)  { 
-    [class*="homePage"] {
+    [class*="home-page"] {
         height: auto;
         max-height: 100%;
         width: 100%;
         float: left;
     }
-    [class*="textAndImgCont"]{
+
+    [class*="about-me-cont"]{
         height: auto;
         width: 95%;
         max-width: 95%;
@@ -51,28 +58,33 @@
         display: flex;
         flex-direction: row;
     }
+
     #profile-picture {
         height: auto;
         width: 50%;
         margin-bottom: 1%;
         max-height: 385.688;
     }
-    [class*="bioTextDiv"]{
+
+    [class*="bio-cont"]{
         height: 97.8%;
         width: 50%;
         padding: 2px 0px 7px 7px;
     }
+
     #home-header{
         padding-top: 1%;
         padding-bottom: 1%;
         font-size: 28px;
         margin-bottom: 4%;
     }
-    #abt-me-text{
+
+    #bio-header{
         padding-top: 2%;
         padding-bottom: .5%;
         font-size: 26px;
     }
+
     #bio-text{
         height: auto;
         width: 80%;
@@ -84,14 +96,15 @@
 
 /* XL DEVICES (LARGE LAPTOPS AND DESKTOPS, 1200px AND UP) */
 @media only screen and (min-width: 992px){ 
-    [class*="homePage"] {
+    [class*="home-page"] {
         overflow: auto;
         contain: content;
         height: 100%;
         float: left;
         width: 93%;
     }
-    [class*="textAndImgCont"]{
+
+    [class*="about-me-cont"]{
         height: 100%;
         width: 100%;
         display: flex;
@@ -99,26 +112,31 @@
         align-items: center;
         justify-content: space-evenly;
     }
+
     #profile-picture {
         max-height: 80%;
         width: 50%;
         max-width: 45%;
         margin-right: 2%;
     }
-    [class*="bioTextDiv"]{
+
+    [class*="bio-cont"]{
         min-height: 80%;
         max-width: 40%;
         padding: 0px 22px 0px 22px;
     }
+
     #home-header{
         font-size: 55px;
         padding-top: 1%;
         padding-bottom: 1%;
     }
-    #abt-me-text{
+
+    #bio-header{
         font-size: 35px;
         margin-top: 2%;
     }
+
     #bio-text{
         width: 95%;
         max-width: 95%;
@@ -129,18 +147,18 @@
     }
  }
 
-.homePage{
+/* END RESPONSIVE STYLE */
+
+.home-page{
     scroll-behavior: smooth;
-/* COME BACK HERE */
     height: 100%;
-/*  */
     contain: content;
     overflow: auto;
     display: flex;
     flex-direction: column;
 }
 
-.homePage > h1{
+.home-page > h1{
     box-shadow: 0 2px 5px 0 rgb(0 0 0 / 16%), 0 2px 10px 0 rgb(0 0 0 / 12%);
     background-color: #475667;
     font-size: 50px;
@@ -152,33 +170,33 @@
     width: 100%;
 }
 
-.textAndImgCont{
+.about-me-cont{
     height: auto;
     width: auto;
 
 }
 
-.textAndImgCont > img {
+.about-me-cont > img {
     box-shadow: 0 2px 5px 0 rgb(0 0 0 / 16%), 0 2px 10px 0 rgb(0 0 0 / 12%);
     height: auto;
     width: auto;
 }
 
-.bioTextDiv{
+.bio-cont{
     box-shadow: 0 2px 5px 0 rgb(0 0 0 / 16%), 0 2px 10px 0 rgb(0 0 0 / 12%);
     background-color: white;
     display: flex;
     flex-direction: column;
 }
 
-.bioTextDiv > h2{
+.bio-cont > h2{
     text-align: center;
     text-decoration: underline;
     font-family: "Roboto" , "sans-serif";
     padding-bottom: 1%;
 }
 
-.bioTextDiv > p {
+.bio-cont > p {
     align-self: center;
     height: auto;
     width: auto;
@@ -187,7 +205,7 @@
     font-family: "Roboto" , "sans-serif";
 }
 
-.skillsCont{
+.my-skills-cont{
     height: auto;
     width: 100%;
     display: flex;
@@ -195,17 +213,4 @@
     margin-top: 1%;
     padding-bottom: 2%;
     align-content: center;
-}
-
-.skillsHeaderText{
-    background-color: #475667;
-    font-size: 58px;
-    padding-left: 1%;
-    color: white;
-    letter-spacing: 1px;
-    height: auto;
-    font-family: "Roboto" , "sans-serif";
-    width: 100%;
-    padding-top: 2%;
-    padding-bottom: 2%;
 }

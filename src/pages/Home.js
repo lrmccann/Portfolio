@@ -1,8 +1,8 @@
 import React from "react";
-import SkillsContainer from '../components/SkillsContainer/index';
-import "../styleSheets/home.css";
 import Fade from 'react-reveal/Fade';
+import SkillsContainer from '../components/SkillsContainer/index';
 import { skillIconsOne, skillsIconsTwo, skillsIconsThree, skillsIconsFour, skillsIconsFive } from "../skills-icons/importSkills";
+import "../styleSheets/home.css";
 
 
 export default function Home() {
@@ -18,15 +18,13 @@ export default function Home() {
   var skillsFive = ["AWS", "Github", "Heroku", "Robo3T", "Jest", "Workbench", "Webpack"];
   var altSkillsFive = ["Github Icon", "Heroku Icon", "AWS Icon", "Robo3T Icon", "Jest", "MySQL Workbench Icon", "Webpack"]
 
-    console.log(window.innerWidth)
   return (
-    <div className="homePage container-fixed">
+    <div className="home-page container-fixed">
       <h1 id="home-header">Home</h1>
-      <div className="textAndImgCont container-fixed">
-        {/* <img id="profile-picture" alt="Logan R McCann" src={require("../page-images/prof-pic-1.png")}></img> */}
+      <div className="about-me-cont container-fixed">
         <img id="profile-picture" alt="Logan R McCann" src={require("../page-images/large-prof-pic.png")}></img>
-        <div className="bioTextDiv container-fixed">
-          <h2 id="abt-me-text">About Me</h2>
+        <div className="bio-cont container-fixed">
+          <h2 id="bio-header">About Me</h2>
           <p id="bio-text">
             I am a full stack web developer living in Brooklyn, New York. I focus on crafting clean & user-friendly experiences. I currently specialize in Javascript & Node.js, and enjoy learning new languages in my free time.
           <br></br>
@@ -38,7 +36,7 @@ export default function Home() {
             </p>
         </div>
       </div>
-      <div className="skillsCont container-fixed">
+      <div className="my-skills-cont container-fixed">
         <Fade bottom>
           <SkillsContainer
             skillType={'Languages'}
