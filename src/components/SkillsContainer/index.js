@@ -3,26 +3,26 @@ import "./style.css";
 
 export default function SkillsContainer(props) {
 
-    const skillImagesToMap = {
+    const skillsToMap = {
         images: [...props.skillImages],
         skills: (props.skills)
     }
 
     return (
-        <div className="skillsDiv container-fluid">
+        <div className="skill-main-cont container-fluid">
             <h2 id="skill-title-header">{props.skillType}</h2>
-            <div className="rowDiv">
-                <div className="cardHolder">
-                    {skillImagesToMap.images.map((mappedIcon, iconKey) => (
-                        <div key={iconKey} className="eachImage">
-                            <img src={mappedIcon} alt={props.altSkills} className="skillIcon"></img>
+            <div className="skill-content">
+                <div className="icon-div">
+                    {skillsToMap.images.map((mappedIcon, iconKey) => (
+                        <div key={iconKey} className="icon-holder">
+                            <img src={mappedIcon} alt={props.altSkills} className="skill-icon"></img>
                         </div>
                     ))}
                 </div>
-                <div className="cardKeeper">
-                    {skillImagesToMap.skills.map((mappedText, textKey) => (
-                        <div className="textHolder" key={textKey}>
-                            <p className="skillText">{mappedText}</p>
+                <div className="text-div">
+                    {skillsToMap.skills.map((mappedText, textKey) => (
+                        <div className="text-holder" key={textKey}>
+                            <p className="skill-text">{mappedText}</p>
                         </div>
                     ))}
                 </div>

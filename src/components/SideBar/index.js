@@ -1,8 +1,8 @@
-import React, { useEffect, useState } from "react";
-import "./style.css";
+import React, { useState } from "react";
+import { useHistory } from 'react-router-dom';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faHome, faFolder, faFileAlt, faBold, faAddressBook } from '@fortawesome/free-solid-svg-icons';
-import { useHistory } from 'react-router-dom';
+import "./style.css";
 
 
 export default function SideBar(props) {
