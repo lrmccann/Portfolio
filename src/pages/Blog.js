@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from "react";
-import '../styleSheets/blog.css';
 import blogsJson from '../blogs.json';
+import '../styleSheets/blog.css';
 
 
 export default function Blog() {
@@ -13,7 +13,7 @@ export default function Blog() {
   );
 
   return (
-    <div className="blogRightSide container-fixed">
+    <div className="blog-page container-fixed">
       <h1 id="blog-header">Blog</h1>
       <h2 id="month-header">March</h2>
       {(blogsToMap.map((item, myKey) => (
