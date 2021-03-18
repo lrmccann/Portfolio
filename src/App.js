@@ -1,17 +1,17 @@
-import React from "react";
-import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
-import Projects from "./pages/Projects";
-import Home from "./pages/Home";
-import Contact from "./pages/Contact";
-import Resume from "./pages/Resume";
+/* eslint-disable semi */
+import React from 'react';
+import { BrowserRouter as Router, Route, Switch } from 'react-router-dom';
+import Projects from './pages/Projects';
+import Home from './pages/Home';
+import Contact from './pages/Contact';
+import Resume from './pages/Resume';
 import Blog from './pages/Blog';
 import Awards from './pages/Awards';
 import Welcome from './pages/Welcome';
 import SideBar from './components/SideBar';
-import "./index.css";
+import './index.css';
 
-export default function App() {
-
+export default function App () {
   return (
     <>
       {
