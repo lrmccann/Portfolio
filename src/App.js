@@ -12,14 +12,22 @@ import SideBar from './components/SideBar';
 import './index.css';
 
 export default function App () {
+  var WebFont = require('webfontloader');
+
+  WebFont.load({
+    google: {
+      families: ['Open Sans', 'Semi-bold']
+    }
+  });
+
   return (
     <>
       {
         <Router>
-          <Switch>
-            <Route exact path="/" component={Welcome} />
-          </Switch>
           <React.StrictMode>
+            <Switch>
+              <Route exact path="/" component={Welcome} />
+            </Switch>
             <SideBar />
             <Route exact path="/home" component={Home} />
             <Route exact path="/projects" component={Projects} />

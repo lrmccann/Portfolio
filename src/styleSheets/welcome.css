@@ -1,8 +1,11 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@600&family=Source+Sans+Pro:ital,wght@1,600&display=swap');
 .welcome-page{
     height: 100%;
     width: 100%;
     display: flex;
     flex-direction: column;
+    contain: content;
+    position: absolute;
 }
 
 .welcome-cont{
@@ -12,10 +15,11 @@
     display: flex;
     flex-direction: row;
     scroll-behavior: smooth;
-    background-image: url('../page-images/canva-bg-2.png');
+    /* background-image: url('../page-images/canva-bg-2.png'); */
+    background-image: url('../page-images/welcome-pg-bg-2.png');
     background-repeat: no-repeat;
     background-size: cover;
-    background-position-y: 80%;
+    background-position-y: 50%;
 }
 
 .text-cont{
@@ -25,6 +29,7 @@
     display: flex;
     flex-direction: column;
     margin-top: 2%;
+    font-family: 'Open Sans', sans-serif, 'Source Sans Pro', sans-serif;
 }
 
 .text-cont > h1{
@@ -32,15 +37,49 @@
     padding-bottom: .50%;
     display: flex;
     padding-left: 2%;
-    font-size: 60px;
-    background-color: white;
+    font-size: 70px;
+    background-color: whitesmoke;
+    margin-bottom: 2%;
+    box-shadow: 0 2px 5px 0 rgb(0 0 0 / 16%), 0 2px 10px 0 rgb(0 0 0 / 12%);
 }
 
 .text-cont > h2{
-    padding-top: .50%;
-    padding-bottom: .50%;
+    box-shadow: 0 2px 5px 0 rgb(0 0 0 / 16%), 0 2px 10px 0 rgb(0 0 0 / 12%);
+    padding-top: 1.50%;
+    padding-bottom: 1.50%;
     display: flex;
-    background-color: white;
-    font-size: 40px;
+    background-color: whitesmoke;
+    /* font-size: 40px; */
+    font-size: 50px;
     padding-left: 2%;
+}
+
+.navHomeBtn{
+    height: 15%;
+    width: 20%;
+    background-color: whitesmoke;
+    box-shadow: 0 2px 5px 0 rgb(0 0 0 / 106%), 0 2px 10px 0 rgb(0 0 0 / 120%);
+    position: absolute;
+    margin-top: 30%;
+    left: 0;
+    right: 0;
+    margin-left: auto;
+    margin-right: auto;
+    /* align-self: center; */
+    border: none;
+    cursor: pointer;
+}
+
+/* .navHomeBtn  :hover{
+    height: 100%;
+    width: 100%;
+    background-color: rgb(34, 34, 34);
+} */
+
+.navHomeBtn :focus{
+    outline: none;
+}
+
+.navBtnText{
+
 }

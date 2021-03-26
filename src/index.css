@@ -1,8 +1,9 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@600&display=swap');
+
 html, body {
   background-image: url('./page-images/city-bg-img.jpg');
   background-position: center;
   background-size: cover;
-  font-family: Verdana, Geneva, Tahoma, sans-serif;
   background-blend-mode: luminosity;
 }
 
@@ -16,6 +17,8 @@ body {
   overflow: auto;
   contain: content;
   height: 100%;
+  /* font-family: 'Open Sans'; */
+  /* font-weight: 600; */
 }
 
 html, body, #app, #app > div {

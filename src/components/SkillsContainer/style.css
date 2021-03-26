@@ -1,8 +1,10 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@600&family=Roboto:wght@300&family=Source+Sans+Pro:ital,wght@1,600&display=swap');
 /* SMALL SCREEN DEVICES (PHONES, 600px AND BELOW) */
 @media only screen and (max-width: 599px)  { 
     [class*="skill-main-cont"] {
         height: auto;
         width: 90%;
+        margin-top: 1%;
     }
     #skill-title-header{
         font-size: 18px;
@@ -27,6 +29,7 @@
     }
     #skill-title-header{
         font-size: 18px;
+        margin-top: 1%;
     }
     [class*="icon-div"]{
         justify-content: space-around;
@@ -43,20 +46,31 @@
 /* XL DEVICES (LARGE LAPTOPS AND DESKTOPS, 1200px AND UP) */
 @media only screen and (min-width: 992px){ 
     [class*="skill-main-cont"] {
-        height: auto;
+        height: 85%;
         width: 85%;
+        margin-bottom: 3%;
     }
     #skill-title-header{
-        font-size: 36px;
+        font-size: 40px;
+        margin-top: .5%;
     }
     [class*="skill-icon"]{
         height: 75%;
         min-height: 75%;
         width: 80%;
         min-width: 80%;
+        /* background-color: red; */
     }
     [class*="skill-text"]{
+        margin-top: 4%;
+        /* background-color: gold; */
+        /* margin-top: 4%; */
+        font-family: "Roboto" , sans-serif;
+        /* font-family: 'Open Sans'; */
+        /* font-weight: 600; */
         font-size: 20px;
+        height: auto;
+        width: 100%;
     }
  }
 
@@ -71,10 +85,12 @@
 
 .skill-main-cont > h2{
     text-align: center;
-    border-bottom: solid black 1.5px;
-    margin-top: 1%;
+    border-bottom: solid black 1.75px;
+    /* margin-top: 1%; */
     margin-bottom: .15%;
-    padding-bottom: 1.5%;
+    padding-bottom: 1%;
+    font-family: 'Open Sans';
+    font-weight: 600;
 }
 
 .skill-content{

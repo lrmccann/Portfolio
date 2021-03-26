@@ -1,3 +1,4 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@600&family=Roboto:wght@300&family=Source+Sans+Pro:ital,wght@1,600&display=swap');
 /* SMALL SCREEN DEVICES (PHONES, 600px AND BELOW) */
 @media only screen and (max-width: 599px)  { 
     [class*="contact-page"]{
@@ -67,18 +68,18 @@
 }
 
 /* XL DEVICES (LARGE LAPTOPS AND DESKTOPS, 1200px AND UP) */
-@media only screen and (min-width: 991px){ 
+@media only screen and (min-width: 992px){ 
     [class*="contact-page"]{
         height: 100%;
         width: 93%;
     }
     #contact-header{
-        font-size: 50px;
+        font-size: 48px;
         padding-top: 1%;
         padding-bottom: 1%;
     }
     [class*="contact-div"]{
-        width: 80%;
+        width: 70%;
         margin: auto;
         height: auto;
     }
@@ -89,9 +90,10 @@
         width: 90%;
     }
     [class*="submit-btn"]{
-        margin-top: .5%;
+        /* margin-top: .5%; */
         width: 14%;
         font-size: 18px;
+        padding: 1%;
     }
  }
 
@@ -108,12 +110,14 @@
     color: white;
     letter-spacing: 1px;
     height: auto;
-    font-family: "Roboto" , "sans-serif";
+    font-family: "Open Sans";
+    font-weight: 600;
     width: 100%;
 }
 
 .contact-div{
-    font-family: "Roboto" , "sans-serif";
+    font-family: "Roboto" , sans-serif;
+    font-weight: 600;
     padding: 15px;
     align-self: center;
     justify-content: center;

@@ -1,3 +1,4 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@600&family=Roboto:wght@300&family=Source+Sans+Pro:ital,wght@1,600&display=swap');
 /* SMALL SCREEN DEVICES (PHONES, 600px AND BELOW) */
 @media only screen and (max-width: 599px)  { 
     [class*="navbar-container"] {
@@ -255,8 +256,8 @@
     }
 
     #social-media-icon{
-        height: 70%;
-        width: 45%;
+        height: 75%;
+        width: 49%;
     }
  }
  
@@ -286,5 +287,6 @@
 }
 
 #navbar-text{
-    text-decoration: underline;
+    font-family: "Roboto" , sans-serif;
+    text-decoration: underline rgb(31, 30, 30);
 }
