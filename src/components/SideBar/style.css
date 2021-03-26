@@ -257,7 +257,7 @@
 
     #social-media-icon{
         height: 75%;
-        width: 49%;
+        width: 48%;
     }
  }
  
@@ -287,6 +287,8 @@
 }
 
 #navbar-text{
-    font-family: "Roboto" , sans-serif;
-    text-decoration: underline rgb(31, 30, 30);
+    /* font-family: "Roboto" , sans-serif; */
+    font-family: "Sans Open" , sans-serif;
+    /* text-decoration: underline rgb(31, 30, 30); */
+    border-bottom: solid rgb(15, 15, 15) 2px ;
 }

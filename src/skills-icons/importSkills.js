@@ -8,7 +8,7 @@ export const skillIconsOne = [
 
 export const skillsIconsTwo = [
   require('./react-icon2.png'),
-  require('./jquery-icon2.png'),
+  require('./jquery-use-me.png'),
   require('./bootstrap-icon2.png')
 ];
 
@@ -30,7 +30,7 @@ export const skillsIconsFive = [
   require('./aws-icon-2.png'),
   require('./github-icon-2.png'),
   require('./heroku-icon2.png'),
-  require('./robo-icon-3.png'),
+  require('./robo-icon-use.png'),
   require('./jest-icon.png'),
   require('./mysql-bench-icon-1.png'),
   require('./webpack-icon.png')

@@ -269,7 +269,7 @@
     }
 
     [class*="project-card"] {
-        height: 380px;
+        height: 365px;
         width: 380px;
     }
 
@@ -451,7 +451,8 @@
     display: flex;
     flex-direction: column;
     width: 100%;
-    border-top: solid black thin;
+    padding-right: 2%;
+    /* border-top: solid black thin; */
     background-color: white;
 }
 

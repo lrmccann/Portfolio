@@ -56,13 +56,13 @@
     }
     [class*="skill-icon"]{
         height: 75%;
-        min-height: 75%;
+        min-height: 85%;
         width: 80%;
-        min-width: 80%;
+        min-width: 85%;
         /* background-color: red; */
     }
     [class*="skill-text"]{
-        margin-top: 4%;
+        margin-top: 5%;
         /* background-color: gold; */
         /* margin-top: 4%; */
         font-family: "Roboto" , sans-serif;
@@ -81,6 +81,8 @@
     padding-top: .5%;
     padding-bottom: 1%;
     box-shadow: 0 2px 5px 0 rgb(0 0 0 / 16%), 0 2px 10px 0 rgb(0 0 0 / 12%);
+    display: flex;
+    flex-direction: column;
 }
 
 .skill-main-cont > h2{
@@ -94,12 +96,14 @@
 }
 
 .skill-content{
-    margin-top: 1%;
-    height: 60%;
+    margin-top: 2%;
+    height: 70%;
     width: 95%;
     display: flex;
     flex-direction: column;
-    margin-left: 2.5%;
+    align-self: center;
+    /* margin-left: 2.5%; */
+    /* background-color: red; */
 }
 
 .icon-div{
@@ -113,6 +117,7 @@
 .icon-holder{
     height: 100%;
     width: 12.5%;
+    /* background-color: red; */
     display: flex;
     flex-direction: column;
     justify-content: center; 
