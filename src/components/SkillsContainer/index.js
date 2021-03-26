@@ -4,6 +4,15 @@ import React from 'react';
 import './style.css';
 
 export default function SkillsContainer (props) {
+  console.log(props.skillImages, 'props images')
+  console.log(props.skills, 'props skills')
+
+  // var skillsTaMap = {};
+  // // eslint-disable-next-line no-return-assign
+  // props.skillImages.forEach((skillImg, i) => skillsTaMap[skillImg] = props.skills[i]);
+
+  // console.log(skillsTaMap)
+
   const skillsToMap = {
     images: [...props.skillImages],
     skills: props.skills

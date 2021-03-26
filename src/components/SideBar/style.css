@@ -187,12 +187,12 @@
     }
 
     [class*="icon-cont"] {
-        height: 15%;
+        height: 14%;
         width: 100%;
     }
 
     [class*="nav-link-container"]{
-        margin-top: 50%;
+        margin-top: 53%;
         height: 50%;
         width: 100%;
         display: flex;
@@ -215,7 +215,7 @@
     }
 
     [class*="social-media-link-container"]{
-        margin-top: 90%;
+        margin-top: 99%;
         height: 10%;
         width: 100%;
         display: flex;
@@ -233,8 +233,9 @@
 
     #font-aws-icon{
         height: 100%;
-        max-height: 45%;
-        width: 70%;
+        max-height: 52%;
+        width: 80%;
+        /* background-color: red; */
     }
 
     #social-media-btn{
@@ -256,8 +257,8 @@
     }
 
     #social-media-icon{
-        height: 75%;
-        width: 48%;
+        height: 71%;
+        width: 43.25%;
     }
  }
  
