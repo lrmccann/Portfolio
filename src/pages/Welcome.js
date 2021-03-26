@@ -22,7 +22,7 @@ export default function Welcome () {
           </Fade>
         </div>
         <Flip left>
-        <button className="navHomeBtn" onClick={homePage}><p className="navBtnText">Enter Now</p></button>
+          <button className="navHomeBtn" onClick={homePage}><p className="navBtnText">Enter Site</p></button>
         </Flip>
       </div>
     </div>
