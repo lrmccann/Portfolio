@@ -77,26 +77,20 @@
     #month-header{
         font-size: 50px;
         width: 30.5%;
-        /* margin-left: 5%; */
         padding-bottom: .60%;
         text-align: center;
         align-self: center;
         font-family: 'Open Sans';
         font-weight: 600;
-        /* background-color: red; */
         margin-top: 1%;
-        /* padding-left: 1%; */
-        
     }
     #blog-list{
-        /* list-style: square; */
         align-self: center;
         list-style: none;
         display: flex;
         flex-direction: column;
         justify-content: center;
         align-items: center;
-        /* background-color: green; */
     }
     #blog-item{
         padding-left: 2.5%;
@@ -107,11 +101,10 @@
         font-size: 26px;
         height: 90%;
         width: 75%;
-        background: rgba(255, 249, 192, 0.7);
+        background-color: ghostwhite;
     }
     #blog-item:hover{
         background-color: ghostwhite;
-        /* text-decoration-color: black; */
         text-decoration: none;
         height: 96%;
         width: 80%;
@@ -136,7 +129,6 @@
     }
 
     #blog-item:hover > li > p{
-        /* text-decoration-color: black; */
         font-size: 19px;
     }
  }
@@ -147,8 +139,6 @@
     overflow: auto;
     display: flex;
     flex-direction: column;
-    /* font-weight: 600; */
-    /* font-family: "Roboto" , "sans-serif"; */
 }
 
 #blog-header{
@@ -186,12 +176,10 @@
     color: black;
     font-family: 'Open Sans';
     font-weight: 600;
-    /* opacity: 1; */
 }
 
 .blog-page > ul > li > p {
     margin-left: 1%;
     font-family: 'Open Sans';
     font-weight: 600;
-    /* opacity: 1; */
 }

@@ -2,7 +2,6 @@
 import React, { useEffect, useState } from 'react';
 import { useHistory, useLocation } from 'react-router-dom';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import LoadingScreen from '../LoadingScreen/index';
 import {
   faHome,
   faFolder,
@@ -19,7 +18,7 @@ export default function SideBar () {
   const [currentPath, setCurrentPath] = useState();
   const [oldPath, setOldPath] = useState();
   // state to set loading and when the user clicks to navigate
-  const [loading, setLoading] = useState(true);
+  // const [loading, setLoading] = useState(true);
   const [clicked, setClicked] = useState(null);
   // state for the content of each button
   const [homeNavLink, setHomeNavLink] = useState();
@@ -47,7 +46,7 @@ export default function SideBar () {
       return uncheckRoute(location);
     } else if (clicked === true) {
       checkRoute(location);
-      setLoading(false);
+      // setLoading(false);
       return setClicked(false);
     }
   }, [clicked]);
@@ -60,7 +59,6 @@ export default function SideBar () {
         setHomeNavLink(
           <FontAwesomeIcon
             className="active-route-btn"
-            // id="font-aws-icon"
             id="font-aws-icon-two"
             icon={faHome}
           />
@@ -69,7 +67,6 @@ export default function SideBar () {
         setProjectNavLink(
           <FontAwesomeIcon
             className="active-route-btn"
-            // id="font-aws-icon"
             id="font-aws-icon-two"
             icon={faFolder}
           />
@@ -78,7 +75,6 @@ export default function SideBar () {
         setResumeNavLink(
           <FontAwesomeIcon
             className="active-route-btn"
-            // id="font-aws-icon"
             id="font-aws-icon-two"
             icon={faFileAlt}
           />
@@ -87,7 +83,6 @@ export default function SideBar () {
         setBlogNavLink(
           <FontAwesomeIcon
             className="active-route-btn"
-            // id="font-aws-icon"
             id="font-aws-icon-two"
             icon={faBold}
           />
@@ -96,22 +91,16 @@ export default function SideBar () {
         setContactNavLink(
           <FontAwesomeIcon
             className="active-route-btn"
-            // id="font-aws-icon"
             id="font-aws-icon-two"
             icon={faAddressBook}
           />
         );
       }
-      return setLoading(false);
     }
   };
 
-  const uncheckRoute = (newPath) => {
-    console.log(oldPath, 'oldie');
-    console.log(newPath, 'newie');
-    if (oldPath === newPath) {
-      console.log('nothing');
-    } else if (oldPath === '/home') {
+  const uncheckRoute = () => {
+    if (oldPath === '/home') {
       setHomeNavLink(<FontAwesomeIcon id="font-aws-icon" icon={faHome} />);
     } else if (oldPath === '/projects') {
       setProjectNavLink(<FontAwesomeIcon id="font-aws-icon" icon={faFolder} />);
@@ -184,114 +173,110 @@ export default function SideBar () {
     history.push(routeName);
   };
 
-  if (loading) {
-    return <LoadingScreen />;
-  } else {
-    return (
-      <div className="navbar-container container-fixed">
-        <div className="icon-cont">
-          <img
-            alt="Logan McCann"
-            src={require('../../page-images/canva-logo-2.png')}
-          ></img>
+  return (
+    <div className="navbar-container container-fixed">
+      <div className="icon-cont">
+        <img
+          alt="Logan McCann"
+          src={require('../../page-images/canva-logo-2.png')}
+        ></img>
+      </div>
+      <div className="nav-link-container">
+        <button
+          id="navbar-btn"
+          // onMouseEnter={hoverHomeLink}
+          // onMouseLeave={resetHomeLink}
+          onClick={() => {
+            navPage('/home');
+          }}
+        >
+          {homeNavLink}
+        </button>
+        <button
+          id="navbar-btn"
+          // onMouseEnter={hoverProjectLink}
+          // onMouseLeave={resetProjectLink}
+          onClick={() => {
+            navPage('/projects');
+          }}
+        >
+          {projectNavLink}
+        </button>
+        <button
+          id="navbar-btn"
+          // onMouseEnter={hoverResumeLink}
+          // onMouseLeave={resetResumeLink}
+          onClick={() => {
+            navPage('/resume');
+          }}
+        >
+          {resumeNavLink}
+        </button>
+        <button
+          id="navbar-btn"
+          // onMouseEnter={hoverBlogLink}
+          // onMouseLeave={resetBlogLink}
+          onClick={() => {
+            navPage('/blog');
+          }}
+        >
+          {blogNavLink}
+        </button>
+        <button
+          id="navbar-btn"
+          // onMouseEnter={hoverContactLink}
+          // onMouseLeave={resetContactLink}
+          onClick={() => {
+            navPage('/contact');
+          }}
+        >
+          {contactNavLink}
+        </button>
+      </div>
+      <div className="social-media-link-container">
+        <div id="social-media-btn" className="myGithubBtn">
+          <a
+            id="social-media-link"
+            href="https://github.com/lrmccann"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <img
+              id="social-media-icon"
+              alt="Github Link"
+              src={require('../../page-images/github-mini-img.png')}
+            ></img>
+          </a>
         </div>
-        <div className="nav-link-container">
-          <button
-            id="navbar-btn"
-            // onMouseEnter={hoverHomeLink}
-            // onMouseLeave={resetHomeLink}
-            onClick={() => {
-              navPage('/home');
-            }}
+        <div id="social-media-btn" className="myMediumBtn">
+          <a
+            id="social-media-link"
+            href="https://medium.com/@loganrmccann"
+            target="_blank"
+            rel="noopener noreferrer"
           >
-            {homeNavLink}
-          </button>
-          <button
-            id="navbar-btn"
-            // onMouseEnter={hoverProjectLink}
-            // onMouseLeave={resetProjectLink}
-            onClick={() => {
-              navPage('/projects');
-            }}
-          >
-            {projectNavLink}
-          </button>
-          <button
-            id="navbar-btn"
-            // onMouseEnter={hoverResumeLink}
-            // onMouseLeave={resetResumeLink}
-            onClick={() => {
-              navPage('/resume');
-            }}
-          >
-            {resumeNavLink}
-          </button>
-          <button
-            id="navbar-btn"
-            // onMouseEnter={hoverBlogLink}
-            // onMouseLeave={resetBlogLink}
-            onClick={() => {
-              navPage('/blog');
-            }}
-          >
-            {blogNavLink}
-          </button>
-          <button
-            id="navbar-btn"
-            // onMouseEnter={hoverContactLink}
-            // onMouseLeave={resetContactLink}
-            onClick={() => {
-              navPage('/contact');
-            }}
-          >
-            {contactNavLink}
-          </button>
+            <img
+              id="social-media-icon"
+              alt="Medium Link"
+              src={require('../../page-images/medium-icon2.png')}
+            ></img>
+          </a>
         </div>
-        <div className="social-media-link-container">
-          <div id="social-media-btn" className="myGithubBtn">
-            <a
-              id="social-media-link"
-              href="https://github.com/lrmccann"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              <img
-                id="social-media-icon"
-                alt="Github Link"
-                src={require('../../page-images/github-mini-img.png')}
-              ></img>
-            </a>
-          </div>
-          <div id="social-media-btn" className="myMediumBtn">
-            <a
-              id="social-media-link"
-              href="https://medium.com/@loganrmccann"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              <img
-                id="social-media-icon"
-                alt="Medium Link"
-                src={require('../../page-images/medium-icon2.png')}
-              ></img>
-            </a>
-          </div>
-          <div id="social-media-btn" className="mylinkedInBtn">
-            <a
-              id="social-media-link"
-              href="https://www.linkedin.com/in/logan-mccann-381855155/"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              <img
-                id="social-media-icon"
-                alt="LinkedIn Link"
-                src={require('../../page-images/linkedin-icon2.png')}
-              ></img>
-            </a>
-          </div>
+        <div id="social-media-btn" className="mylinkedInBtn">
+          <a
+            id="social-media-link"
+            href="https://www.linkedin.com/in/logan-mccann-381855155/"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <img
+              id="social-media-icon"
+              alt="LinkedIn Link"
+              src={require('../../page-images/linkedin-icon2.png')}
+            ></img>
+          </a>
         </div>
       </div>
-    );
-  }
+    </div>
+  );
 }

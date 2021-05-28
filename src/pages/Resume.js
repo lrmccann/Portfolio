@@ -4,10 +4,10 @@ import Viewer, { Worker } from '@phuocng/react-pdf-viewer';
 import '@phuocng/react-pdf-viewer/cjs/react-pdf-viewer.css';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faDownload } from '@fortawesome/free-solid-svg-icons';
-import resume from '../page-images/logan-resume-with-links.pdf';
+import resume from '../page-images/LoganMcCann.pdf';
 import '../styleSheets/resume.css';
 
-const resumeDownload = require('../page-images/logan-resume-with-links.pdf');
+const resumeDownload = require('../page-images/LoganMcCann.pdf');
 
 export default function Resume () {
   const [screenWidth, setScreenWidth] = useState(window.innerWidth);

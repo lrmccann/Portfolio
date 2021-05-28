@@ -1,5 +1,10 @@
-.loading-page{
+.loading-screen{
     height: 100%;
     width: 100%;
-    background-color: rebeccapurple;
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-content: center;
+    background-color: white;
 }

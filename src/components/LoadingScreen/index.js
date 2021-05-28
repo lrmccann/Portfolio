@@ -1,23 +1,12 @@
 /* eslint-disable semi */
-import React, { useEffect, useState } from 'react';
-import FadeIn from 'react-fade-in';
-import Lottie from 'react-lottie';
-import ReactLoading from 'react-loading';
-import 'bootstrap/dist/css/bootstrap.css';
-import './index.css';
+import React from 'react';
+import Loader from 'react-loader-spinner';
+import 'react-loader-spinner/dist/loader/css/react-spinner-loader.css';
 
-export default function LoadingScreen () {
-//   const [loading, setLoading] = useState(true);
-
-//   useEffect(() => {
-//     setTimeout(() => (
-//       setLoading(false)
-//     ), 2 * 100)
-//   }, [])
-// console.log(loading, "i am loading")
-  return(
-    <div className="container-fixed loading-page">
-      <h1>Loading</h1>
+export default function LoadingPage () {
+  return (
+    <div className="loading-screen">
+      <Loader type="Rings" color="#00BFFF" height={120} width={120} />
     </div>
   )
 }
