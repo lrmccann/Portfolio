@@ -5,12 +5,16 @@ import Flip from 'react-reveal/Flip';
 import { useHistory } from 'react-router-dom';
 import '../styleSheets/welcome.css';
 
-export default function Welcome () {
+export default function Welcome (props) {
   const history = useHistory()
 
   const homePage = () => {
+    localStorage.setItem('secretKey', 'lrm97');
+    console.log(localStorage.getItem('secretKey'));
     history.push('/home');
   }
+  // console.log()
+  console.log(props);
 
   return (
     <div className="welcome-page container-fixed">

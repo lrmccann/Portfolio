@@ -1,7 +1,8 @@
 /* eslint-disable semi */
-import React, { useState } from 'react';
-import { useHistory } from 'react-router-dom';
+import React, { useEffect, useState } from 'react';
+import { useHistory, useLocation } from 'react-router-dom';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import LoadingScreen from '../LoadingScreen/index';
 import {
   faHome,
   faFolder,
@@ -11,188 +12,286 @@ import {
 } from '@fortawesome/free-solid-svg-icons';
 import './style.css';
 
-export default function SideBar (props) {
+export default function SideBar () {
+  const location = useLocation().pathname;
   const history = useHistory();
+  // state to store paths from router
+  const [currentPath, setCurrentPath] = useState();
+  const [oldPath, setOldPath] = useState();
+  // state to set loading and when the user clicks to navigate
+  const [loading, setLoading] = useState(true);
+  const [clicked, setClicked] = useState(null);
+  // state for the content of each button
+  const [homeNavLink, setHomeNavLink] = useState();
+  const [projectNavLink, setProjectNavLink] = useState();
+  const [blogNavLink, setBlogNavLink] = useState();
+  const [resumeNavLink, setResumeNavLink] = useState();
+  const [contactNavLink, setContactNavLink] = useState();
+
+  useEffect(() => {
+    if (clicked === null) {
+      setOldPath(location);
+      setCurrentPath(`'${location}'`);
+      setHomeNavLink(<FontAwesomeIcon id="font-aws-icon" icon={faHome} />);
+      setProjectNavLink(<FontAwesomeIcon id="font-aws-icon" icon={faFolder} />);
+      setBlogNavLink(<FontAwesomeIcon id="font-aws-icon" icon={faBold} />);
+      setResumeNavLink(<FontAwesomeIcon id="font-aws-icon" icon={faFileAlt} />);
+      setContactNavLink(
+        <FontAwesomeIcon id="font-aws-icon" icon={faAddressBook} />
+      );
+      if (currentPath === undefined || currentPath === null) {
+        return checkRoute(location);
+      }
+    } else if (clicked === false) {
+      setOldPath(location);
+      return uncheckRoute(location);
+    } else if (clicked === true) {
+      checkRoute(location);
+      setLoading(false);
+      return setClicked(false);
+    }
+  }, [clicked]);
+
+  const checkRoute = (thePath) => {
+    if (thePath === undefined || thePath === null) {
+      alert('Error, please refresh page and try again');
+    } else {
+      if (thePath === '/home') {
+        setHomeNavLink(
+          <FontAwesomeIcon
+            className="active-route-btn"
+            // id="font-aws-icon"
+            id="font-aws-icon-two"
+            icon={faHome}
+          />
+        );
+      } else if (thePath === '/projects') {
+        setProjectNavLink(
+          <FontAwesomeIcon
+            className="active-route-btn"
+            // id="font-aws-icon"
+            id="font-aws-icon-two"
+            icon={faFolder}
+          />
+        );
+      } else if (thePath === '/resume') {
+        setResumeNavLink(
+          <FontAwesomeIcon
+            className="active-route-btn"
+            // id="font-aws-icon"
+            id="font-aws-icon-two"
+            icon={faFileAlt}
+          />
+        );
+      } else if (thePath === '/blog') {
+        setBlogNavLink(
+          <FontAwesomeIcon
+            className="active-route-btn"
+            // id="font-aws-icon"
+            id="font-aws-icon-two"
+            icon={faBold}
+          />
+        );
+      } else if (thePath === '/contact') {
+        setContactNavLink(
+          <FontAwesomeIcon
+            className="active-route-btn"
+            // id="font-aws-icon"
+            id="font-aws-icon-two"
+            icon={faAddressBook}
+          />
+        );
+      }
+      return setLoading(false);
+    }
+  };
+
+  const uncheckRoute = (newPath) => {
+    console.log(oldPath, 'oldie');
+    console.log(newPath, 'newie');
+    if (oldPath === newPath) {
+      console.log('nothing');
+    } else if (oldPath === '/home') {
+      setHomeNavLink(<FontAwesomeIcon id="font-aws-icon" icon={faHome} />);
+    } else if (oldPath === '/projects') {
+      setProjectNavLink(<FontAwesomeIcon id="font-aws-icon" icon={faFolder} />);
+    } else if (oldPath === '/resume') {
+      setResumeNavLink(<FontAwesomeIcon id="font-aws-icon" icon={faFileAlt} />);
+    } else if (oldPath === '/blog') {
+      setBlogNavLink(<FontAwesomeIcon id="font-aws-icon" icon={faBold} />);
+    } else if (oldPath === '/contact') {
+      setContactNavLink(
+        <FontAwesomeIcon id="font-aws-icon" icon={faAddressBook} />
+      );
+    }
+  };
 
   // HOME BTN FUNC
-  const homePage = () => {
-    history.push('/home');
-  };
-  const [homeNavLink, setHomeNavLink] = useState(
-    <FontAwesomeIcon id="font-aws-icon" icon={faHome} />
-  );
-  const hoverHomeLink = (e) => {
-    e.preventDefault();
-    setHomeNavLink(<h5 id="navbar-text">Home</h5>);
-  };
-  const resetHomeLink = (e) => {
-    e.preventDefault();
-    setHomeNavLink(<FontAwesomeIcon id="font-aws-icon" icon={faHome} />);
-  };
-  //
+  // const hoverHomeLink = (e) => {
+  //   e.preventDefault();
+  //   if (currentPath === '/home') {
+  //     console.log('disbaled func')
+  //   } else {
+  //     setHomeNavLink(<h5 id="navbar-text">Home</h5>);
+  //   }
+  // };
+  // const resetHomeLink = (e) => {
+  //   e.preventDefault();
+  //   setHomeNavLink(<FontAwesomeIcon id="font-aws-icon" icon={faHome} />);
+  // };
   // PROJECTS BTN FUNC
-  const projectPage = () => {
-    history.push('/projects');
-  };
-  const [projectNavLink, setprojectNavLink] = useState(
-    <FontAwesomeIcon id="font-aws-icon" icon={faFolder} />
-  );
-  const hoverProjectLink = (e) => {
-    e.preventDefault();
-    setprojectNavLink(<h5 id="navbar-text">Projects</h5>);
-  };
-  const resetProjectLink = (e) => {
-    e.preventDefault();
-    setprojectNavLink(<FontAwesomeIcon id="font-aws-icon" icon={faFolder} />);
-  };
-  //
+  // const hoverProjectLink = (e) => {
+  //   e.preventDefault();
+  //   setProjectNavLink(<h5 id="navbar-text">Projects</h5>);
+  // };
+  // const resetProjectLink = (e) => {
+  //   e.preventDefault();
+  //   setProjectNavLink(<FontAwesomeIcon id="font-aws-icon" icon={faFolder} />);
+  // };
   // RESUME BTN FUNC
-  const resumePage = () => {
-    history.push('/resume');
-  };
-  const [resumeNavLink, setResumeNavLink] = useState(
-    <FontAwesomeIcon id="font-aws-icon" icon={faFileAlt} />
-  );
-  const hoverResumeLink = (e) => {
-    e.preventDefault();
-    setResumeNavLink(<h5 id="navbar-text">Resume</h5>);
-  };
-  const resetResumeLink = (e) => {
-    e.preventDefault();
-    setResumeNavLink(<FontAwesomeIcon id="font-aws-icon" icon={faFileAlt} />);
-  };
-  //
+  // const hoverResumeLink = (e) => {
+  //   e.preventDefault();
+  //   setResumeNavLink(<h5 id="navbar-text">Resume</h5>);
+  // };
+  // const resetResumeLink = (e) => {
+  //   e.preventDefault();
+  //   setResumeNavLink(<FontAwesomeIcon id="font-aws-icon" icon={faFileAlt} />);
+  // };
   // BLOG BTN FUNC
-  const blogPage = () => {
-    history.push('/blog');
-  };
-  const [blogNavLink, setBlogNavLink] = useState(
-    <FontAwesomeIcon id="font-aws-icon" icon={faBold} />
-  );
-  const hoverBlogLink = (e) => {
-    e.preventDefault();
-    setBlogNavLink(<h5 id="navbar-text">Blog</h5>);
-  };
-  const resetBlogLink = (e) => {
-    e.preventDefault();
-    setBlogNavLink(<FontAwesomeIcon id="font-aws-icon" icon={faBold} />);
-  };
-  //
+  // const hoverBlogLink = (e) => {
+  //   e.preventDefault();
+  //   setBlogNavLink(<h5 id="navbar-text">Blog</h5>);
+  // };
+  // const resetBlogLink = (e) => {
+  //   e.preventDefault();
+  //   setBlogNavLink(<FontAwesomeIcon id="font-aws-icon" icon={faBold} />);
+  // };
   // CONTACT BTN FUNC
-  const contactPage = () => {
-    history.push('/contact');
-  };
-  const [contactNavLink, setContactNavLink] = useState(
-    <FontAwesomeIcon id="font-aws-icon" icon={faAddressBook} />
-  );
-  const hoverContactLink = (e) => {
-    e.preventDefault();
-    setContactNavLink(<h5 id="navbar-text">Contact</h5>);
-  };
-  const resetContactLink = (e) => {
-    e.preventDefault();
-    setContactNavLink(
-      <FontAwesomeIcon id="font-aws-icon" icon={faAddressBook} />
-    );
-  // eslint-disable-next-line semi
-  };
-  //
+  // const hoverContactLink = (e) => {
+  //   e.preventDefault();
+  //   setContactNavLink(<h5 id="navbar-text">Contact</h5>);
+  // };
+  // const resetContactLink = (e) => {
+  //   e.preventDefault();
+  //   setContactNavLink(
+  //     <FontAwesomeIcon id="font-aws-icon" icon={faAddressBook} />
+  //   );
+  // };
 
-  return (
-    <div className="navbar-container container-fixed">
-      <div className="icon-cont">
-        <img
-          alt="Logan McCann"
-          src={require('../../page-images/canva-logo-2.png')}
-        ></img>
-      </div>
-      <div className="nav-link-container">
-        <button
-          id="navbar-btn"
-          onMouseEnter={hoverHomeLink}
-          onMouseLeave={resetHomeLink}
-          onClick={homePage}
-        >
-          {homeNavLink}
-        </button>
-        <button
-          id="navbar-btn"
-          onMouseEnter={hoverProjectLink}
-          onMouseLeave={resetProjectLink}
-          onClick={projectPage}
-        >
-          {projectNavLink}
-        </button>
-        <button
-          id="navbar-btn"
-          onMouseEnter={hoverResumeLink}
-          onMouseLeave={resetResumeLink}
-          onClick={resumePage}
-        >
-          {resumeNavLink}
-        </button>
-        <button
-          id="navbar-btn"
-          onMouseEnter={hoverBlogLink}
-          onMouseLeave={resetBlogLink}
-          onClick={blogPage}
-        >
-          {blogNavLink}
-        </button>
-        <button
-          id="navbar-btn"
-          onMouseEnter={hoverContactLink}
-          onMouseLeave={resetContactLink}
-          onClick={contactPage}
-        >
-          {contactNavLink}
-        </button>
-      </div>
-      <div className="social-media-link-container">
-        <div id="social-media-btn" className="myGithubBtn">
-          <a
-            id="social-media-link"
-            href="https://github.com/lrmccann"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            <img
-              id="social-media-icon"
-              alt="Github Link"
-              src={require('../../page-images/github-mini-img.png')}
-              // src={githubImg}
-            ></img>
-          </a>
+  const navPage = (routeName) => {
+    setCurrentPath(`'${routeName}'`);
+    setClicked(true);
+    history.push(routeName);
+  };
+
+  if (loading) {
+    return <LoadingScreen />;
+  } else {
+    return (
+      <div className="navbar-container container-fixed">
+        <div className="icon-cont">
+          <img
+            alt="Logan McCann"
+            src={require('../../page-images/canva-logo-2.png')}
+          ></img>
         </div>
-        <div id="social-media-btn" className="myMediumBtn">
-          <a
-            id="social-media-link"
-            href="https://medium.com/@loganrmccann"
-            target="_blank"
-            rel="noopener noreferrer"
+        <div className="nav-link-container">
+          <button
+            id="navbar-btn"
+            // onMouseEnter={hoverHomeLink}
+            // onMouseLeave={resetHomeLink}
+            onClick={() => {
+              navPage('/home');
+            }}
           >
-            <img
-              id="social-media-icon"
-              alt="Medium Link"
-              src={require('../../page-images/medium-icon2.png')}
-            ></img>
-          </a>
+            {homeNavLink}
+          </button>
+          <button
+            id="navbar-btn"
+            // onMouseEnter={hoverProjectLink}
+            // onMouseLeave={resetProjectLink}
+            onClick={() => {
+              navPage('/projects');
+            }}
+          >
+            {projectNavLink}
+          </button>
+          <button
+            id="navbar-btn"
+            // onMouseEnter={hoverResumeLink}
+            // onMouseLeave={resetResumeLink}
+            onClick={() => {
+              navPage('/resume');
+            }}
+          >
+            {resumeNavLink}
+          </button>
+          <button
+            id="navbar-btn"
+            // onMouseEnter={hoverBlogLink}
+            // onMouseLeave={resetBlogLink}
+            onClick={() => {
+              navPage('/blog');
+            }}
+          >
+            {blogNavLink}
+          </button>
+          <button
+            id="navbar-btn"
+            // onMouseEnter={hoverContactLink}
+            // onMouseLeave={resetContactLink}
+            onClick={() => {
+              navPage('/contact');
+            }}
+          >
+            {contactNavLink}
+          </button>
         </div>
-        <div id="social-media-btn" className="mylinkedInBtn">
-          <a
-            id="social-media-link"
-            href="https://www.linkedin.com/in/logan-mccann-381855155/"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            <img
-              id="social-media-icon"
-              alt="LinkedIn Link"
-              src={require('../../page-images/linkedin-icon2.png')}
-            ></img>
-          </a>
+        <div className="social-media-link-container">
+          <div id="social-media-btn" className="myGithubBtn">
+            <a
+              id="social-media-link"
+              href="https://github.com/lrmccann"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <img
+                id="social-media-icon"
+                alt="Github Link"
+                src={require('../../page-images/github-mini-img.png')}
+              ></img>
+            </a>
+          </div>
+          <div id="social-media-btn" className="myMediumBtn">
+            <a
+              id="social-media-link"
+              href="https://medium.com/@loganrmccann"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <img
+                id="social-media-icon"
+                alt="Medium Link"
+                src={require('../../page-images/medium-icon2.png')}
+              ></img>
+            </a>
+          </div>
+          <div id="social-media-btn" className="mylinkedInBtn">
+            <a
+              id="social-media-link"
+              href="https://www.linkedin.com/in/logan-mccann-381855155/"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <img
+                id="social-media-icon"
+                alt="LinkedIn Link"
+                src={require('../../page-images/linkedin-icon2.png')}
+              ></img>
+            </a>
+          </div>
         </div>
       </div>
-    </div>
-  );
+    );
+  }
 }

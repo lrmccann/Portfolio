@@ -4,8 +4,10 @@ import React from 'react';
 import './style.css';
 
 export default function SkillsContainer (props) {
-  console.log(props.skillImages, 'props images')
-  console.log(props.skills, 'props skills')
+  // console.log(props.skillImages, 'props images')
+  // console.log(props.skills, 'props skills')
+
+  // for(i = 0; i <= )
 
   // var skillsTaMap = {};
   // // eslint-disable-next-line no-return-assign

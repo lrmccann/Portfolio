@@ -153,6 +153,22 @@
         min-width: 46px;
         max-width: 46px;
         margin: auto;
+        stroke: black;
+        stroke-width: 6;
+    }
+
+    #font-aws-icon-two{
+        height: 26px;
+        min-height: 26px;
+        max-height: 26px;
+        width: 46px;
+        min-width: 46px;
+        max-width: 46px;
+        margin: auto;
+        border-bottom: solid green 2px;
+        background-color: blueviolet;
+        /* stroke: black; */
+        /* stroke-width: 6; */
     }
 
     #social-media-btn{
@@ -212,6 +228,7 @@
         flex-direction: row;
         align-items: center;
         justify-content: center;
+        /* background-color: yellow; */
     }
 
     [class*="social-media-link-container"]{
@@ -235,7 +252,18 @@
         height: 100%;
         max-height: 52%;
         width: 80%;
-        /* background-color: red; */
+        color: white;
+        stroke: black;
+        stroke-width: 20;
+    }
+
+    #font-aws-icon-two{
+        height: 100%;
+        max-height: 52%;
+        width: 80%;
+        /* stroke: slategray; */
+        stroke: black;
+        stroke-width: 20;
     }
 
     #social-media-btn{
@@ -292,4 +320,13 @@
     font-family: "Sans Open" , sans-serif;
     /* text-decoration: underline rgb(31, 30, 30); */
     border-bottom: solid rgb(15, 15, 15) 2px ;
+}
+
+
+
+.active-route-btn{
+    border-right: none;
+    border-left: none;
+    border-top: none;
+    color: black;
 }
