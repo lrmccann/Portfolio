@@ -10,8 +10,9 @@ export default function Welcome (props) {
 
   const homePage = () => {
     localStorage.setItem('secretKey', 'lrm97');
-    console.log(localStorage.getItem('secretKey'));
-    history.push('/home');
+    // console.log(localStorage.getItem('secretKey'));
+    props.someCallback("clicked");
+    // history.push('/home');
   }
   // console.log()
   console.log(props);

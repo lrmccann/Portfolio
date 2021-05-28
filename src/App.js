@@ -2,7 +2,6 @@
 import React, { useEffect, useState } from 'react';
 import { BrowserRouter as Router, Route } from 'react-router-dom';
 import ReactGA from 'react-ga';
-// import LoadingScreen from './components/LoadingScreen/index';
 import Projects from './pages/Projects';
 import Home from './pages/Home';
 import Contact from './pages/Contact';
@@ -23,8 +22,6 @@ export default function App () {
     }
   });
 
-  console.log(idk, 'some state')
-
   useEffect(() => {
     if (idk[0] === null) {
       console.log('its null')
@@ -43,17 +40,22 @@ export default function App () {
   // // that you would like to track with google analytics
   // })
 
-  return (
+  const someCallback = (clickedHome) => {
+    if (clickedHome === 'clicked') {
+      setClicked(true);
+    }
+  }
 
+  return (
     <>
       <Router>
         <React.StrictMode>
           {!clicked ? (
-            <Route exact = {true} path='/' component={Welcome} />
+            <Route exact path='/' render={(props) => <Welcome {...props} someCallback = {someCallback} />}/>
           ) : (
             <>
               <SideBar />
-              <Route exact path='/home' component={Home} />
+              <Route exact path='/home' component={Home}/>
               <Route exact path='/projects' component={Projects} />
               <Route exact path='/resume' component={Resume} />
               <Route exact path='/blog' component={Blog} />

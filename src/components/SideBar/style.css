@@ -276,12 +276,14 @@
     }
 
     #social-media-btn{
-        width: 100%;
+        width: 95%;
         height: 65%;
         border: transparent;
         display: flex;
         flex-direction: column;
         align-items: center;
+        margin-top: 2%;
+        /* background: yellow; */
     }
 
     #social-media-link{
@@ -290,7 +292,8 @@
         align-items: center;
         justify-content: center;
         height: 100%;
-        width: 73%;
+        width: 71%;
+        /* background-color: red; */
     }
 
     #social-media-icon{

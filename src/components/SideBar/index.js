@@ -30,7 +30,7 @@ export default function SideBar () {
   useEffect(() => {
     if (clicked === null) {
       setOldPath(location);
-      setCurrentPath(`'${location}'`);
+      setCurrentPath(location);
       setHomeNavLink(<FontAwesomeIcon id="font-aws-icon" icon={faHome} />);
       setProjectNavLink(<FontAwesomeIcon id="font-aws-icon" icon={faFolder} />);
       setBlogNavLink(<FontAwesomeIcon id="font-aws-icon" icon={faBold} />);
@@ -46,7 +46,6 @@ export default function SideBar () {
       return uncheckRoute(location);
     } else if (clicked === true) {
       checkRoute(location);
-      // setLoading(false);
       return setClicked(false);
     }
   }, [clicked]);
@@ -100,18 +99,23 @@ export default function SideBar () {
   };
 
   const uncheckRoute = () => {
-    if (oldPath === '/home') {
-      setHomeNavLink(<FontAwesomeIcon id="font-aws-icon" icon={faHome} />);
-    } else if (oldPath === '/projects') {
-      setProjectNavLink(<FontAwesomeIcon id="font-aws-icon" icon={faFolder} />);
-    } else if (oldPath === '/resume') {
-      setResumeNavLink(<FontAwesomeIcon id="font-aws-icon" icon={faFileAlt} />);
-    } else if (oldPath === '/blog') {
-      setBlogNavLink(<FontAwesomeIcon id="font-aws-icon" icon={faBold} />);
-    } else if (oldPath === '/contact') {
-      setContactNavLink(
-        <FontAwesomeIcon id="font-aws-icon" icon={faAddressBook} />
-      );
+    console.log(currentPath, oldPath)
+    if (oldPath === currentPath) {
+      return;
+    } else {
+      if (oldPath === '/home') {
+        setHomeNavLink(<FontAwesomeIcon id="font-aws-icon" icon={faHome} />);
+      } else if (oldPath === '/projects') {
+        setProjectNavLink(<FontAwesomeIcon id="font-aws-icon" icon={faFolder} />);
+      } else if (oldPath === '/resume') {
+        setResumeNavLink(<FontAwesomeIcon id="font-aws-icon" icon={faFileAlt} />);
+      } else if (oldPath === '/blog') {
+        setBlogNavLink(<FontAwesomeIcon id="font-aws-icon" icon={faBold} />);
+      } else if (oldPath === '/contact') {
+        setContactNavLink(
+          <FontAwesomeIcon id="font-aws-icon" icon={faAddressBook} />
+        );
+      }
     }
   };
 
