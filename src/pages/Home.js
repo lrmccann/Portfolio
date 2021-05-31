@@ -55,7 +55,7 @@ export default function Home () {
         <div className="bio-cont container-fixed">
           <h2 id="bio-header">About Me</h2>
           <p id="bio-text">
-            I am a full stack web developer living in Brooklyn, New York. I
+            I am a full stack web developer living in Chicago, Illinois. I
             focus on crafting clean & user-friendly experiences. I currently
             specialize in Javascript & Node.js, and enjoy learning new languages
             in my free time.

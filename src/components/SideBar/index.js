@@ -31,10 +31,8 @@ export default function SideBar (props) {
 
   useEffect(() => {
     if (location === '/') {
-      console.log("now hidden");
       setNavStyle('hidden');
     } else if (location !== '/') {
-      console.log("now visible")
       setNavStyle('visible');
     }
   }, [props])
@@ -113,7 +111,7 @@ export default function SideBar (props) {
   const uncheckRoute = () => {
     console.log(currentPath, oldPath)
     if (oldPath === currentPath) {
-      console.log("old path is current path")
+      console.log('old path is current path');
     } else {
       if (oldPath === '/home') {
         setHomeNavLink(<FontAwesomeIcon id="font-aws-icon" icon={faHome} />);
