@@ -50,8 +50,7 @@ export default function Home () {
         <img
           id="profile-picture"
           alt="Logan R McCann"
-          // src={require('../page-images/large-prof-pic.png')}
-          src={require('../page-images/LoganPort.png')}
+          src={require('../page-images/LoganLarge.png')}
         ></img>
         <div className="bio-cont container-fixed">
           <h2 id="bio-header">About Me</h2>

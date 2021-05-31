@@ -1,7 +1,7 @@
 /* eslint-disable semi */
 import React, { useEffect, useState } from 'react';
-import { BrowserRouter as Router, Route } from 'react-router-dom';
-import ReactGA from 'react-ga';
+import { BrowserRouter as Router, Route, Switch } from 'react-router-dom';
+import ReactGA, { set } from 'react-ga';
 import Projects from './pages/Projects';
 import Home from './pages/Home';
 import Contact from './pages/Contact';
@@ -12,8 +12,8 @@ import SideBar from './components/SideBar';
 import './index.css';
 
 export default function App () {
-  const [clicked, setClicked] = useState(false);
-  const idk = useState(localStorage.getItem('secretKey'))
+  const [clicked, setClicked] = useState(null);
+  const [navStyleState, setNavStyleState] = useState();
   var WebFont = require('webfontloader');
 
   WebFont.load({
@@ -21,16 +21,6 @@ export default function App () {
       families: ['Open Sans', 'Semi-bold', 'Roboto']
     }
   });
-
-  useEffect(() => {
-    if (idk[0] === null) {
-      console.log('its null')
-      setClicked(false);
-    } else if (idk[0] === 'lrm97') {
-      console.log('its true')
-      setClicked(true);
-    }
-  }, [idk])
 
   const trackingId = '2405172398';
   ReactGA.initialize(trackingId);
@@ -40,28 +30,46 @@ export default function App () {
   // // that you would like to track with google analytics
   // })
 
-  const someCallback = (clickedHome) => {
-    if (clickedHome === 'clicked') {
-      setClicked(true);
+  useEffect(() => {
+    if (clicked) {
+      setNavStyleState('visible');
+    } else if (clicked === null) {
+      setNavStyleState('hidden');
     }
+  }, [clicked]);
+
+  const hideNavbar = (styleAtt) => {
+    if (styleAtt === 'visible') {
+      return setClicked(true);
+    }
+
+    // console.log(styleAtt, "hide nav")
+    // return setNavStyleState()
   }
 
   return (
     <>
       <Router>
         <React.StrictMode>
-          {!clicked ? (
-            <Route exact path='/' render={(props) => <Welcome {...props} someCallback = {someCallback} />}/>
-          ) : (
-            <>
-              <SideBar />
-              <Route exact path='/home' component={Home}/>
+          {/* {!clicked ? ( */}
+            <Route exact path='/' render={(props) => <Welcome {...props} hideNavbar = {hideNavbar} />}/>
+          {/* ) : ( */}
+            {/* <> */}
+            <Switch>
+              <>
+              <SideBar navStyleAtt = {navStyleState} />
+              <Route exact path='/home'
+              // render={(props) => <Home {...props} showNavbar = {showNavbar} />}
+              component={Home}
+              />
               <Route exact path='/projects' component={Projects} />
               <Route exact path='/resume' component={Resume} />
               <Route exact path='/blog' component={Blog} />
               <Route exact path='/contact' component={Contact} />
-            </>
-          )}
+              </>
+              </Switch>
+            {/* </> */}
+          {/* )} */}
         </React.StrictMode>
       </Router>
     </>

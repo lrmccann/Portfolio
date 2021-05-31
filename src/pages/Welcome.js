@@ -1,21 +1,18 @@
+/* eslint-disable react/prop-types */
 /* eslint-disable semi */
-import * as React from 'react';
+import React from 'react';
 import Fade from 'react-reveal/Fade';
 import Flip from 'react-reveal/Flip';
 import { useHistory } from 'react-router-dom';
 import '../styleSheets/welcome.css';
 
 export default function Welcome (props) {
-  const history = useHistory()
+  const history = useHistory();
 
   const homePage = () => {
-    localStorage.setItem('secretKey', 'lrm97');
-    // console.log(localStorage.getItem('secretKey'));
-    props.someCallback("clicked");
-    // history.push('/home');
+    props.hideNavbar('visible');
+    history.push('/home');
   }
-  // console.log()
-  console.log(props);
 
   return (
     <div className="welcome-page container-fixed">

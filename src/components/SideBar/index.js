@@ -11,7 +11,7 @@ import {
 } from '@fortawesome/free-solid-svg-icons';
 import './style.css';
 
-export default function SideBar () {
+export default function SideBar (props) {
   const location = useLocation().pathname;
   const history = useHistory();
   // state to store paths from router
@@ -26,6 +26,18 @@ export default function SideBar () {
   const [blogNavLink, setBlogNavLink] = useState();
   const [resumeNavLink, setResumeNavLink] = useState();
   const [contactNavLink, setContactNavLink] = useState();
+
+  const [navStyle, setNavStyle] = useState();
+
+  useEffect(() => {
+    if (location === '/') {
+      console.log("now hidden");
+      setNavStyle('hidden');
+    } else if (location !== '/') {
+      console.log("now visible")
+      setNavStyle('visible');
+    }
+  }, [props])
 
   useEffect(() => {
     if (clicked === null) {
@@ -101,7 +113,7 @@ export default function SideBar () {
   const uncheckRoute = () => {
     console.log(currentPath, oldPath)
     if (oldPath === currentPath) {
-      return;
+      console.log("old path is current path")
     } else {
       if (oldPath === '/home') {
         setHomeNavLink(<FontAwesomeIcon id="font-aws-icon" icon={faHome} />);
@@ -118,59 +130,6 @@ export default function SideBar () {
       }
     }
   };
-
-  // HOME BTN FUNC
-  // const hoverHomeLink = (e) => {
-  //   e.preventDefault();
-  //   if (currentPath === '/home') {
-  //     console.log('disbaled func')
-  //   } else {
-  //     setHomeNavLink(<h5 id="navbar-text">Home</h5>);
-  //   }
-  // };
-  // const resetHomeLink = (e) => {
-  //   e.preventDefault();
-  //   setHomeNavLink(<FontAwesomeIcon id="font-aws-icon" icon={faHome} />);
-  // };
-  // PROJECTS BTN FUNC
-  // const hoverProjectLink = (e) => {
-  //   e.preventDefault();
-  //   setProjectNavLink(<h5 id="navbar-text">Projects</h5>);
-  // };
-  // const resetProjectLink = (e) => {
-  //   e.preventDefault();
-  //   setProjectNavLink(<FontAwesomeIcon id="font-aws-icon" icon={faFolder} />);
-  // };
-  // RESUME BTN FUNC
-  // const hoverResumeLink = (e) => {
-  //   e.preventDefault();
-  //   setResumeNavLink(<h5 id="navbar-text">Resume</h5>);
-  // };
-  // const resetResumeLink = (e) => {
-  //   e.preventDefault();
-  //   setResumeNavLink(<FontAwesomeIcon id="font-aws-icon" icon={faFileAlt} />);
-  // };
-  // BLOG BTN FUNC
-  // const hoverBlogLink = (e) => {
-  //   e.preventDefault();
-  //   setBlogNavLink(<h5 id="navbar-text">Blog</h5>);
-  // };
-  // const resetBlogLink = (e) => {
-  //   e.preventDefault();
-  //   setBlogNavLink(<FontAwesomeIcon id="font-aws-icon" icon={faBold} />);
-  // };
-  // CONTACT BTN FUNC
-  // const hoverContactLink = (e) => {
-  //   e.preventDefault();
-  //   setContactNavLink(<h5 id="navbar-text">Contact</h5>);
-  // };
-  // const resetContactLink = (e) => {
-  //   e.preventDefault();
-  //   setContactNavLink(
-  //     <FontAwesomeIcon id="font-aws-icon" icon={faAddressBook} />
-  //   );
-  // };
-
   const navPage = (routeName) => {
     setCurrentPath(`'${routeName}'`);
     setClicked(true);
@@ -178,7 +137,7 @@ export default function SideBar () {
   };
 
   return (
-    <div className="navbar-container container-fixed">
+    <div className="navbar-container container-fixed" style={{ visibility: navStyle }}>
       <div className="icon-cont">
         <img
           alt="Logan McCann"
@@ -188,8 +147,6 @@ export default function SideBar () {
       <div className="nav-link-container">
         <button
           id="navbar-btn"
-          // onMouseEnter={hoverHomeLink}
-          // onMouseLeave={resetHomeLink}
           onClick={() => {
             navPage('/home');
           }}
@@ -198,8 +155,6 @@ export default function SideBar () {
         </button>
         <button
           id="navbar-btn"
-          // onMouseEnter={hoverProjectLink}
-          // onMouseLeave={resetProjectLink}
           onClick={() => {
             navPage('/projects');
           }}
@@ -208,8 +163,6 @@ export default function SideBar () {
         </button>
         <button
           id="navbar-btn"
-          // onMouseEnter={hoverResumeLink}
-          // onMouseLeave={resetResumeLink}
           onClick={() => {
             navPage('/resume');
           }}
@@ -218,8 +171,6 @@ export default function SideBar () {
         </button>
         <button
           id="navbar-btn"
-          // onMouseEnter={hoverBlogLink}
-          // onMouseLeave={resetBlogLink}
           onClick={() => {
             navPage('/blog');
           }}
@@ -228,8 +179,6 @@ export default function SideBar () {
         </button>
         <button
           id="navbar-btn"
-          // onMouseEnter={hoverContactLink}
-          // onMouseLeave={resetContactLink}
           onClick={() => {
             navPage('/contact');
           }}
