@@ -132,7 +132,8 @@ export default function SideBar (props) {
       <div className="icon-cont">
         <img
           alt="Logan McCann"
-          src={require('../../page-images/canva-logo-2.png')}
+          // src={require('../../page-images/canva-logo-2.png')}
+          src={require('../../page-images/blm-logo.png')}
         ></img>
       </div>
       <div className="nav-link-container">

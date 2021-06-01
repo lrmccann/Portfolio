@@ -93,6 +93,9 @@ export default function Projects () {
               <h6 id="keywords-header">NPMs</h6>
             </span>
             <div>
+              {/* {currentlySelectedProject.packagesFE.split(',').map((npmText, myKey) => (
+                <h5 key={myKey} id="hashtag-list">{`${npmText},`}</h5>
+              ))} */}
               <h5 id="hashtag-list">{`${currentlySelectedProject.packagesFE}`}</h5>
               {/* FOR BE PACKAGES */}
               {/* <h5 id="hashtag-list">{`${currentlySelectedProject.packagesBE}`}</h5> */}

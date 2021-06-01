@@ -45,10 +45,12 @@
 /* STYLE FOR FLIPPED PAGE */
 
     [class*="project-page-two"]{
+        height: auto;
         width: 100%;
     }
 
     [class*="project-div"]{
+        height: 100%;
         width: 100%;
     }
     
@@ -61,6 +63,8 @@
     #exit-btn{
         width: 25%;
         margin-left: 2.4%;
+        margin-top: 2.5%;
+        margin-bottom: 1.5%;
     }
 
     [class*="project-img-cont"]{
@@ -69,7 +73,7 @@
     }
 
     #prjct-img-lg{
-        height: 20%;
+        height: 90%;
         width: 95%;
     }
 
@@ -95,6 +99,7 @@
 
     [class*="hashtag-bar"]{
         margin-top: 3%;
+        height: 15%;
         width: 95%;
         align-self: center;
     }
@@ -174,6 +179,7 @@
 /* STYLE FOR FLIPPED PAGE */
 
     [class*="project-page-two"]{
+        height: auto;
         width: 100%;
     }
 
@@ -188,6 +194,8 @@
     }
 
     #exit-btn{
+        margin-top: 1.5%;
+        margin-bottom: .50%;
         margin-right: 17.4%;
         width: 16%;
         align-self: flex-end;
@@ -344,6 +352,7 @@
 /* STYLE FOR FLIPPED PAGE */
 
     [class*="project-page-two"]{
+        height: 100%;
         width: 93%;
         display: flex;
         flex-direction: column;
@@ -364,6 +373,8 @@
     }
 
     #exit-btn{
+        margin-top: 1.5%;
+        margin-bottom: .50%;
         width: 12%;
         align-self: flex-end;
         margin-right: 2.5%;
@@ -446,7 +457,6 @@
     height: 100%;
     contain: content;
     overflow: auto;
-    /* background-color: chocolate; */
     width: 100%;
 }
 
@@ -516,28 +526,24 @@
 /* Style for Detailed Project Page */
 
 .project-page-two {
-    height: 100%;
     overflow: auto;
     contain: content;
 }
 
 .project-div{
     height: 95%;
-    /* background-color: cornflowerblue; */
     display: flex;
     flex-direction: column;
 }
 
 #exit-btn {
     box-shadow: 0 2px 5px 0 rgb(0 0 0 / 16%), 0 2px 10px 0 rgb(0 0 0 / 12%);
-    margin-top: 1.5%;
     padding-top: .50%;
     color: black;
     border: solid black 1px;
     height: auto;
     background-color: white; 
     cursor: pointer;
-    margin-bottom: .50%;
   }
 
 .project-div > button:focus {
@@ -666,7 +672,7 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    /* background-color: rebeccapurple; */
+    background-color: rebeccapurple;
 }
 
 #link-btn:hover{
