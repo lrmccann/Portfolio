@@ -20,11 +20,15 @@
         list-style: none;
         text-align: center;
     }
+    [class*="blog-item-header"] {
+        font-size: 25px;
+    }
     #blog-item{
-        font-size: 18px;
+        color: black;
+        text-decoration: black underline;
     }
     #blog-date{
-        font-size: 12px;
+        font-size: 14px;
     }
  }
 

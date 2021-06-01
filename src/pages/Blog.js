@@ -10,9 +10,6 @@ export default function Blog () {
     setBlogsToMap(blogsJson);
   }, []);
 
-  // console.log(blogsToMap)
-  console.log({ ...blogsJson })
-
   return (
     <div className="blog-page container-fixed">
       <h1 id="blog-header">Blog</h1>
@@ -21,7 +18,7 @@ export default function Blog () {
         <ul key={myKey} id="blog-list">
           <a id="blog-item" href={item.link}>
             <li key={myKey}>
-              <h1>{item.title}</h1>
+              <h1 className="blog-item-header">{item.title}</h1>
               <p id="blog-date">({item.monthCreated})</p>
             </li>
           </a>
