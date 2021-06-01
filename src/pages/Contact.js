@@ -35,7 +35,7 @@ export default function Contact () {
   return (
     <div className="contact-page container-fixed">
       <h1 id="contact-header">Contact</h1>
-      <div className="contact-div">
+      <div className="contact-div container-fixed">
         <h2 className="connect-header">Let&apos;s Connect!</h2>
         <form className="form-area" onInput={handleInputChange}>
           <div className="form-group">

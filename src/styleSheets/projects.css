@@ -431,15 +431,31 @@
 
     [class*="link-bar"]{
         align-self: center;
-        width: 95%;
+        /* width: 95%; */
+        width: 100%;
         height: 10%;
         margin-top: 1%;
     }
+/* 
+    [class*="link-bar:hover"]{
+        height: 125%;
+        width: 125%;
+    } */
+
+    #link-btn-cont:hover {
+        height: 105%;
+        width: 6%;
+    }
+
     #link-btn { 
         height: 100%;
-        width: 40%;
-
+        width: 100%;
     }
+
+    /* #link-btn:hover {
+        height: 105%;
+        width: 105%;
+    } */
  }
 
 /* END RESPONSIVE STYLE */
@@ -656,8 +672,9 @@
 
 #link-btn-cont{
     height: 100%;
-    width: 10%;
+    width: 5.5%;
     background-color: green;
+    contain: content;
     border-radius: 35px;
     /*  */
     display: flex;
@@ -672,20 +689,20 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    background-color: rebeccapurple;
+    /* background-color: rebeccapurple; */
 }
-
+/* 
 #link-btn:hover{
     background-color: rgb(206, 206, 206);
-}
+} */
 
 #link-btn:focus{
     outline: none;
 }
 
 #link-img{
-    height: 90%;
-    width: 90%;
+    height: 100%;
+    width: 100%;
     /* height: 72%;
     width: 16%;
     margin-right: 2%; */

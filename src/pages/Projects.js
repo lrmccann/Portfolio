@@ -112,7 +112,7 @@ export default function Projects () {
                 <img
                   id="link-img"
                   alt="Github Link"
-                  src={require('../page-images/github-lg.png')}
+                  src={require('../page-images/github-lg-two.png')}
                 ></img>
               </a>
             </div>
@@ -126,7 +126,7 @@ export default function Projects () {
                 <img
                   id="link-img"
                   alt="Deployment Link"
-                  src={require('../page-images/web-lg.png')}
+                  src={require('../page-images/web-lg-two.png')}
                 ></img>
               </a>
             </div>
@@ -140,7 +140,7 @@ export default function Projects () {
                 <img
                   id="link-img"
                   alt="aws S3 Bucket"
-                  src={require('../page-images/amazon-lg.png')}
+                  src={require('../page-images/amazon-lg-two.png')}
                 ></img>
               </a>
             </div>
