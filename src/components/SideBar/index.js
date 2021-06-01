@@ -15,7 +15,6 @@ export default function SideBar (props) {
   const location = useLocation().pathname;
   const history = useHistory();
   // state to store paths from router
-  const [currentPath, setCurrentPath] = useState();
   const [oldPath, setOldPath] = useState();
   // state to set loading and when the user clicks to navigate
   // const [loading, setLoading] = useState(true);
@@ -39,20 +38,17 @@ export default function SideBar (props) {
 
   useEffect(() => {
     if (clicked === null) {
-      setOldPath(location);
-      setCurrentPath(location);
       setHomeNavLink(<FontAwesomeIcon id="font-aws-icon" icon={faHome} />);
       setProjectNavLink(<FontAwesomeIcon id="font-aws-icon" icon={faFolder} />);
       setBlogNavLink(<FontAwesomeIcon id="font-aws-icon" icon={faBold} />);
       setResumeNavLink(<FontAwesomeIcon id="font-aws-icon" icon={faFileAlt} />);
-      setContactNavLink(
-        <FontAwesomeIcon id="font-aws-icon" icon={faAddressBook} />
-      );
-      if (currentPath === undefined || currentPath === null) {
-        return checkRoute(location);
+      setContactNavLink(<FontAwesomeIcon id="font-aws-icon" icon={faAddressBook} />);
+      if (location === '/') {
+        setHomeNavLink(<FontAwesomeIcon className="active-route-btn" id="font-aws-icon-two" icon={faHome} />);
+      } else {
+        checkRoute(location);
       }
     } else if (clicked === false) {
-      setOldPath(location);
       return uncheckRoute(location);
     } else if (clicked === true) {
       checkRoute(location);
@@ -60,11 +56,11 @@ export default function SideBar (props) {
     }
   }, [clicked]);
 
-  const checkRoute = (thePath) => {
-    if (thePath === undefined || thePath === null) {
+  const checkRoute = (path) => {
+    if (path === undefined || path === null) {
       alert('Error, please refresh page and try again');
     } else {
-      if (thePath === '/home') {
+      if (path === '/home') {
         setHomeNavLink(
           <FontAwesomeIcon
             className="active-route-btn"
@@ -72,7 +68,7 @@ export default function SideBar (props) {
             icon={faHome}
           />
         );
-      } else if (thePath === '/projects') {
+      } else if (path === '/projects') {
         setProjectNavLink(
           <FontAwesomeIcon
             className="active-route-btn"
@@ -80,7 +76,7 @@ export default function SideBar (props) {
             icon={faFolder}
           />
         );
-      } else if (thePath === '/resume') {
+      } else if (path === '/resume') {
         setResumeNavLink(
           <FontAwesomeIcon
             className="active-route-btn"
@@ -88,7 +84,7 @@ export default function SideBar (props) {
             icon={faFileAlt}
           />
         );
-      } else if (thePath === '/blog') {
+      } else if (path === '/blog') {
         setBlogNavLink(
           <FontAwesomeIcon
             className="active-route-btn"
@@ -96,7 +92,7 @@ export default function SideBar (props) {
             icon={faBold}
           />
         );
-      } else if (thePath === '/contact') {
+      } else if (path === '/contact') {
         setContactNavLink(
           <FontAwesomeIcon
             className="active-route-btn"
@@ -109,10 +105,7 @@ export default function SideBar (props) {
   };
 
   const uncheckRoute = () => {
-    console.log(currentPath, oldPath)
-    if (oldPath === currentPath) {
-      console.log('old path is current path');
-    } else {
+    if (oldPath !== location) {
       if (oldPath === '/home') {
         setHomeNavLink(<FontAwesomeIcon id="font-aws-icon" icon={faHome} />);
       } else if (oldPath === '/projects') {
@@ -129,7 +122,7 @@ export default function SideBar (props) {
     }
   };
   const navPage = (routeName) => {
-    setCurrentPath(`'${routeName}'`);
+    setOldPath(location);
     setClicked(true);
     history.push(routeName);
   };

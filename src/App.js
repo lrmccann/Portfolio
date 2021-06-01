@@ -50,12 +50,14 @@ export default function App () {
       <React.StrictMode>
         <Route exact path='/' render={(props) => <Welcome {...props} hideNavbar = {hideNavbar} />}/>
         <Switch>
-          <SideBar navStyleAtt = {navStyleState} />
-          <Route exact path='/home' component={Home} />
-          <Route exact path='/projects' component={Projects} />
-          <Route exact path='/resume' component={Resume} />
-          <Route exact path='/blog' component={Blog} />
-          <Route exact path='/contact' component={Contact} />
+          <>
+            <SideBar navStyleAtt = {navStyleState} />
+            <Route exact path='/home' component={Home} />
+            <Route exact path='/projects' component={Projects} />
+            <Route exact path='/resume' component={Resume} />
+            <Route exact path='/blog' component={Blog} />
+            <Route exact path='/contact' component={Contact} />
+          </>
         </Switch>
       </React.StrictMode>
     </Router>

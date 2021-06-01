@@ -19,8 +19,8 @@ export default function Welcome (props) {
       <div className="welcome-cont container-fixed">
         <div className="text-cont">
           <Fade right>
-            <h1>Hi, I&apos;m Logan.</h1>
-            <h2>I Design and Build User Interfaces.</h2>
+            <h1 className="header-text-one">Hi, I&apos;m Logan.</h1>
+            <h2 className="header-text-two">I Design and Build User Interfaces.</h2>
           </Fade>
         </div>
         <Flip left>

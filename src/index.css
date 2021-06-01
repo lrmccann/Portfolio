@@ -17,8 +17,6 @@ body {
   overflow: auto;
   contain: content;
   height: 100%;
-  /* font-family: 'Open Sans'; */
-  /* font-weight: 600; */
 }
 
 html, body, #app, #app > div {

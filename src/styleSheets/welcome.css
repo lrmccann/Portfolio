@@ -1,4 +1,96 @@
 @import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@600&family=Source+Sans+Pro:ital,wght@1,600&display=swap');
+@media only screen and (max-width: 599px) {
+    [class*="welcome-cont"] { 
+        background-image: url('../page-images/welcome-page-mobile.png');
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: right;
+    }
+
+    [class*="navHomeBtn"] {
+        bottom: 10%;
+        height: 8%;
+        width: 55%;
+        border-radius: 25px;
+    }
+
+    [class*="header-text-one"] {
+        justify-content: center;
+        font-size: 58px;
+        white-space: nowrap;
+        padding-top: 4.50%;
+        padding-bottom: 4.50%;
+        margin-bottom: 5%;
+    }
+
+    [class*="header-text-two"] {
+        font-size: 30px;
+        padding-top: 4.50%;
+        padding-bottom: 4.50%;
+        text-align: center;
+    }
+}
+
+@media only screen and (min-width: 600px) and (max-width: 991px) {
+    [class*="welcome-cont"] { 
+        background-image: url('../page-images/welcome-pg-bg-2.png');
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position-y: 50%;        
+    }
+
+    [class*="navHomeBtn"] {
+        margin-top: 36%;
+        height: 13%;
+        width: 17%;
+    }
+
+    [class*="header-text-one"] {
+        justify-content: center;
+        /* padding-left: 2%; */
+        font-size: 70px;
+        padding-top: .50%;
+        padding-bottom: .50%;
+        margin-bottom: 2%;
+    }
+
+    [class*="header-text-two"] {
+        font-size: 50px;
+        padding-top: 1.50%;
+        padding-bottom: 1.50%;
+        text-align: center;
+    }
+}
+
+@media only screen and (min-width: 992px) { 
+    [class*="welcome-cont"] { 
+        background-image: url('../page-images/welcome-pg-bg-2.png');
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+    
+    [class*="navHomeBtn"] {
+        margin-top: 36%;
+        height: 13%;
+        width: 17%;
+    }
+
+    [class*="header-text-one"] {
+        padding-left: 2%;
+        font-size: 70px;
+        padding-top: .50%;
+        padding-bottom: .50%;
+        margin-bottom: 2%;
+    }
+
+    [class*="header-text-two"] {
+        font-size: 50px;
+        padding-top: 1.50%;
+        padding-bottom: 1.50%;
+        padding-left: 2.5%;
+    }
+}
+
 .welcome-page{
     height: 100%;
     width: 100%;
@@ -15,11 +107,6 @@
     display: flex;
     flex-direction: row;
     scroll-behavior: smooth;
-    /* background-image: url('../page-images/canva-bg-2.png'); */
-    background-image: url('../page-images/welcome-pg-bg-2.png');
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position-y: 50%;
 }
 
 .text-cont{
@@ -32,41 +119,26 @@
     font-family: 'Open Sans', sans-serif, 'Source Sans Pro', sans-serif;
 }
 
-.text-cont > h1{
-    padding-top: .50%;
-    padding-bottom: .50%;
+.header-text-one{
     display: flex;
-    padding-left: 2%;
-    font-size: 70px;
     background-color: whitesmoke;
-    margin-bottom: 2%;
     box-shadow: 0 2px 5px 0 rgb(0 0 0 / 16%), 0 2px 10px 0 rgb(0 0 0 / 12%);
 }
 
-.text-cont > h2{
+.header-text-two{
     box-shadow: 0 2px 5px 0 rgb(0 0 0 / 16%), 0 2px 10px 0 rgb(0 0 0 / 12%);
-    padding-top: 1.50%;
-    padding-bottom: 1.50%;
     display: flex;
     background-color: whitesmoke;
-    /* font-size: 40px; */
-    font-size: 50px;
-    padding-left: 2%;
 }
 
 .navHomeBtn{
-    height: 13%;
-    width: 17%;
     background-color: whitesmoke;
-    /* background-color: red; */
     box-shadow: 0 2px 5px 0 rgb(0 0 0 / 106%), 0 2px 10px 0 rgb(0 0 0 / 120%);
     position: absolute;
-    margin-top: 36%;
     left: 0;
     right: 0;
     margin-left: auto;
     margin-right: auto;
-    /* align-self: center; */
     border: none;
     cursor: pointer;
     display: flex;
@@ -91,16 +163,6 @@
     font-family: "Sans Open";
 }
 
-/* .navHomeBtn  :hover{
-    height: 100%;
-    width: 100%;
-    background-color: rgb(34, 34, 34);
-} */
-
 .navHomeBtn :focus{
     outline: none;
-}
-
-.navBtnText{
-
 }

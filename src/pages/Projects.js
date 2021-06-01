@@ -90,10 +90,12 @@ export default function Projects () {
           </div>
           <div className="hashtag-bar container-fixed">
             <span id="hashtag-span">
-              <h4 id="keywords-header">Tech</h4>
+              <h6 id="keywords-header">NPMs</h6>
             </span>
             <div>
-              <h5 id="hashtag-list">React</h5>
+              <h5 id="hashtag-list">{`${currentlySelectedProject.packagesFE}`}</h5>
+              {/* FOR BE PACKAGES */}
+              {/* <h5 id="hashtag-list">{`${currentlySelectedProject.packagesBE}`}</h5> */}
             </div>
           </div>
           <div className="link-bar container-fixed">
