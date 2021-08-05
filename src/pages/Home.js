@@ -4,45 +4,15 @@ import Fade from 'react-reveal/Fade';
 import SkillsContainer from '../components/SkillsContainer/index';
 import {
   skillIconsOne,
-  skillsIconsTwo,
-  skillsIconsThree,
-  skillsIconsFour,
-  skillsIconsFive
+  skillIconsTwo,
+  skillIconsThree,
+  skillIconsFour,
+  skillIconsFive
 } from '../skill-icons/importSkills';
 import '../styleSheets/home.css';
 
 export default function Home () {
-  var skillsOne = ['HTML-5', 'CSS', 'JavaScript', 'Sass'];
-  var altSkillsOne = [
-    'HTML-5 Icon',
-    'CSS Icon',
-    'JavaScript Icon',
-    'Sass Icon'
-  ];
-  var skillsTwo = ['React', 'jQuery', 'Bootstrap'];
-  var altSkillsTwo = ['React Icon', 'jQuery Icon', 'Bootstrap Icon'];
-  var skillsThree = ['Vue.js', 'Node.js', 'React Native', 'Expo'];
-  var altSkillsThree = ['Vue.js Icon', 'Node.js Icon', 'Expo', 'React Native'];
-  var skillsFour = ['MySQL', 'Firebase', 'MongoDB'];
-  var altSkillsFour = ['MySQL Icon', 'Firebase Icon', 'MongoDB Icon'];
-  var skillsFive = [
-    'AWS',
-    'Github',
-    'Heroku',
-    'Robo3T',
-    'Jest',
-    'Workbench',
-    'Webpack'
-  ];
-  var altSkillsFive = [
-    'Github Icon',
-    'Heroku Icon',
-    'AWS Icon',
-    'Robo3T Icon',
-    'Jest',
-    'MySQL Workbench Icon',
-    'Webpack'
-  ];
+  console.log(skillIconsOne, skillIconsTwo)
   return (
     <div className="home-page container-fixed">
       <h1 id="home-header">Home</h1>
@@ -75,33 +45,23 @@ export default function Home () {
         <Fade bottom>
           <SkillsContainer
             skillType={'Languages'}
-            skills={skillsOne}
-            skillImages={skillIconsOne}
-            altSkills={altSkillsOne}
+            skills={skillIconsOne}
           />
           <SkillsContainer
             skillType={'Libraries'}
-            skills={skillsTwo}
-            skillImages={skillsIconsTwo}
-            altSkills={altSkillsTwo}
+            skills={skillIconsTwo}
           />
           <SkillsContainer
             skillType={'Frameworks'}
-            skills={skillsThree}
-            skillImages={skillsIconsThree}
-            altSkills={altSkillsThree}
+            skills={skillIconsThree}
           />
           <SkillsContainer
             skillType={'Databases'}
-            skills={skillsFour}
-            skillImages={skillsIconsFour}
-            altSkills={altSkillsFour}
+            skills={skillIconsFour}
           />
           <SkillsContainer
             skillType={'Tools'}
-            skills={skillsFive}
-            skillImages={skillsIconsFive}
-            altSkills={altSkillsFive}
+            skills={skillIconsFive}
           />
         </Fade>
       </div>

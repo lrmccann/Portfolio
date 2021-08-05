@@ -4,44 +4,22 @@ import React from 'react';
 import './style.css';
 
 export default function SkillsContainer (props) {
-  // console.log(props.skillImages, 'props images')
-  // console.log(props.skills, 'props skills')
-
-  // for(i = 0; i <= )
-
-  // var skillsTaMap = {};
-  // // eslint-disable-next-line no-return-assign
-  // props.skillImages.forEach((skillImg, i) => skillsTaMap[skillImg] = props.skills[i]);
-
-  // console.log(skillsTaMap)
-
-  const skillsToMap = {
-    images: [...props.skillImages],
-    skills: props.skills
-  };
+  console.log(props.skills, 'props for skills here')
 
   return (
     <div className="skill-main-cont container-fluid">
-      <h2 id="skill-title-header">{props.skillType}</h2>
-      <div className="skill-content">
-        <div className="icon-div">
-          {skillsToMap.images.map((mappedIcon, iconKey) => (
-            <div key={iconKey} className="icon-holder">
-              <img
-                src={mappedIcon}
-                alt={props.altSkills}
-                className="skill-icon"
-              ></img>
-            </div>
-          ))}
-        </div>
-        <div className="text-div">
-          {skillsToMap.skills.map((mappedText, textKey) => (
-            <div className="text-holder" key={textKey}>
-              <p className="skill-text">{mappedText}</p>
-            </div>
-          ))}
-        </div>
+      <h2>{props.skillType}</h2>
+      <div className="skill-row">
+        {props.skills.map((content, contentKey) => (
+          <div key={contentKey} className="content-skill">
+            <img
+              src={content.img}
+              alt={props.altSkills}
+              className="skill-icon"
+            ></img>
+            <h4 className='skill-text'>{content.skill}</h4>
+          </div>
+        ))}
       </div>
     </div>
   );
